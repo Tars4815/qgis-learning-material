@@ -1,0 +1,23 @@
+site_name: QGIS Learning Material
+
+theme:
+  name: material
+  palette:
+    primary: green
+  font:
+    text: Open Sans
+  language: it
+  extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+
+
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+      
+  repo_url: https://github.com/Tars4815/qgis-learning-material
+
+
