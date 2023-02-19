@@ -231,6 +231,135 @@ I valori sono celle di una griglia con determinate estensioni e una determinata 
 
 [INSERIRE IMMAGINE]
 
+## Importazione shapefile
+
+[INSERIRE IMMAGINE]
+
+[INSERIRE IMMAGINE]
+
+## Gestione proprietà shapefile
+
+Per modificare le proprietà dello shapefile, cliccare sul layer con il tasto destro e selezionare proprietà.
+
+[INSERIRE IMMAGINE]
+
+### Stile
+
+**Visualizzazione con singolo simbolo**
+
+[INSERIRE IMMAGINE]
+
+E' possibile anche impostare la trasparenza del layer che può essere utile nei casi in cui si vuole sovrappore questo ad un altro strato informativo (es. un'ortofoto).
+
+**Visualizzazione con simbolo categorizzato** in base ai valori contenuti in un campo del layer.
+
+[INSERIRE IMMAGINE]
+
+L'utilizzo di questo stile permette anche di assegnare a ogni valore individuato un'etichetta da includere nella legenda. In questo modo il significato del campo scelto e dei suoi valori risulta ancora più chiaro e comprensibile.
+
+[INSERIRE IMMAGINE]
+
+### Etichette
+
+Per identificare meglio i comuni è possibile inserire anche le etichette relative ad ogni unità geometrica: cliccare su **etichette** -> Selezionare ***Etichette singole*** e scegliere quale ***Valore*** far comparire.
+
+[INSERIRE IMMAGINE]
+
+[INSERIRE IMMAGINE]
+
+## Dati vettoriali
+
+### Tabella attributi
+
+Per visualizzare la tabella con i comuni della provincia di PC, cliccare con il tasto destro sul layer nel pannello layer -> premere ***Apri tabella attributi***
+
+### Aggiunta campo
+
+***Tasto destro sul layer -> Apri tabella attributi -> Attiva modifiche -> Nuovo campo***
+
+[INSERIRE IMMAGINE]
+
+Definire i campi richiesti con particolare attenzione al **tipo di valore** che verrà inserito nel nuovo campo (numero intero, decimale, testo, data, etc.) e il **numero massimo di caratteri**.
+
+[INSERIRE IMMAGINE]
+
+Per finalizzare le modifiche, salvare e concludere la sessione di editing.
+
+### Calcolatore di campi
+
+***Tasto destro sul layer -> Apri tabella attributi -> Attiva modifiche -> Apri il calcolatore di campi***
+
+[INSERIRE IMMAGINE]
+
+Con il **calcolatore di campi** è possibile creare un nuovo campo con il risultato della funzione scelta oppure aggiornarne uno esistente.
+
+[INSERIRE IMMAGINE]
+
+### Rimuovi campo
+
+***Tasto destro sul layer -> Apri tabella attributi -> Attiva modifiche -> Elimina campo***
+
+[INSERIRE IMMAGINE]
+
+Selezionare il campo di interesse e confermare la rimozione.
+
+[INSERIRE IMMAGINE]
+
+Per finalizzare le modifiche, salvare e concludere la sessione di editing.
+
+## Dati raster
+
+Che cos'è un raster?
+
+[INSERIRE IMMAGINE]
+
+Un dato fondamentale per le analisi GIS sono i cosiddetti **Digital Terrain Model** (DTM) ma ci sono anche **Ortofoto**, **Carte tecniche**, foto aree, immagini satellitari, mappe geologiche etc.
+
+### Modelli digitali delle altezze
+
+* **DEM** (Digital Elevation Model) è un file digitale con le quote della superficie del terreno a intervalli regolarmente spaziati sul piano orizzontale.
+
+* **DTM** (Digital Terrain Model) avrebbe un significato più generico indicando oltre alla quota della superficie del terreno anche altre informazioni come pendenza ed esposizione.
+
+* **DSM** (Digital Surface Model) rappresenta in forma digitale le quote della parte superiore del terreno comprensivo degli edifici, delle infrastrutture e degli alberi senza le procedure di filtraggio utilizzare per produrre DEM e/o DTM.
+
+[INSERIRE IMMAGINE]
+
+### Ortofoto
+
+E' una mappa fotografica che combina le caratteristiche di una mappa tradizionale con quelle di un'immagine. E' georeferenziata, priva di distorsioni e con scala uniforme.
+
+### Importare un raster
+
+[INSERIRE IMMAGINE]
+
+### Riproiezione
+
+La riproiezione raster tramite le librerie GDAL:
+***Raster -> Proiezioni -> Riproiezione**
+
+[INSERIRE IMMAGINI]
+
+### Proprietà
+
+Per modificare le proprietà del raster, cliccare sul tasto destro e selezionare **proprietà**:
+
+[INSERIRE IMMAGINE]
+
+### Stile
+
+Modificare lo **stile**:
+
+* Banda singola grigia
+* Colori banda multipla
+* Valori a tavolozza
+* Banda singola falso colore
+* Omreggiatura
+
+...e altre opzioni statistiche.
+
+[INSERIRE IMMAGINE]
+
 
 
 
