@@ -32,18 +32,6 @@ plugins:
         en: "This page isn't translated to English."
 
 
-extra:
-  # Default mkdocs-material alternate links for untranslated pages
-  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector
-  alternate:
-    - name: English
-      link: ""
-      lang: en
-
-    - name: Italiano
-      link: index.it/
-      lang: it
-
 
 
 
