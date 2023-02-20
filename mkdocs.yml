@@ -20,14 +20,29 @@ theme:
       
 repo_url: https://github.com/Tars4815/qgis-learning-material
 
+plugins:
+  - i18n:
+      languages:
+        it: "Italiano"
+        en: "English"
+      default_language: 'en'
+      no_translation:
+        it: "Questa pagina non è tradotta in italiano."
+        en: "This page isn't translated to English."
+
+
 extra:
+  # Default mkdocs-material alternate links for untranslated pages
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language-selector
   alternate:
     - name: English
-      link: https://tars4815.github.io/qgis-learning-material/en/
+      link: ""
       lang: en
+
     - name: Italiano
-      link: https://tars4815.github.io/qgis-learning-material/it/
+      link: index.it/
       lang: it
+
 
 
 
