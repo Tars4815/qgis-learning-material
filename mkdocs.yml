@@ -21,7 +21,7 @@ theme:
 repo_url: https://github.com/Tars4815/qgis-learning-material
 
 plugins:
-  - searchs
+  - search
   - i18n:
       languages:
         it: "Italiano"
