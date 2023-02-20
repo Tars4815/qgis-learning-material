@@ -18,6 +18,16 @@ theme:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
       
-  repo_url: https://github.com/Tars4815/qgis-learning-material
+repo_url: https://github.com/Tars4815/qgis-learning-material
+
+extra:
+  alternate:
+    - name: English
+      link: https://tars4815.github.io/qgis-learning-material/en/
+      lang: en
+    - name: Italiano
+      link: https://tars4815.github.io/qgis-learning-material/it/
+      lang: it
+
 
 
