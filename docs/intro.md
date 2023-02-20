@@ -1,6 +1,6 @@
-# Introduzione
+# Introduction
 
-## **Che cos'è un GIS?**
+## **What is a GIS?**
 
 Un **GIS** (*Geographic Information System*) è un sistema informativo computerizzato che permette di **acquisire**, **registrare**, **analizzare**, **visualizzare**, **restituire**, **condividere** e **presentare** informazioni da **dati geografici** (*georiferiti*).
 
