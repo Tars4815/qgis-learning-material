@@ -17,15 +17,15 @@ QGIS usa uno strumento detto **compositore di stampe** attraverso cui è possibi
 
 ***Progetto -> Nuovo layout di stampa -> Assegnare un titolo -> OK***
 
-[INSERIRE IMMAGINE]
+![Esempio nuovo layout](./assets/img/nuovo_layout.png "Procedura per creazione nuovo file di layout in QGIS")
 
-Attenzione! Se abbiamo più layer in uso e vogliamo creare il layout di solo uno di questi, lasciare attiva la visibilità nel pannello layers solo dello strato di interesse.
+*Attenzione!* Se abbiamo più layer in uso e vogliamo creare il layout di solo uno di questi, lasciare attiva la visibilità nel pannello layers solo dello strato di interesse.
 
-[INSERIRE IMMAGINE]
+![Compositore di stampa QGIS](./assets/img/compositore_stampa.png "Interfaccia del compositore di stampa QGIS")
 
 L'**estensione** e le **unità di misura** (per scala e eventuale reticolo) sono quelle del progetto QGIS da cui si parte, per cui è bene impostare correttamente il **S.R.** in funzione delle informazioni che si vogliono visualizzare sulla stampa.
 
-[INSERIRE IMMAGINE]
+![Proprietà del compositore di stampa QGIS](./assets/img/propriet%C3%A0_compositore_stampa.png "Proprietà del compositore di stampa QGIS")
 
 Per cambiare orientazione della pagina del compositore, cliccare il tasto destro al centro dell'oggetto -> ***Proprietà pagina -> Orientazione***
 
@@ -33,29 +33,29 @@ Per cambiare orientazione della pagina del compositore, cliccare il tasto destro
 
 Scegliere una delle opzioni per aggiungere la mappa alla pagina selezionando l'area a essa destinata all'interno del layout. La mappa potrà quindi essere spostata all'interno del riquadro con il comando (simbolo).
 
-[INSERIRE IMMAGINE]
+![Inserimento nuova mappa nel layout](./assets/img/inserire_mappa.png "Inserire una mappa nel compositore di stampa QGIS")
 
 La scala di visualizzazione della mappa viene definita nella finestra *Proprietà dell'oggetto* a destra del compositore di layout. 
 
-[INSERIRE IMMAGINE]
+![Scala di visualizzazione mappa](./assets/img/mappa_scala.png "Definire scala di visualizzazione della mappa nel compositore di stampa QGIS")
 
 ## Inserire la barra di scala
 
 Una volta premuto ***Aggiungi barra di scala***, disegnare sulla mappa un'area rettangolare per poter inserire la scala.
 
-[INSERIRE IMMAGINE]
+![Inserire barra di scala](./assets/img/inserire_scalimetro.png "Inserimento di barra di scala nel compositore di stampa QGIS")
 
 ## Inserire la freccia del Nord
 
 Una volta premuto ***Aggiungi Freccia Nord***, disegnare sulla mappa un'area rettangolare per poter inserire la freccia.
 
-[INSERIRE IMMAGINE]
+![Inserire la freccia del Nord](./assets/img/inserire_freccianord.png "Inserimento della freccia del Nord nel compositore di stampa QGIS")
 
 ## Inserire la legenda
 
 Una volta premuto ***Aggiungi Legenda***, disegnare sulla mappa un'area rettangolare per poter inserire la legenda.
 
-[INSERIRE LA LEGENDA]
+![Inserire la legenda](./assets/img/inserire_legenda.png "Inserimento della legenda nel compositore di stampa QGIS")
 
 Per modificare la legenda:
 
@@ -64,13 +64,13 @@ Per modificare la legenda:
 3. Per aggiungere e togliere dei campi.
 4. Per modificare il nome del layer che compare in legenda.
 
-[INSERIRE IMMAGINE]
+![Modificare la legenda](./assets/img/legenda_modifiche.png "Modifica della legenda nel compositore di stampa QGIS")
 
 ## Stampa con finestre multiple
 
 Per stampare due mappe distinte cambiando i layer accesi e il loro stile, è possibile impostare le opportune funzioni per il blocco dei layer attivi.
 
-[INSERIRE IMMAGINE]
+![Stampa con finestre multiple](./assets/img/stampa_finestre_multiple.png "Inserimento multiplo di mappe nel compositore di stampa QGIS")
 
 In questo caso inserire la seconda mappa con il comando *Aggiungi mappa* creando una finestra più piccola.
 
@@ -82,5 +82,5 @@ Nella toolbar, cliccando sulle icone evidenziate, è possibile salvare il layout
 
 Nella finestra di salvataggio, selezionare il formato di file desiderato (3).
 
-[INSERIRE IMMAGINE].
+![Salvataggio layout](./assets/img/salvataggio_layout.png "Salvataggio layout di stampa in QGIS")
 
