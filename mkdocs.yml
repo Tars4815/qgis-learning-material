@@ -49,10 +49,10 @@ plugins:
 nav:
   - Home: index.md
   - Courses:
-    - A.Y. 2022:
+    - a.y. 2022:
       - Piacenza Campus:
-        - arch-pc/about.md
-        - arch-pc/intro.md
+        - arch-pc-about.md
+        - arch-pc-intro.md
 
 
 
