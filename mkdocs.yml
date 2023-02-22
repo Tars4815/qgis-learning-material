@@ -9,7 +9,15 @@ theme:
   language: it
   features:
     - navigation.path
+    - navigation.footer
   extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/fede_gaspari
+    - icon: fontawesome/brands/github
+      link: https://github.com/Tars4815
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/federicagaspari/
   consent:
     title: Cookie consent
     description: >- 
