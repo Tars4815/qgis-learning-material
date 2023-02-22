@@ -1,5 +1,6 @@
 site_name: QGIS Learning Material
 
+# Configuration
 theme:
   name: material
   palette:
@@ -10,7 +11,9 @@ theme:
   features:
     - navigation.path
     - navigation.footer
-  extra:
+
+# Customization
+extra:
   social:
     - icon: fontawesome/brands/twitter 
       link: https://twitter.com/fede_gaspari
@@ -40,6 +43,14 @@ plugins:
       no_translation:
         it: "Questa pagina non è tradotta in italiano."
         en: "This page isn't translated to English."
+
+
+# Page tree
+nav:
+  - Home: index.md
+  - Courses: courses.md
+    - Architecture - Piacenza Campus: arch-pc/about.md
+      - intro.md
 
 
 
