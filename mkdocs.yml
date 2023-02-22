@@ -48,7 +48,7 @@ plugins:
 # Page tree
 nav:
   - Home: index.md
-  - Courses: courses.md
+  - Courses:
     - Architecture - Piacenza Campus: arch-pc/about.md
       - intro.md
 
