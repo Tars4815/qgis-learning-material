@@ -49,8 +49,8 @@ plugins:
 nav:
   - Home: index.md
   - Courses:
-    - Architecture - Piacenza Campus: arch-pc/about.md
-      - intro.md
+    - arch-pc/about.md
+    - arch-pc/intro.md
 
 
 
