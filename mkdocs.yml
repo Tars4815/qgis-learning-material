@@ -7,6 +7,8 @@ theme:
   font:
     text: Open Sans
   language: it
+  features:
+    - navigation.path
   extra:
   consent:
     title: Cookie consent
