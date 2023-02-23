@@ -2,11 +2,12 @@
 
 ## **What is a GIS?**
 
-Un **GIS** (*Geographic Information System*) è un sistema informativo computerizzato che permette di **acquisire**, **registrare**, **analizzare**, **visualizzare**, **restituire**, **condividere** e **presentare** informazioni da **dati geografici** (*georiferiti*).
+A **GIS** (*Geographic Information System*) is a computerised information system that allows the **acquisition**, **storage**, **analysis**, **visualization** and **exchange** of geographical information in the form of **geo-referenced data**.
 
-Permette quindi di associare i dati alla loro posizione geografica sulla superficie terrestre e di elaborarli per estrarne informazioni.
+It then allows data to be associated with their geographical position on the earth's surface and processed in order to extract information.
 
-I principali **software GIS** disponibili sono:
+
+The most common **GIS software** are:
 
 * ArcGIS
 * QGIS
@@ -14,234 +15,239 @@ I principali **software GIS** disponibili sono:
 * SagaGIS
 ...
 
-## **Perché QGIS?**
+**Why QGIS?**
 
-E' un software:
+It is:
 
 * Free and Open Source
-* In forte evoluzione -> Ogni 4 mesi viene rilasciata una nuova release
+* Constantly updated -> Every 4 months a new version is released
 
-Inoltre, QGIS ha il grande vantaggio per chi lavora con versioni più datate di poter gestire anche progetti realizzati con versioni più recenti.
+But it has the great advantage for those working with older versions that it can also handle projects made with newer versions.
 
-## **Le funzionalità principali**
+![QGIS logo](./assets/img/QGIS-logo.png "QGIS logo")
 
-* Visualizzazione dei dati:
+## **Main functionalities**
 
-si possono visualizzare e sovrappore dati vettoriali e raster in diversi formati e proiezioni cartografiche.
+* **Data visualisation**:
 
-* Esplorazione di dati e creazione di mappe:
+Vector and raster data can be displayed and superimposed in different formats and map projections.
 
-si possono comporre mappe ed esplorare interattivamente dati spaziali tramite una facile interfaccia grafica.
+* **Data exploration and map print layout creation**:
 
-* Creazione, editing, gestione, esportazione:
+You can compose maps and interactively explore spatial data through an easy-to-use graphical interface.
 
-possono essere eseguite analisi spaziali di dati.
+* **Creation, editing, management, export**:
 
-* Colegamento a DB esterni
+Spatial analysis of data can be performed 
 
-è possibile visualizzare e interrogare dati memorizzati su DB (es. MySQL, PostgreSQL...) esterni.
+* **Link to external DBs**:
 
-* Pubblicazione di mappe sul web
+You can view and query data stored on external DBs (e.g., MySQL, PostgreSQL...).
 
-con plugin nativi e non, QGIS permette di definire le impostazioni per realizzare una mappa interattiva da condividere su pagine web.
+* **Publication of maps on the web**
 
-...e molto altro!
+With native and non-native plugins, QGIS allows you to define settings to make an interactive map to share on web pages.
+
+...and much more!
 
 ## Graphic User Interface
 
-La GUI di QGIS Desktop è principalmente composta da:
+The GUI of QGIS Desktop is mainly composed of:
 
-1. **Barra dei menù** dove è possibile trovare le principali funzionalità di progetto QGIS raggruppate per tematiche.
-2. **Barra delle applicazioni** personalizzabile che include le scorciatoie ai tool di più comune utilizzo per la manipolazione dei dati in ambiente GIS.
-3. **Elenco dei layers caricati** che indica quali dati sono stati inseriti nel progetto, specificandone le caratteristiche, la simbologia e la visibilità.
-4. **Area di visualizzazione layers** ovvero la map canvas su cui è possibile valutare graficamente la componente geografica e geometrica dei dati.
-5. **Barra di stato** che indica lo stato di avanzamento di eventuali processamenti avviati ed eventuali errori riscontrati.
+1. **Menu toolbar** where you can find the main QGIS project features grouped by themes.
+2. **Attributes and Vector toolbar** customizable that includes shortcuts to the most commonly used tools for data manipulation in a GIS environment.
+3. **Loaded layers list** which indicates what data have been included in the project, specifying their characteristics, symbology and visibility.
+4. **Map view** that is the map canvas on which the geographic and geometric component of the data can be evaluated graphically.
+5. **Status bar** indicating the status of any processings initiated and any errors encountered.
 
-[INSERIRE IMMAGINE]
+![QGIS Graphic User Interface](./assets/img/GUI-en.png "QGIS GUI")
 
-## Come vengono gestiti i dati geografici in QGIS?
+## Data management
 
-Cosa serve per lavorare in QGIS?
-* Saper gestire dati geografici nei **diversi sistemi di coordinate** geografiche e/o proiettate;
-* Saper gestire un **progetto**;
-* Saper importare:
-    
-* Dati **vettoriali** (e.g. shapefile .shp, GeoJSON .geojson...)
-    * Dati **raster** (e.g. .tiff)
+**How QGIS handles geographic data?**
 
-* Comprendere la logica dei **plugins**
+What is needed in order to work with QGIS?
 
-## A cosa serve un sistema di riferimento?
+* Knowing how to handle geographical data in **different geographical and/or projected coordinate systems**;
+* Knowing how to manage a project;
+* Knowing how to import:
+    * **Vector** data (e.g. shapefile .shp, GeoJSON .geojson...)
+    * **Raster** data (e.g. .tiff)
+* Understanding the functionalities of **plugin**
 
-**Sistema di riferimento** -> insieme di regole che ci consentono di risalire alla posizione nello spazio in maniera univoca.
+**What is the purpose of a reference system?**
 
-Questo concetto tipicamente geometrico è ancora più importante in cartografia per localizzare correttamente un punto appartenente al territorio.
+**Reference System** -> set of rules that allow us to determine the position in space in a unique way.
 
-[INSERIRE IMMAGINE]
+This geometric concept is even more important in cartography to correctly locate a point in the territory.
 
-## Sistema di riferimento geografico
+![Reference system](./assets/img/cartesian-sr.png "Reference system")
 
-Sicuramente il sistema di riferimento geografico è il più conosciuto e comprensivo e forse anche uno tra i più potenti sistemi di georeferenziazione.
+## Geographical reference system
 
-**Esso è metrico, standard, stabile, unico.**
+The concept of geographical reference system is the best known and most comprehensive, and perhaps also one of the most powerful georeferencing systems.
 
-Utilizza un riferimento ben definito e fisso basato su:
+**It is metric, standard, stable, unique.**
 
-* asse di rotazione terrestre
-* centro di massa
-* meridiano di riferimento di Greenwich
-* equatore
+It uses a well-defined and fixed reference
+based on:
 
-[INSERIRE IMMAGINE]
-
-## Sistemi di riferimento
-
-Normalmente si usano diversi SR per planimetria e altimetria.
-
-* **planimetria**: riferimento ellissoidico (sferico per piccole o grandi scale). Perché non lo uso per l'altimetria? Perché privo di legame con il campo della gravità.
+* Earth's axis of rotation
+* centre of mass
+* Greenwich reference meridian
+* Equator
 
 [INSERIRE IMMAGINE]
 
-* **altimetria**: riferimento geoidico (non ha descrizione analitica semplice). Perché non lo uso per la planimetria? Di impiego molto complesso nel trattamento delle osservazioni effettuate per la planimetria (angoli e distanze).
+Normally, different R.S. are used for planimetry and altimetry....
+
+* **planimetry**: ellipsoid reference (spherical for small or large scales). Why it is not used for altimetry? No link with the gravity field.
+
+![Planimetry](./assets/img/planimetria.png "Planimetry Reference Systems")
+
+* **altimetry**: geoid reference (no simple analytical description). Why is it not used for planimetry? It is very complex to use in the treatment of observations made for planimetry (due to angles and distances conversion).
+
+![Geoid](./assets/img/geoid.png "Geoid")
+
 
 ## Datum
 
-Un **datum (geodetico)** è un sistema geodetico di riferimento che consente di definire in termini matematici la posizione di punti sulla superficie della Terra.
+A **datum (geodetic)**, is a geodetic reference system that allows the position of points on the Earth's surface to be defined in mathematical terms.
 
-**Datum** -> Insieme di parametri che definiscono la **forma** dell'ellissoide usato ed il suo **orientamento**.
 
-Un datum è costituito da 8 parametri:
+**Datum** -> Set of parameters defining the **shape** of the ellipsoid used and its **orientation**.
 
-* 2 di forma dell'ellissoide;
-* 6 di posizione e di orientamento:
-    * latitudine e longitudine ellissoidica (2)
-    * altezza geoidica
-    * 2 componenti della deviazione della verticale
-    * azimut ellissoidico
 
-## Proiezioni
+A datum is composed by 8 parameters:
 
-La superficie della terra è curva ma ci sono molte ragioni che ci spingono a rappresentarla su **piano**, anch in cartografia numerica.
+* 2 for the ellipsoid shape;
+* 6 for the position and the orientation:
+    * latitude e longitude on the ellipsoid (2)
+    * geoid height
+    * 2 components of the deviation from the vertical
+    * azimut of the ellipsoid
 
-* La carta utilizzata per rappresentare i risultati di analisi fatte con GIS è piatta.
-* Le carte piatte sono scansionate ed utilizzate per creare dati GIS.
-* Il modello raster è piatto
-* Non si può vedere contemporaneamente tutta la terra su una superficie curva
-* E' molto più facile effettuare misure nel piano (aree, distanze, direzioni).
+## Projections
 
-Per queste ragioni anche in cartografia numerica si utilizzano le diverse **proiezioni cartografiche**.
+The surface of the earth is curved but there are many reasons for representing it on a **plane**, even in numerical cartography.
 
-[INSERIRE IMMAGINI]
+* The map used to represent the results of GIS analysis is flat.
+* Flat maps are scanned and used to create GIS data.
+* The raster model is flat (2D)
+* It is not possible to see all the land on a curved surface at once
+* It is much easier to make measurements in the plane (areas, distances, directions)
 
-Le proiezioni cartografiche trasportano coordinate dall'ellissoide del sistema di riferimento al piano della carta. **Le due superfici non sono topologicamente equivalenti, quindi non è possibile passare da ellissoide a carta senza deformazioni.**
+For this reason, different **map projections** are also used in numerical cartography.
 
-A seconda del **tipo di forma** usato per effettuare le proiezioni, si distinguono:
+![Projection](./assets/img/proj.png "Projection")
 
-* proiezioni piane;
-* proiezioni cilindriche;
-* proiezioni coniche.
+Cartographic projections carry coordinates from the ellipsoid of the reference system to the map plane. **The two surfaces are not topologically equivalent, so it is not possible to move from ellipsoid to map without deformation.**
 
-Ci sono moltissimi tipi di proiezioni cartografiche, quelle utilizzate in **Italia** sono:
+Depending on the **geometric shape** adopted, the projections are classified as:
 
-* **UTM** (Universal Trasversal Mercator), utilizzata a livello mondiale;
-* **Gauss-Boaga**, utilizzata per il datum Roma 40 Monte Mario;
-* **Cassini-Soldner**, utilizzata dal Nuovo Catasto dei Terreni Italiano.
+* Planar projections;
+* Cylindrical projections;
+* Conic projections.
 
-## Sistema di riferimento
+There are many types of map projections, those used in **Italy** are:
 
-In definitiva, la definizione di un sistema di riferimento è data da:
+* **UTM** (Universal Trasversal Mercator), globally adopted;
+* **Gauss-Boaga**, used for the Roma 40 Monte Mario datum;
+* **Cassini-Soldner**, used for Nuovo Catasto dei Terreni Italiano.
 
-* sistemi di coordinate geografiche:
+Ultimately, the definition of a reference system is given by:
 
-**Datum** (es. WGS84 oppure Roma 40 Monte Mario)
+* *geographical coordinate systems*:
 
-* sistemi di coordinate proiettate:
+**Datum** (es. WGS84 or Roma 40 Monte Mario)
 
-**Datum + sistema di proiezione** (es. WGS84-UTM32N oppure Roma 40 Monte Mario - Gauss Boaga Fuso Ovest)
+* *sistemi di coordinate proiettate*:
 
-Inoltre tutti i GIS utilizzano i registri di parametri geometrici di cui il più conosciuto è quello rappresentato dai **codici EPSG** (European Petroleum Survey Group) per definire in maniera univoca i vari sistemi di riferimento mondiali.
+**Datum + projection system** (es. WGS84-UTM32N or Roma 40 Monte Mario - Gauss Boaga Fuso Ovest)
 
-## Come gestisce QGIS i dati geografici?
+In addition, all GIS softwares use geometric parameter registers, the best known of which are the **EPSG** (European Petroleum Survey Group) codes that unambiguously define the various world reference systems.
 
-La gestione dei **sistemi di riferimento** è sempre un elemento particolarmente delicato in un GIS.
+**How does QGIS handle geographical data?**
 
-In QGIS esistono 2 diverse gestioni di sistemi di riferimento:
+The management of **reference systems** is always a particularly delicate element in a GIS.
 
-* S.R. del **progetto**
-* S.R. del **singolo layer**
+In QGIS, there are 2 different reference system managements: 
 
-QGIS è in grado di eseguire la riproiezione al volo dei singoli layer tramite le librerie [proj4](https://proj.org/), purché sia definito il S.R. del singolo layer.
+* **Project R.S.**
+* **Single layer R.S.**
 
-QGIS usa i codici **EPSG** (European Petroleum Survey Group) per definire in maniera univoca i vari sistemi di riferimento mondiali.
+QGIS is capable of reprojecting on the fly individual layers using the [proj4](https://proj.org/) libraries, provided that the R.S. of the individual layer is defined.
 
-### Impostazioni SR
+QGIS uses **EPSG** (European Petroleum Survey Group) codes to uniquely define the different global reference systems.
 
-Dalle impostazioni (***Impostazioni -> Opzioni -> SR tab***) è possibile definire le regole con cui gestire i SR dei vari layer.
+### RS Settings
 
-Permette di definire quale SR adottare al momento dell'apertura di un nuovo progetto o come gestire i layers privi di informazioni circa il sistema di riferimento utilizzato.
+In the settings panel (***Settings → Options → CRS tab***) it is possible to define the rules with which the layers RS can be managed.
 
-[INSERIRE IMMAGINE]
+![Reference System Settings](./assets/img/SRsettingsprj.png "Reference System Settings")
 
-### SR del layer
+It allows you to define which SR to adopt when opening a new project or how to manage layers without information on the reference system used.
 
-Il **SR del singolo layer** è gestibile cliccando con il tasto destro del mouse sul layer stesso.
+### Layer RS
 
-[INSERIRE IMMAGINE]
+The **SR of the individual layer** can be managed by right-clicking on the layer.
 
-[INSERIRE IMMAGINE]
+![Layer Reference System Settings](./assets/img/layer-sr-en-01.png "Layer Reference System Settings")
 
-### Riproiezione - Shapefile
+![Layer Reference System Settings](./assets/img/layer-sr-en-02.png "Layer Reference System Settings")
 
-E' possibile gestire la ri-proiezione dei vettori: ***tasto destro sul layer -> Salva con nome...***
+### Reprojection - Shapefile
 
-[INSERIRE IMMAGINE]
+You can manage the re-projection of vectors: ***Right click on the layer → Save features as…***
 
-## Modellazione della realtà con QGIS
+![Vector reprojection](./assets/img/vector-reproj.png "Vector reprojection")
 
-Esistono principalmente due modi di concettualizzare o modellare la realtà da un punto di vista geografico considerando:
+## Reality modelling with QGIS
 
-* **Oggetti discreti**: possono essere osservati o descritti nel mondo reale ed identificati da una sua posizione.
+There are mainly two ways of conceptualising or modelling reality from a geographical point of view by considering objects as:
 
-[INSERIRE IMMAGINE]
+* **Discrete objects**: can be observed or described in the real world and identified by its position
 
-* **Oggetti distribuiti**:
-rappresentano una grandezza il cui valore è funzione della posizione e si può misurare in ogni luogo.
+![Vector model](./assets/img/vector-model.jpg "Vector model")
 
-[INSERIRE IMMAGINE]
+* **Distributed objects**:
+represent a quantity whose value is a function of position and can be measured at any location
 
-### Modelli di dati
+![Raster model](./assets/img/raster-model.png "Raster model")
 
-Il modello **vettore** in cui le informazioni su oggetti discreti sono codificate ed archiviate come insieme di coordinate x, y, z.
+**Vector** model: information on discrete objects is coded and stored as a set of x, y, z coordinates.
 
-Il modello vettoriale indica una rappresentazione di entità geografiche attraverso:
+The vector model indicates a representation of geographical entities through:
 
-* **Punti**
-* **Linee**
-* **Poligoni**
+* **Points**
+* **Lines**
+* **Polygons**
 
-I modelli vettoriali sono particolarmente utili per rappresentare e memorizzare oggetti discreti come edifici, strade, particelle, etc.
+Vector model features are particularly useful for representing and storing discrete objects such as buildings, roads, particles, etc.
 
-**Nel modello vettoriale le informazioni su oggetti discreti sono codificate e archiviate come insieme di coordinate x, y, z.**
+**In the vector model, information on discrete objects is coded and stored as a set of x,y,z coordinates.**
 
-[INSERIRE IMMAGINE]
+![Vector model primitives](./assets/img/vector-model-primitive.png "Vector model primitives")
 
-Il modello **raster** in cui informazioni su oggetti continui sono codificate da un insieme di celle di una griglia, ciascuna con il suo valore relativo.
+**Raster** model: information on continuous objects, are coded using a set of grid cells, each with its relative value 
 
-I valori sono celle di una griglia con determinate estensioni e una determinata risoluzione.
+Values are cells of a grid with certain extensions and a certain resolution. 
 
-[INSERIRE IMMAGINE]
+![Raster model primitives](./assets/img/raster-model-primitive.png "Raster model primitives")
 
-## Importazione shapefile
+## Shapefile import
 
-[INSERIRE IMMAGINE]
+![Shapefile import](./assets/img/shapefile-import.png "Shapefile import")
 
-[INSERIRE IMMAGINE]
+![Shapefile import](./assets/img/shapefile-import-1.png "Shapefile import")
 
-## Gestione proprietà shapefile
+![Shapefile import](./assets/img/shapefile-import-2.png "Shapefile import")
 
-Per modificare le proprietà dello shapefile, cliccare sul layer con il tasto destro e selezionare proprietà.
+## Shapefile properties
 
-[INSERIRE IMMAGINE]
+To change the properties of the shapefile, right-click on the layer and select properties.
+
+![Shapefile properties](./assets/img/shapefile-properties.png "Shapefile properties")
 
 ### Stile
 
