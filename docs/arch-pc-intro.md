@@ -235,7 +235,9 @@ Values are cells of a grid with certain extensions and a certain resolution.
 
 ![Raster model primitives](./assets/img/raster-model-primitive.png "Raster model primitives")
 
-## Shapefile import
+## Vector data
+
+### Shapefile import
 
 ![Shapefile import](./assets/img/shapefile-import.png "Shapefile import")
 
@@ -243,130 +245,209 @@ Values are cells of a grid with certain extensions and a certain resolution.
 
 ![Shapefile import](./assets/img/shapefile-import-2.png "Shapefile import")
 
-## Shapefile properties
+### Shapefile properties
 
 To change the properties of the shapefile, right-click on the layer and select properties.
 
 ![Shapefile properties](./assets/img/shapefile-properties.png "Shapefile properties")
 
-### Stile
+### Style and symbology
 
-**Visualizzazione con singolo simbolo**
+**Single symbol display**
 
-[INSERIRE IMMAGINE]
+![Single symbol vector data](./assets/img/single-symbol-vector.png "Single symbol for vector data")
 
-E' possibile anche impostare la trasparenza del layer che può essere utile nei casi in cui si vuole sovrappore questo ad un altro strato informativo (es. un'ortofoto).
+It is also possible to set the transparency of the layer, which can be useful if you want to superimpose it on another information layer, e.g. an orthophoto.
 
-**Visualizzazione con simbolo categorizzato** in base ai valori contenuti in un campo del layer.
+In order to better identify the municipalities, it is also possible to insert labels for each geometric unit: click on ***Labels*** → select ***Single Labels*** and choose which **Value** to display.
 
-[INSERIRE IMMAGINE]
+![Labels vector data](./assets/img/labels-vector.png "Labels vector data")
 
-L'utilizzo di questo stile permette anche di assegnare a ogni valore individuato un'etichetta da includere nella legenda. In questo modo il significato del campo scelto e dei suoi valori risulta ancora più chiaro e comprensibile.
-
-[INSERIRE IMMAGINE]
-
-### Etichette
-
-Per identificare meglio i comuni è possibile inserire anche le etichette relative ad ogni unità geometrica: cliccare su **etichette** -> Selezionare ***Etichette singole*** e scegliere quale ***Valore*** far comparire.
-
-[INSERIRE IMMAGINE]
-
-[INSERIRE IMMAGINE]
-
-## Dati vettoriali
-
-### Tabella attributi
-
-Per visualizzare la tabella con i comuni della provincia di PC, cliccare con il tasto destro sul layer nel pannello layer -> premere ***Apri tabella attributi***
-
-### Aggiunta campo
-
-***Tasto destro sul layer -> Apri tabella attributi -> Attiva modifiche -> Nuovo campo***
-
-[INSERIRE IMMAGINE]
-
-Definire i campi richiesti con particolare attenzione al **tipo di valore** che verrà inserito nel nuovo campo (numero intero, decimale, testo, data, etc.) e il **numero massimo di caratteri**.
-
-[INSERIRE IMMAGINE]
-
-Per finalizzare le modifiche, salvare e concludere la sessione di editing.
-
-### Calcolatore di campi
-
-***Tasto destro sul layer -> Apri tabella attributi -> Attiva modifiche -> Apri il calcolatore di campi***
-
-[INSERIRE IMMAGINE]
-
-Con il **calcolatore di campi** è possibile creare un nuovo campo con il risultato della funzione scelta oppure aggiornarne uno esistente.
-
-[INSERIRE IMMAGINE]
-
-### Rimuovi campo
-
-***Tasto destro sul layer -> Apri tabella attributi -> Attiva modifiche -> Elimina campo***
-
-[INSERIRE IMMAGINE]
-
-Selezionare il campo di interesse e confermare la rimozione.
-
-[INSERIRE IMMAGINE]
-
-Per finalizzare le modifiche, salvare e concludere la sessione di editing.
-
-## Dati raster
-
-Che cos'è un raster?
-
-[INSERIRE IMMAGINE]
-
-Un dato fondamentale per le analisi GIS sono i cosiddetti **Digital Terrain Model** (DTM) ma ci sono anche **Ortofoto**, **Carte tecniche**, foto aree, immagini satellitari, mappe geologiche etc.
-
-### Modelli digitali delle altezze
-
-* **DEM** (Digital Elevation Model) è un file digitale con le quote della superficie del terreno a intervalli regolarmente spaziati sul piano orizzontale.
-
-* **DTM** (Digital Terrain Model) avrebbe un significato più generico indicando oltre alla quota della superficie del terreno anche altre informazioni come pendenza ed esposizione.
-
-* **DSM** (Digital Surface Model) rappresenta in forma digitale le quote della parte superiore del terreno comprensivo degli edifici, delle infrastrutture e degli alberi senza le procedure di filtraggio utilizzare per produrre DEM e/o DTM.
-
-[INSERIRE IMMAGINE]
-
-### Ortofoto
-
-E' una mappa fotografica che combina le caratteristiche di una mappa tradizionale con quelle di un'immagine. E' georeferenziata, priva di distorsioni e con scala uniforme.
-
-### Importare un raster
-
-[INSERIRE IMMAGINE]
-
-### Riproiezione
-
-La riproiezione raster tramite le librerie GDAL:
-***Raster -> Proiezioni -> Riproiezione**
-
-[INSERIRE IMMAGINI]
-
-### Proprietà
-
-Per modificare le proprietà del raster, cliccare sul tasto destro e selezionare **proprietà**:
-
-[INSERIRE IMMAGINE]
-
-### Stile
-
-Modificare lo **stile**:
-
-* Banda singola grigia
-* Colori banda multipla
-* Valori a tavolozza
-* Banda singola falso colore
-* Omreggiatura
-
-...e altre opzioni statistiche.
-
-[INSERIRE IMMAGINE]
+![Labels example](./assets/img/labels-piacenza.png "Labels example")
 
 
+Display with **symbol categorized** according to the values contained in a layer field.
+
+![Categorized symbol vector data](./assets/img/categorized-symbol-vector.png "Categorized symbol for vector data")
+
+The use of this style also makes it possible to assign to each value a label to be included in the legend. This makes the meaning of the chosen field and its values even clearer and more comprehensible.
+
+![Categorized symbol example](./assets/img/categorized-piacenza.png "Categorized symbol example")
+
+### Attribute table
+
+To delete municipalities that are not part of the province of PC, right-click on the layer in the (Layer panel) → click on ***Open Attribute Table***.
+
+![Open attribute table](./assets/img/attribute-table.png "Open attribute table")
+
+### Editing mode
+
+Click ***Toggle editing mode*** (1) → select the row associated to the municipality to be removed (it will be highlighted in light blue) (2) → click ***Delete selected features*** (3).
+
+The removal of the selected record(s) will be completed only after clicking ***Save edits*** (4) and exiting the editing mode by clicking one more time ***Toggle editing mode*** (5).
+
+![Editing mode attribute table](./assets/img/edting-mode-vector-data.png "Editing mode attribute table")
+
+Other municipalities outside the province of Piacenza can be removed - with the editing session active - with a query on the column "NM_PRV“ by clicking ***Select features using an expression***.
+After formulating the desired expression, you can remove the selected elements and save the operations carried out using the procedure previously described.
+
+![Select features by expression](./assets/img/select-features-by-expression.png "Select features by expression")
+
+![Vector data editing results](./assets/img/editing-results.png "Vector data editing results")
+
+### Adding a new field
+
+***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ New field***
+
+![Vector data add new field](./assets/img/vector-data-add-new-field.png "Vector data add new field")
+
+Define the required fields, paying particular attention to the **type of value** that will be entered in the new field (integer, decimal, text, date, etc.) and the **maximum number** of characters.
+
+To finalise the changes introduced on the attribute table, save and end the editing session.
+
+### Field calculator
+
+***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ Open field calculator***
+
+![Vector data field calculator](./assets/img/vector-data-field-calculator.png "Vector data field calculator")
+
+Using the **field calculator** it is possible to create a new field containing the result of a pre-defined function or update with the results an existing field.
+
+The unit of measurement of the result is defined by the reference system of the layer (in this case meters).
+
+![Field calculator results](./assets/img/field-calculator-results.png "Field calculator results")
+
+To finalize changes, save and end the editing session.
+
+### Delete field
+
+***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ Delete field***
+
+![Editing for deleting a field](./assets/img/editing-delete-field.png "Editing for deleting a field")
+
+Select the field of interest and confirm the removal.
+
+To finalize changes, save and end the editing session.
+
+### New shapefile - Points
+
+***Layer → Create layer → New shapefile…***
+
+![New vector layer of points](./assets/img/vector-data-new-layer-points.png "New vector layer of points")
+
+Choose the **type of geometry** (point, line, polygon), define **SR** and **layer name**.
+Save (1) and confirm the operation (2).
+
+Toggle editing mode
+
+![New layer editing mode](./assets/img/new-layer-editing.png "New layer editing mode")
+
+Select ***Add point feature*** and click on a point in the project map view in order to add an element to the layer.
+
+**Editing options**
+
+![Vector editing options](./assets/img/vector-editing-options.png "Vector editing options")
+
+From the toolbar you could either **edit** (1) existing features that are part of the layers or **save** (2) any modification.
+
+## Raster data
+
+What is a **raster**?
+
+![Raster model](./assets/img/raster-model-primitive.png "Raster model")
+
+**Digital Terrain Models (DTM)** are fundamental data for GIS analysis, but there are also orthophotos, technical maps, aerial photos, satellite images, geological maps, etc.
 
 
-[IN COSTRUZIONE//]
+### Examples
+
+* **DEM** (Digital Elevation Model) is a digital file with ground surface elevation values at regularly spaced intervals in the horizontal plane.
+
+* **DTM** (Digital Terrain Model) has a more generic meaning by indicating not only the height of the ground surface but also other information such as slope and exposure.
+
+* **DSM** (Digital Surface Model) represents in digital form the heights of the upper part of the terrain including buildings, infrastructures and trees without the filtering procedures used to produce DEMs and/or DTMs.
+
+![Digital elevation models](./assets/img/digital-elevation-model.png "Digital elevation models")
+
+* **Ortophoto**: It is a photographic map that combines the characteristics of a traditional map with those of an image. It is georeferenced, distortion-free and has a uniform scale.
+
+![Ortophoto](./assets/img/ortophoto.png "Orthophoto")
+
+### Raster import
+
+![Raster import](./assets/img/raster-import.png "Raster import")
+
+### Reprojection
+
+Raster reprojection using the GDAL libraries:
+***Raster → Projections → Warp (Reproject)…***
+
+![Raster reprojection](./assets/img/raster-reprojection.png "Raster reprojection")
+
+### Properties
+
+To change the properties of the raster, right-click on the layer of interest and select **Properties**:
+
+![Raster properties](./assets/img/raster-properties.png "Raster properties")
+
+### Style
+
+Change the **style**:
+
+* Singleband grey
+* Multiband color
+* Paletted/Unique values
+* Singleband pseudo-color
+* Hillshade
+
+…and other statistical settings
+
+![Raster style](./assets/img/raster-style.png "Raster style")
+
+**Example**
+
+*Corine Land Cover (CLC)*
+
+Map of land cover classified according to 5 classes of first reference level:
+
+1. Artificial surfaces
+2. Agricultural areas
+3. Forest and seminatural areas
+4. Wetlands
+5. Water bodies
+
+... it's a matter of classification by value classes!
+
+![Corine Land Cover classes](./assets/img/CLC-landcover.png "Corine Land Cover classes")
+
+### Paletted/Unique values style
+
+Set the **Paletted/Unique values** render type and define the **visualisation style** (color and label) for each first level land cover class.
+
+![Raster paletted values](./assets/img/raster-paletted-values.png "Raster paletted values")
+
+### Transparency
+
+Manage the **layer transparency**:
+
+* Global opacity
+* Customized for selected classes
+
+![Raster transparency](./assets/img/raster-transparency.png "Raster transparency")
+
+![Raster style results](./assets/img/raster-style-results.png "Raster style results")
+
+## Save a project
+
+Saving the project **(*.qgs)** concerns the following elements:
+
+* List of recalled maps (layers);
+* Display modes (colors, styles, transparencies,...);
+* Printing layouts;
+* RS used and last display extension.
+
+![Save project option](./assets/img/save-project.png "Save project option")
+
+The *.qgs file does not contain map files but only references to them and is saved in XML format.
+
+![Save project pop-up](./assets/img/save-project-popup.png "Save project pop-up")
