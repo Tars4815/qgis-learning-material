@@ -44,12 +44,19 @@ plugins:
         it: "Questa pagina non è tradotta in italiano."
         en: "This page isn't translated to English."
 
+markdown_extensions:
+  - attr_list
 
 # Page tree
 nav:
   - Home: index.md
   - Courses:
-    - a.y. 2022:
+    - a.y. 2022-2023:
+      - Sistemi Informativi Territoriali:
+        - sit-about.it.md
+        - sit-qgis00.it.md
+        - sit-qgis01.it.md
+        - sit-qgis02.it.md
       - Piacenza Campus:
         - arch-pc-about.md
         - arch-pc-intro.md
