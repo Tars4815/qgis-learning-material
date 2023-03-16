@@ -51,12 +51,14 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Courses:
-    - a.y. 2022-2023:
+    - a. 2023:
+      - Intro Workshop: intro-workshop.md
       - Sistemi Informativi Territoriali:
         - sit-about.it.md
         - sit-qgis00.it.md
         - sit-qgis01.it.md
         - sit-qgis02.it.md
+    - a. 2022:
       - Piacenza Campus:
         - arch-pc-about.md
         - arch-pc-intro.md
