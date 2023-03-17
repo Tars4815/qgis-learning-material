@@ -14,19 +14,19 @@ Dal 2004, anno in cui questo termine fa il suo debutto ufficiale su una pubblica
 
 Dal 2004 l'acronimo è stato ufficialmente adottato come titolo delle conferenze annuali che vengono organizzate in ogni parte del mondo dalla comunità di sviluppatori e utilizzatori dei software. Allo stesso anno di inizio della serie di conferenze corrisponde anche la nascita del logo ufficiale di FOSS4G: un **nastro** che simboleggia lo scorrere libero di idee e ispirazioni nell'ambito dell'open-source. Scorrendo i loghi delle conferenze negli anni, il nastro rimane sempre il filo conduttore di una community in continua evoluzione e crescita.
 
-L'ultimo raduno globale ha avuto luogo a **Firenze** nell'agosto del 2022, esattamente 20 anni dopo il primo raduno informale di appassionati di software libero geoografico avvenuto a Trento nel 2002.
+L'ultimo raduno globale ha avuto luogo a **Firenze** nell'agosto del 2022, esattamente 20 anni dopo il primo raduno informale di appassionati di software libero geografico avvenuto a Trento nel 2002.
 
 ![Foto di gruppo di FOSS4G 2022 Firenze](https://www.gfoss.it/images/DSC_0802.jpg)
 
-L'evento si articola in una serie di incontri, workshop e presentazioni su più giorni in cui sviluppatori e utilizzatori possono confrontarsi sulle novità dei software, discutendo sui bisogni degli utenti e sulle future prospettive dei progetti. Non si tratta unicamente di una conferenza dedicata quindi esclusivamente a **sviluppatori** ma anche a **utilizzatori**, **ricercatori** in ambito accademico e non ma anche ad **aziende** e **enti pubblici** attive in ambito geospaziale.
+L'evento si articola in una serie di incontri, workshop e presentazioni su più giorni in cui sviluppatori e utilizzatori possono confrontarsi sulle novità dei software, discutendo sui bisogni degli utenti e sulle future prospettive dei progetti. Non si tratta unicamente di una conferenza dedicata quindi esclusivamente a **sviluppatori** ma anche a **utilizzatori**, **ricercatori** in ambito accademico e non ma anche ad **aziende** ed **enti pubblici** attivi in ambito geospaziale.
 
-Dal 2006, l'organizzazione della conferenza è coordinata a livello globale dall'**Open Geospatial Foundation** (OSGEO) e reso possibile da un comitato organizzativo locale di volontari.
+Dal 2006, l'organizzazione della conferenza è coordinata a livello globale dall'**Open Geospatial Foundation** (OSGEO) e resa possibile da un comitato organizzativo locale di volontari.
 
 La prossima conferenza FOSS4G avrà luogo a **Prizren in Kosovo** dal 26 giugno al 2 luglio 2023.
 
 ![Logo FOSS4G 2023](https://foss4g.org/logos/2023.png)
 
-Parallelamente, con cadenza annuale o biannuale, vengono organizzate delle conferenze locali, tendenzialmente a livello nazionale, dai local chapter di OSGeo. In Italia la conferenza prende il nome di **FOSS4G-IT**. Nel 2023 avrà luogo a **Bari** dall'11 al 14 giugno nell'ambito dei **GEODaysIT 2023**.
+Parallelamente, con cadenza annuale, vengono organizzate delle conferenze locali, tendenzialmente a livello nazionale, dai local chapter di OSGeo. In Italia la conferenza prende il nome di **FOSS4G-IT**. Nel 2023 avrà luogo a **Bari** dall'11 al 14 giugno nell'ambito dei **GEODaysIT 2023**.
 
 Maggiori info:
 
@@ -63,14 +63,14 @@ Maggiori info:
 
 Cos'è un GIS?
 
-Con la sigla GIS si fa riferimento a un *G*eographic *I*nformation *S*ystem (in italiano anche noto come Sistema Informativo Territoriale o SIT), ovvero un software che permette l'**acquisizione**, **creazione**, **analisi**, **visualizzazione**, **condivisione** e **presentazione** di informazioni geografiche.
+Con la sigla GIS si fa riferimento a un **G**eographic **I**nformation **S**ystem (in italiano anche noto come Sistema Informativo Territoriale o SIT), ovvero un software che permette l'**acquisizione**, **creazione**, **analisi**, **visualizzazione**, **condivisione** e **presentazione** di informazioni geografiche.
 
 **QGIS** - in precedenza noto anche come *QuantumGIS* - è un software GIS free e open-source che rientra tra i progetti supportati da OSGEO.
 Sin dalla sua prima versione rilasciata pubblicamente nel 2002, il software ha raccolto un grande entusiasmo nella comunità open-source e non solo, coinvolgendo sempre più sviluppatori e utenti da tutto il mondo.
 
 ![Logo QGIS](https://www.osgeo.org/wp-content/uploads/QGIS_740x412_acf_cropped-370x206.png)
 
-In occasione di ogni edizione di FOSS4G, gli sviluppatori presentano le nuove funzionalità del software e gli indirizzi di sviluppo per le prossime versioni. Uno dei grandi punti di forza di QGIS è proprio la sua flessibilità in termini di aggiornamento: ogni 4 mesi, infatti, viene rilasciata una nuova **Long Term Release** (più stabile per l'utilizzo frequente) e una versione avanzata con funzionalità avanzate in fase di test, mantenendo però sempre compatibilità per i progetti realizzati con le versioni precedenti. Molto spesso tali funzionalità vengono prima abbozzate e ideate e poi sviluppate durante gli incontri online e in presenza organizzati dalla community (*QGIS Hackfest*, *User conference*, *Contributor Meeting* e *QGIS Open Day*).
+In occasione di ogni edizione di FOSS4G, gli sviluppatori presentano le nuove funzionalità del software e gli indirizzi di sviluppo per le prossime versioni. Uno dei grandi punti di forza di QGIS è proprio la sua flessibilità in termini di aggiornamento: ogni 4 mesi, infatti, viene rilasciata una nuova **Long Term Release** (più stabile per l'utilizzo frequente) e una versione avanzata con funzionalità avanzate in fase di test, mantenendo però sempre compatibilità per i progetti realizzati con le versioni precedenti. Molto spesso tali funzionalità vengono prima abbozzate e ideate e poi sviluppate durante gli incontri online e in presenza organizzati dalla community (*QGIS Hackfest*, *User conference*, *Contributor Meeting* e *QGIS Open Day*). Spesso questi incontri vengono organizzati in luoghi che daranno poi il nome alla più recente versione del software. QGIS 3.28 prende il nome da Firenze, in onore dell'ultimo meeting avvenuto pochi giorni prima di FOSS4G 2023.
 
 ![QGIS Contributors Meeting](https://www.qgis.org/it/_static/images/about-community.jpeg)
 
@@ -195,6 +195,8 @@ Tra le operazioni più comuni nei database spaziali vi è quella di **Query**. I
 
 * **Posizione** selezionando elementi in base alla loro posizione relativa (es. parchi che ricadono in un certo comune).
 
+##### Selezione per attributo
+
 Nel primo caso, per esempio, può essere isolare il solo comune di Arona. Per fare questo è necessario accedere alla componente tabellare del dataset dei comuni cliccando con il tasto destro sul layer *Ambiti amministrativi* e selezionando **Apri tabella attributi**. La nuova finestra mostrerà i record associati a ogni poligono visibile sulla mappa e i valori dei vari attributi (colonne).
 
 ![Tabella attributi](./assets/img/intro-workshop/tabella-attributi.jpg)
@@ -211,5 +213,71 @@ Per salvare in un nuovo layer il solo comune di Arona, lasciare selezionato l'el
 
 ![Salva selected](./assets/img/intro-workshop/salva-selected.jpg)
 
+Prima di procedere, disattivare la visualizzazione del vecchio layer dei comuni e copiarne la simbologia (Tasto destro sul layer, ***Stili > Copia stile > Tutti gli elementi dello stile***). Incollare la simbologia appena copiata cliccando il tasto destro sul layer del comune di Arona, poi ***Stili > Incolla stile > Tutti gli elementi dello stile***.
 
-[...]
+##### Selezione per posizione
+
+Come individuare invece i parchi classificati di rilevanza regionale che ricadono nei confini di Arona?
+
+Per rispondere a questa domanda basta definire una semplice selezione per prossimità in ambiente QGIS. Dalla schermata principale del software, nella barra dei menù selezionare ***Vettore > Strumenti di ricerca > Seleziona per posizione...***. Nella nuova finestra, definire:
+
+- *Seleziona elementi da*: layer dei parchi
+- *Predicato geometrico*: Interseca e Sono contenuti
+- *Rispetto agli elementi da*: layer del comune di Arona
+
+![Selezione per posizione](./assets/img/intro-workshop/selezione-parchi.jpg)
+
+Cliccando *Esegui*, QGIS effettuerà una selezione sul layer dei parchi, evidenziando in giallo solo gli elementi che intersecano o sono all'interno dei confini del comune.
+
+![Selezione parchi in Arona](./assets/img/intro-workshop/parchi-selected.jpg)
+
+Per visualizzare le informazioni dei parchi selezionati, cliccare con il tasto destro sul layer dei parchi e cliccare *Apri tabella attributi*. Nella tabella attributi in basso a sinistra, al posto di *Mostra tutti gli elementi*, indicare l'opzione ***Mostra elementi selezionati***. In questo modo, la vista della tabella sarà filtrata mostrando unicamente le informazioni relative ai parchi selezionati sulla mappa.
+
+![Selezione parchi in Arona - Tabella](./assets/img/intro-workshop/parchi-selected-tab.jpg)
+
+#### Dati da OpenStreetMap
+
+I dati utilizzati finora provengono da geoportali cartografici ufficiali (Geoportale Regione Piemonte) e sono stati scaricati utilizzzando link diretti alle pagine di download dati degli stessi. Tuttavia, è interessante osservare come, attraverso plugin realizzati dalla comunità, sia possibile anche far dialogare agevolmente l'ambiente di QGIS anche con la realtà dei dati geografici volontari come quella di OpenStreetMap. In particolare, il plugin **QuickOSM** - scaricabile in [modo analogo](#basemap) a quanto descritto in precedenza - rende possibile formulare con pochi comandi e un'interfaccia semplificata query alle API di Overpass per poter scaricare dati di interesse da **OpenStreetMap**.
+
+Una volta installato il plugin indicato, dal menù Vettore selezionare ***QuickOSM > QuickOSM***. Nella nuova finestra di QGIS è possibile indicare *chiave* e *valore*, ovvero il **tag** - etichetta - associato all'elemento geografico in OSM che si vuole scaricare nel proprio progetto di QGIS. Per esempio, per scaricare i dati relativi ai tracciati ciclabili di Arona è necessario indicare *highway* come chiave e *cycleway* come valore, specificando come area di ricerca Arona (sotto al box Chiave-Valore quindi selezionare l'opzione **In** e digitare nel box *Arona*). La scelta del tag di ricerca è dettata dalla codifica riconosciuta dalla comunità di OpenStreetMap e documentata sulla [pagina di riferimento di WikiOSM](https://wiki.openstreetmap.org/wiki/Tag:highway%3Dcycleway). Per avviare la ricerca, premere *Esegui richiesta*.
+
+![Query cycleway QuickOSM](./assets/img/intro-workshop/QuickOSM-cycleway.jpg)
+
+Il risultato dell'operazione verrà scaricato e visualizzato direttamente nel map canvas del progetto.
+
+![Ciclabili OSM di Arona](./assets/img/intro-workshop/highway-cycleway-arona.jpg)
+
+Analogamente, è possibile scaricare anche i parcheggi per biciclette ([*amenity=bicycle_parking*](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbicycle_parking)) e i parchi cittadini ([*leisure=park*](https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dpark)).
+
+![Dati OpenStreetMap in QGIS](./assets/img/intro-workshop/dati-osm.jpg)
+
+***PS: Ti sembra che manchi qualche dato tra quelli mappati su OSM? Contribuisci al progetto di OpenStreetMap e rendi ancora più accurata e aggiornata la mappa!***
+
+#### Layout di stampa
+
+E' ora il momento di realizzare il primo layout di stampa della propria mappa!
+
+Cliccare su ***Progetto > Nuovo Layout di Stampa*** e, nella nuova finestra, indicare un titolo per la propria tavola di stampa.
+
+Dalla nuova finestra è possibile procedere nel definire le proprietà del file da stampare inserendo gli elementi cartografici di interesse come la visualizzazione della **mappa**, lo **scalimetro**, la **legenda**, la **freccia del Nord** e un **titolo** rappresentativo.
+
+![Layout di stampa in QGIS](./assets/img/intro-workshop/layout-stampa.jpg)
+
+Una volta soddisfatti del design del layout di stampa, è possibile procedere con la creazione di un file immagine o pdf cliccando nella barra dei menù su ***Layout > Esporta come immagine/Esporta come PDF***.
+
+Et voilà!
+
+![Immagine stampa](./assets/img/intro-workshop/qgis-stampa.png)
+
+#### Per saperne di più
+
+Questo workshop è una semplice introduzione all'ampissimo mondo di potenzialità e funzionalità di QGIS e dei software GIS. Se questo semplice viaggio nel software ti ha incuriosito, ecco alcune risorse per approfondire le conoscenze sia teoriche che pratiche sul software:
+
+* [Documentazione ufficiale QGIS](https://docs.qgis.org/3.22/it/docs/training_manual/foreword/intro.html)
+* [QGIS Tutorials and Tips](http://www.qgistutorials.com/en/)
+* [#QGIS su StackExchange](https://gis.stackexchange.com/questions/tagged/qgis)
+* [Canale YouTube della comunità di QGIS](https://www.youtube.com/@qgishome)
+* [Canale YouTube di PiGrecoInfinito](https://www.youtube.com/@pigrecoinfinito/videos)
+* [Canale YouTube di Paolo Corradeghini](https://www.youtube.com/playlist?list=PLrHt3p3U-QzEDA0CsAa_nPzn8nitU5_h2)
+
+[...Lista in continuo aggiornamento...]
