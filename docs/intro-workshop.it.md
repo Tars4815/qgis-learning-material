@@ -154,6 +154,62 @@ I dati vettoriali dell'esercizio sono forniti in forniti in formato shapefile. L
 Il metodo più intuitivo e pratico per il caricamento di nuovi dati vettoriali all'interno del progetto QGIS consiste in un semplice *drag&drop* dalla cartella in cui il file .shp è salvato allo spazio del map canvas in QGIS.
 In tale modo si procede quindi con il caricamento dei dati .shp dei confini amministrativi e dei parchi Natura 2000.
 
+Una volta caricati i dati, la visibilità di un dato strato informativo può essere attivata e disattivata attraverso il flag accanto al nome del layer. Per portare in primo piano di visualizzazione un layer, invece, basta selezionare lo strato di interesse dalla lista dei layer caricati e tenere premuto il tasto sinistro per trascinarlo all'inizio della lista.
+
 ![Caricamento vettori shapefile](./assets/img/intro-workshop/vector-layers.jpg)
+
+#### Basemap
+
+Spesso, per poter interpretare al meglio i dati caricati o per comprendere se esistono errori di georeferenziazione degli stessi, risulta utile utilizzare una mappa di sfondo che fornisce un contesto ai layer caricati, la cosiddetta **basemap**. Tale livello informativo di tipo immagine può essere fornito da un'immagine satellitare/area di tipo raster caricata in maniera analoga a quella utilizzata in precedenza per i dati vettoriali. Tuttavia, esiste una soluzione più pratica che permette di utilizzare collegamenti a provider di mappe di utilizzo comune sfruttando uno dei maggiori potenziali di QGIS: i **plugins**.
+
+Attraverso lo sviluppo e la condivisione sulla [repository ufficiale dei QGIS Python Plugins](https://plugins.qgis.org/plugins/) di estensioni del codice nativo del software, la community di contributors permette di ampliare le funzionalità di base di QGIS con estensioni dedicate che rendono possibile l'esecuzione di analisi ed elaborazioni avanzate.
+
+Per accedere alla lista dei possibili plugins installabili è necessario cliccare su ***Plugins > Gestisci ed Installa Plugins***. Nella nuova finestra è quindi possibile valutare i pacchetti installati e quelli già integrati. Nel tab *Tutto* nella barra di ricerca digitare **QuickMapServices** e selezionare il risultato corrispondente. Nel box a destra della finestra si ha quindi una panoramica delle funzionalità di tale plugins, dei riferimenti per la documentazione con i crediti agli autori e le valutazioni degli utenti. Per installare, cliccare *Installa Plugin*.
+
+![Installazione plugin](./assets/img/intro-workshop/plugins.jpg)
+
+Nella schermata QGIS principale dal menù ***Web > QuickMapServices***, selezionare quindi *OSM > OSM Standard*. Questa selezione permettera di collegarsi attraverso una connessione di tipo WMS (Web Map Services) a OpenStreetMap per poterne visualizzare dinamicamente i dati nel progetto.
+
+![QuickMapServices OSM](./assets/img/intro-workshop/QuickMapServices.jpg)
+
+#### Simbologia dati
+
+Per poter lavorare al meglio e svolgere con facilità le operazioni successive, può essere utile cambiare la modalità di visualizzazione degli strati vettoriali caricati in precedenza. In particolare, è suggerito definire una visualizzazione senza riempimento per i poligoni dei comuni, lasciandone in evidenza solamente il confine. Per questo motivo, è necessario cliccare con il tasto destro sul layer dei comuni e selezionare l'opzione **Proprietà** posizionandosi in seguito nel tab **Simbologia**. Selezionare quindi la voce *Riempimento semplice* e nel menù sottostante definire:
+
+* *Stile di riempimento*: Vuoto
+* *Colore tratto*: Rosso
+* *Spessore tratto*: 0.4
+* *Stile tratto*: Linea tratteggiata
+
+Premere quindi *Applica* e poi *OK*.
+
+![Simbologia comuni](./assets/img/intro-workshop/Simbologia.jpg)
+
+![Simbologia comuni](./assets/img/intro-workshop/simbologia-2.jpg)
+
+#### Selezione elemento
+
+Tra le operazioni più comuni nei database spaziali vi è quella di **Query**. In ambiente QGIS è possibile eseguire query per:
+
+* **Attributo** selezionando elementi all'interno di un layer vettoriale che corrispondo a una data condizione di valori contenuti in un loro campo (es. comune con un certo nome, parco classificato con una specifica codifica);
+
+* **Posizione** selezionando elementi in base alla loro posizione relativa (es. parchi che ricadono in un certo comune).
+
+Nel primo caso, per esempio, può essere isolare il solo comune di Arona. Per fare questo è necessario accedere alla componente tabellare del dataset dei comuni cliccando con il tasto destro sul layer *Ambiti amministrativi* e selezionando **Apri tabella attributi**. La nuova finestra mostrerà i record associati a ogni poligono visibile sulla mappa e i valori dei vari attributi (colonne).
+
+![Tabella attributi](./assets/img/intro-workshop/tabella-attributi.jpg)
+
+La colonna *comune_nom* in particolare contiene le informazioni relative al nome di ogni comune piemontese. Per poter individuare il territori di Arona, quindi, sarà necessario selezionare la riga in cui tale colonna ha valore *Arona*. Per poter effettuare questa selezione, cliccare nella barra sopra alla tabella sull'icona del quadrato giallo con la E associata all'operazione di **Selezione per espressione**. Dunque, nella nuova finestra nel box bianco di definizione a sinistra inserire la seguente espressione  * "comune_nom"  = 'Arona'* e premere *Seleziona elementi*.
+
+![Selezione attributo](./assets/img/intro-workshop/selezione-arona.jpg )
+
+A seguito di questa operazione, un solo elemento verrà selezionato nella tabella e sulla mappa. Per zoommare agevolmente su di esso, cliccare sull'icona del quadrato giallo con la lente di ingrandimento.
+
+![Selezione arona](./assets/img/intro-workshop/arona-selected.jpg)
+
+Per salvare in un nuovo layer il solo comune di Arona, lasciare selezionato l'elemento, premere il tasto destro sul layer dei comuni e dunque ***Esporta > Salva elementi selezionati come...***. Nella nuova schermata, definire il percorso di salvataggio e il nome del nuovo file che verrà automaticamente caricato sulla mappa al termine della procedura.
+
+![Salva selected](./assets/img/intro-workshop/salva-selected.jpg)
+
 
 [...]
