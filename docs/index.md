@@ -15,4 +15,4 @@ Here you will find learning material focused on QGIS and its applications in dif
 
 ## About the author(s)
 
-The page is currently mantained by [Federica Gaspari](https://github.com/Tars4815/tars4815.github.io) (she/her). You can contact me through [Linkedin](https://www.linkedin.com/in/federicagaspari/).
+This space is currently mantained by [Federica Gaspari](https://github.com/Tars4815/tars4815.github.io) (she/her). You can contact me through [Linkedin](https://www.linkedin.com/in/federicagaspari/).
