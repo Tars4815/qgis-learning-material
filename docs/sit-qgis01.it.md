@@ -67,3 +67,69 @@ Cambiare simbologia per evidenziare situazione COVID a livello provinciale:
 - Tasto destro su “ProvCM01012019_g_WGS84” > ***Symbology > Graduated > Value = prov_covid_20200319_UTM_totale_cas > Mode: Natural Breaks (Jenks) > Classify***
 
 Creare un layout: ***Project > New print layout > Add Map, Add Legend, ecc.*** (deve essere selezionata l’area sul foglio)
+
+### Es02 - Join, query standard e georeferenziate
+
+*Scopo dell'esercizio*: calcolo del bacino di utenza (numero di abitanti) di un parco urbano
+
+**Dati**
+
+Shapefile:
+
+- Parchi (parchi del comune di Modena)
+
+- Censim (zone di censimento del comune di Modena)
+
+Tabelle:
+
+- serv97.dbf (nomi dei parchi)
+
+- sez.dbf (informazioni su zone di censimento)
+
+Settare le unità di misura e il percorso relativo: ***Project > Properties > General***
+
+Caricare lo shapefile *Parchi*: ***Layer > Add Layer***
+
+Caricare la tabella *serv97.dbf*: ***Drag and Drop***
+
+Join tra *Parchi* e *serv97.dbf* (join 1:1) – le tabelle non vengono unite fisicamente in un unico file, ma solo logicamente all’interno del progetto: ***Tasto dx su Parchi > Properties > Joins (Codice)***
+
+Caricare lo shapefile *Censim* e porlo in secondo piano.
+
+Aprire tabella degli attributi associata a *Censim* e mostrare la necessità di collegare un’altra tabella (la tabella contiene solo il numero della sezione di censimento, ma non gli attributi ad essa associati, come per esempio il numero di abitanti). ***Tasto dx su Censim > Open Attribute Table***
+
+Caricare la tabella *sez.dbf*. Join tra attributi di *Censim* e *sez.dbf* (mostrare che alcune zone di censimento non hanno dati perché la tabella *sez.dbf* è riferita alle vecchie sezioni di censimento (1991), mentre lo shapefile *Censim* descrive le nuove sezioni che sono in numero maggiore).
+
+Campire il layer *Censim* in base al numero di abitanti (5 classi: <50, 50-100, 100-200, 200-500, >500): ***Tasto dx su Censim > Properties > Style: Graduated; Column: sez_NUMABT***
+
+Calcolare la densità di abitanti per ogni sezione di censimento; rappresentare il layer Censim in base al nuovo campo creato.
+
+Query su Parco Ferrari: ***Tasto dx su Parchi > Open Attribute Table > Select features using an expression (ε)***
+
+Query georeferenziata sulle zone di censimento a 200 m dal parco Ferrari:
+
+-	***Vector > Geoprocessing tools > Buffer***
+
+-	***Vector > Research tools > Select by location***
+
+Calcolare il numero di abitanti a 200 m dal parco Ferrari:
+
+-	***Tasto dx su Censim > Open Attribute Table > Toggle editing mode (matita) > Open Field Calculator***
+
+-	***Create a new field***
+
+-	***Output field name:*** ABT_TOT
+
+-	***Lista delle Funzioni > Fields and values > sez_NUMABT***
+
+-	Clic su Matita per uscire da modalità di editing > ***Save***
+
+(NOTA: Modificare i valori NULL in 0)
+
+-	***Vector > Analysis Tools > Basic Statistics for Fields***
+
+-	***Input Layer:*** Censim; ***Field to calculate statistics on:*** ABT_TOT
+
+Creare un layout: ***Project > New print layout > Add Map, Add Legend, ecc*** (deve essere selezionata l’area sul foglio)
+
+
