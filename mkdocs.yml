@@ -51,6 +51,9 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Courses:
+    - Sistemi Informativi Territoriali:
+      - sit-intro.it.md
+      - sit-qgis00.it.md
     - a. 2023:
       - Intro Workshop: intro-workshop.md
       - Sistemi Informativi Territoriali:
