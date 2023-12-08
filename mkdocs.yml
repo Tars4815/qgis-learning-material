@@ -7,7 +7,7 @@ theme:
     primary: green
   font:
     text: Open Sans
-  language: it
+  language: en
   features:
     - navigation.path
     - navigation.footer
@@ -57,15 +57,15 @@ nav:
     - a. 2023:
       - Intro Workshop: intro-workshop.md
       - Sistemi Informativi Territoriali:
-        - sit-about.it.md
-        - sit-qgis00.it.md
-        - sit-qgis01.it.md
-        - sit-qgis02.it.md
+        - sit-about.md
+        - sit-qgis00.md
+        - sit-qgis01.md
+        - sit-qgis02.md
     - a. 2022:
       - Piacenza Campus:
         - arch-pc-about.md
         - arch-pc-intro.md
-        - arch-pc-layout.it.md
+        - arch-pc-layout.md
 
 
 
