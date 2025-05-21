@@ -14,7 +14,7 @@ Dal 2004, anno in cui questo termine fa il suo debutto ufficiale su una pubblica
 
 Dal 2004 l'acronimo è stato ufficialmente adottato come titolo delle conferenze annuali che vengono organizzate in ogni parte del mondo dalla comunità di sviluppatori e utilizzatori dei software. Allo stesso anno di inizio della serie di conferenze corrisponde anche la nascita del logo ufficiale di FOSS4G: un **nastro** che simboleggia lo scorrere libero di idee e ispirazioni nell'ambito dell'open-source. Scorrendo i loghi delle conferenze negli anni, il nastro rimane sempre il filo conduttore di una community in continua evoluzione e crescita.
 
-L'ultimo raduno globale ha avuto luogo a **Firenze** nell'agosto del 2022, esattamente 20 anni dopo il primo raduno informale di appassionati di software libero geografico avvenuto a Trento nel 2002.
+FOSS4G e comunità italiana: il raduno globale ha avuto luogo a **Firenze** nell'agosto del 2022, esattamente 20 anni dopo il primo raduno informale di appassionati di software libero geografico avvenuto a Trento nel 2002.
 
 ![Foto di gruppo di FOSS4G 2022 Firenze](https://www.gfoss.it/images/DSC_0802.jpg)
 
@@ -22,18 +22,18 @@ L'evento si articola in una serie di incontri, workshop e presentazioni su più 
 
 Dal 2006, l'organizzazione della conferenza è coordinata a livello globale dall'**Open Geospatial Foundation** (OSGEO) e resa possibile da un comitato organizzativo locale di volontari.
 
-La prossima conferenza FOSS4G avrà luogo a **Prizren in Kosovo** dal 26 giugno al 2 luglio 2023.
+La prossima conferenza FOSS4G avrà luogo a **Auckland in Nuova Zelanda** dal 17 al 23 novembre 2025.
 
-![Logo FOSS4G 2023](https://foss4g.org/logos/2023.png)
+![Logo FOSS4G 2025](https://2025.foss4g.org/_next/static/media/foss4g_2025_logo_interim.28038a5c.png)
 
 Parallelamente, con cadenza annuale, vengono organizzate delle conferenze locali, tendenzialmente a livello nazionale, dai local chapter di OSGeo. In Italia la conferenza prende il nome di **FOSS4G-IT**. Nel 2023 avrà luogo a **Bari** dall'11 al 14 giugno nell'ambito dei **GEODaysIT 2023**.
 
 Maggiori info:
 
 - [Sito ufficiale delle conferenze globali](https://foss4g.org/)
-- [FOSS4G 2023 Prizren](https://2023.foss4g.org/)
+- [FOSS4G 2025 Auckland](https://2025.foss4g.org/)
+- [FOSS4G EU 2025 Mostar](https://2025.europe.foss4g.org/)
 - [Canale YouTube ufficiale](https://www.youtube.com/@FOSS4G)
-- [GEODays2023 IT](https://2023.geodaysit.it/)
 
 ## OSGEO
 
