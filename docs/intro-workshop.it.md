@@ -131,8 +131,8 @@ rappresentano una grandezza il cui valore è funzione della posizione e si può 
 
 Per l'esercizio con QGIS verranno utilizzati dati vettoriali provenienti da diverse fonti:
 
-- [Ambiti Amministrativi - Regione Piemonte](https://www.datigeo-piem-download.it/direct/Geoportale/RegionePiemonte/Limiti_amministrativi/Ambiti_amministrativi_comuni_serie_storica/AMBITI_AMMINISTRATIVI_COMUNI_2021.zip) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 17/03/2023]
-- [Aree Protette Natura 2000 - Regione Piemonte](http://giscartografia.csi.it/Parchi/parchi_wgs84.zip) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 17/03/2023]
+- [Ambiti Amministrativi - Regione Piemonte](https://www.datigeo-piem-download.it/direct/Geoportale/RegionePiemonte/Limiti_amministrativi/Ambiti_amministrativi_comuni_serie_storica/AMBITI_AMMINISTRATIVI_COMUNI_2021.zip) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 24/05/2025]
+- [Aree Protette Natura 2000 - Regione Piemonte](https://www.geoportale.piemonte.it/geonetwork/srv/ita/catalog.search#/metadata/r_piemon:4368c018-6b58-4834-b233-c45360cb1206) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 24/05/2025]
 - [Dati OpenStreetMap](https://www.openstreetmap.org/#map=14/45.7500/8.5658)
 
 #### Nuovo progetto
