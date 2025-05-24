@@ -36,17 +36,17 @@ plugins:
   - i18n:
       default_language: en
       languages:
-        it:
-          name: Italiano
-          build: true
-          default: false
-        en:
+        - locale: en
           name: English
-          build: true
           default: true
+          build: true
+        - locale: it
+          name: Italiano
+          default: false
+          build: true
       no_translation:
-        it: "Questa pagina non è tradotta in italiano."
         en: "This page isn't translated to English."
+        it: "Questa pagina non è tradotta in italiano."
 
 
 markdown_extensions:
