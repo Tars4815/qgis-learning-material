@@ -24,7 +24,7 @@ It is:
 
 But it has the great advantage for those working with older versions that it can also handle projects made with newer versions.
 
-![QGIS logo](./assets/img/QGIS-logo.png "QGIS logo")
+![QGIS logo](../assets/img/QGIS-logo.png "QGIS logo")
 
 ## **Main functionalities**
 
@@ -60,7 +60,7 @@ The GUI of QGIS Desktop is mainly composed of:
 4. **Map view** that is the map canvas on which the geographic and geometric component of the data can be evaluated graphically.
 5. **Status bar** indicating the status of any processings initiated and any errors encountered.
 
-![QGIS Graphic User Interface](./assets/img/GUI-en.png "QGIS GUI")
+![QGIS Graphic User Interface](../assets/img/GUI-en.png "QGIS GUI")
 
 ## Data management
 
@@ -81,7 +81,7 @@ What is needed in order to work with QGIS?
 
 This geometric concept is even more important in cartography to correctly locate a point in the territory.
 
-![Reference system](./assets/img/cartesian-sr.png "Reference system")
+![Reference system](../assets/img/cartesian-sr.png "Reference system")
 
 ## Geographical reference system
 
@@ -103,11 +103,11 @@ Normally, different R.S. are used for planimetry and altimetry....
 
 * **planimetry**: ellipsoid reference (spherical for small or large scales). Why it is not used for altimetry? No link with the gravity field.
 
-![Planimetry](./assets/img/planimetria.png "Planimetry Reference Systems")
+![Planimetry](../assets/img/planimetria.png "Planimetry Reference Systems")
 
 * **altimetry**: geoid reference (no simple analytical description). Why is it not used for planimetry? It is very complex to use in the treatment of observations made for planimetry (due to angles and distances conversion).
 
-![Geoid](./assets/img/geoid.png "Geoid")
+![Geoid](../assets/img/geoid.png "Geoid")
 
 
 ## Datum
@@ -139,7 +139,7 @@ The surface of the earth is curved but there are many reasons for representing i
 
 For this reason, different **map projections** are also used in numerical cartography.
 
-![Projection](./assets/img/proj.png "Projection")
+![Projection](../assets/img/proj.png "Projection")
 
 Cartographic projections carry coordinates from the ellipsoid of the reference system to the map plane. **The two surfaces are not topologically equivalent, so it is not possible to move from ellipsoid to map without deformation.**
 
@@ -184,7 +184,7 @@ QGIS uses **EPSG** (European Petroleum Survey Group) codes to uniquely define th
 
 In the settings panel (***Settings → Options → CRS tab***) it is possible to define the rules with which the layers RS can be managed.
 
-![Reference System Settings](./assets/img/SRsettingsprj.png "Reference System Settings")
+![Reference System Settings](../assets/img/SRsettingsprj.png "Reference System Settings")
 
 It allows you to define which SR to adopt when opening a new project or how to manage layers without information on the reference system used.
 
@@ -192,15 +192,15 @@ It allows you to define which SR to adopt when opening a new project or how to m
 
 The **SR of the individual layer** can be managed by right-clicking on the layer.
 
-![Layer Reference System Settings](./assets/img/layer-sr-en-01.png "Layer Reference System Settings")
+![Layer Reference System Settings](../assets/img/layer-sr-en-01.png "Layer Reference System Settings")
 
-![Layer Reference System Settings](./assets/img/layer-sr-en-02.png "Layer Reference System Settings")
+![Layer Reference System Settings](../assets/img/layer-sr-en-02.png "Layer Reference System Settings")
 
 ### Reprojection - Shapefile
 
 You can manage the re-projection of vectors: ***Right click on the layer → Save features as…***
 
-![Vector reprojection](./assets/img/vector-reproj.png "Vector reprojection")
+![Vector reprojection](../assets/img/vector-reproj.png "Vector reprojection")
 
 ## Reality modelling with QGIS
 
@@ -208,12 +208,12 @@ There are mainly two ways of conceptualising or modelling reality from a geograp
 
 * **Discrete objects**: can be observed or described in the real world and identified by its position
 
-![Vector model](./assets/img/vector-model.jpg "Vector model")
+![Vector model](../assets/img/vector-model.jpg "Vector model")
 
 * **Distributed objects**:
 represent a quantity whose value is a function of position and can be measured at any location
 
-![Raster model](./assets/img/raster-model.png "Raster model")
+![Raster model](../assets/img/raster-model.png "Raster model")
 
 **Vector** model: information on discrete objects is coded and stored as a set of x, y, z coordinates.
 
@@ -227,58 +227,58 @@ Vector model features are particularly useful for representing and storing discr
 
 **In the vector model, information on discrete objects is coded and stored as a set of x,y,z coordinates.**
 
-![Vector model primitives](./assets/img/vector-model-primitive.png "Vector model primitives")
+![Vector model primitives](../assets/img/vector-model-primitive.png "Vector model primitives")
 
 **Raster** model: information on continuous objects, are coded using a set of grid cells, each with its relative value 
 
 Values are cells of a grid with certain extensions and a certain resolution. 
 
-![Raster model primitives](./assets/img/raster-model-primitive.png "Raster model primitives")
+![Raster model primitives](../assets/img/raster-model-primitive.png "Raster model primitives")
 
 ## Vector data
 
 ### Shapefile import
 
-![Shapefile import](./assets/img/shapefile-import.png "Shapefile import")
+![Shapefile import](../assets/img/shapefile-import.png "Shapefile import")
 
-![Shapefile import](./assets/img/shapefile-import-1.png "Shapefile import")
+![Shapefile import](../assets/img/shapefile-import-1.png "Shapefile import")
 
-![Shapefile import](./assets/img/shapefile-import-2.png "Shapefile import")
+![Shapefile import](../assets/img/shapefile-import-2.png "Shapefile import")
 
 ### Shapefile properties
 
 To change the properties of the shapefile, right-click on the layer and select properties.
 
-![Shapefile properties](./assets/img/shapefile-properties.png "Shapefile properties")
+![Shapefile properties](../assets/img/shapefile-properties.png "Shapefile properties")
 
 ### Style and symbology
 
 **Single symbol display**
 
-![Single symbol vector data](./assets/img/single-symbol-vector.png "Single symbol for vector data")
+![Single symbol vector data](../assets/img/single-symbol-vector.png "Single symbol for vector data")
 
 It is also possible to set the transparency of the layer, which can be useful if you want to superimpose it on another information layer, e.g. an orthophoto.
 
 In order to better identify the municipalities, it is also possible to insert labels for each geometric unit: click on ***Labels*** → select ***Single Labels*** and choose which **Value** to display.
 
-![Labels vector data](./assets/img/labels-vector.png "Labels vector data")
+![Labels vector data](../assets/img/labels-vector.png "Labels vector data")
 
-![Labels example](./assets/img/labels-piacenza.png "Labels example")
+![Labels example](../assets/img/labels-piacenza.png "Labels example")
 
 
 Display with **symbol categorized** according to the values contained in a layer field.
 
-![Categorized symbol vector data](./assets/img/categorized-symbol-vector.png "Categorized symbol for vector data")
+![Categorized symbol vector data](../assets/img/categorized-symbol-vector.png "Categorized symbol for vector data")
 
 The use of this style also makes it possible to assign to each value a label to be included in the legend. This makes the meaning of the chosen field and its values even clearer and more comprehensible.
 
-![Categorized symbol example](./assets/img/categorized-piacenza.png "Categorized symbol example")
+![Categorized symbol example](../assets/img/categorized-piacenza.png "Categorized symbol example")
 
 ### Attribute table
 
 To delete municipalities that are not part of the province of PC, right-click on the layer in the (Layer panel) → click on ***Open Attribute Table***.
 
-![Open attribute table](./assets/img/attribute-table.png "Open attribute table")
+![Open attribute table](../assets/img/attribute-table.png "Open attribute table")
 
 ### Editing mode
 
@@ -286,20 +286,20 @@ Click ***Toggle editing mode*** (1) → select the row associated to the municip
 
 The removal of the selected record(s) will be completed only after clicking ***Save edits*** (4) and exiting the editing mode by clicking one more time ***Toggle editing mode*** (5).
 
-![Editing mode attribute table](./assets/img/edting-mode-vector-data.png "Editing mode attribute table")
+![Editing mode attribute table](../assets/img/edting-mode-vector-data.png "Editing mode attribute table")
 
 Other municipalities outside the province of Piacenza can be removed - with the editing session active - with a query on the column "NM_PRV“ by clicking ***Select features using an expression***.
 After formulating the desired expression, you can remove the selected elements and save the operations carried out using the procedure previously described.
 
-![Select features by expression](./assets/img/select-features-by-expression.png "Select features by expression")
+![Select features by expression](../assets/img/select-features-by-expression.png "Select features by expression")
 
-![Vector data editing results](./assets/img/editing-results.png "Vector data editing results")
+![Vector data editing results](../assets/img/editing-results.png "Vector data editing results")
 
 ### Adding a new field
 
 ***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ New field***
 
-![Vector data add new field](./assets/img/vector-data-add-new-field.png "Vector data add new field")
+![Vector data add new field](../assets/img/vector-data-add-new-field.png "Vector data add new field")
 
 Define the required fields, paying particular attention to the **type of value** that will be entered in the new field (integer, decimal, text, date, etc.) and the **maximum number** of characters.
 
@@ -309,13 +309,13 @@ To finalise the changes introduced on the attribute table, save and end the edit
 
 ***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ Open field calculator***
 
-![Vector data field calculator](./assets/img/vector-data-field-calculator.png "Vector data field calculator")
+![Vector data field calculator](../assets/img/vector-data-field-calculator.png "Vector data field calculator")
 
 Using the **field calculator** it is possible to create a new field containing the result of a pre-defined function or update with the results an existing field.
 
 The unit of measurement of the result is defined by the reference system of the layer (in this case meters).
 
-![Field calculator results](./assets/img/field-calculator-results.png "Field calculator results")
+![Field calculator results](../assets/img/field-calculator-results.png "Field calculator results")
 
 To finalize changes, save and end the editing session.
 
@@ -323,7 +323,7 @@ To finalize changes, save and end the editing session.
 
 ***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ Delete field***
 
-![Editing for deleting a field](./assets/img/editing-delete-field.png "Editing for deleting a field")
+![Editing for deleting a field](../assets/img/editing-delete-field.png "Editing for deleting a field")
 
 Select the field of interest and confirm the removal.
 
@@ -333,20 +333,20 @@ To finalize changes, save and end the editing session.
 
 ***Layer → Create layer → New shapefile…***
 
-![New vector layer of points](./assets/img/vector-data-new-layer-points.png "New vector layer of points")
+![New vector layer of points](../assets/img/vector-data-new-layer-points.png "New vector layer of points")
 
 Choose the **type of geometry** (point, line, polygon), define **SR** and **layer name**.
 Save (1) and confirm the operation (2).
 
 Toggle editing mode
 
-![New layer editing mode](./assets/img/new-layer-editing.png "New layer editing mode")
+![New layer editing mode](../assets/img/new-layer-editing.png "New layer editing mode")
 
 Select ***Add point feature*** and click on a point in the project map view in order to add an element to the layer.
 
 **Editing options**
 
-![Vector editing options](./assets/img/vector-editing-options.png "Vector editing options")
+![Vector editing options](../assets/img/vector-editing-options.png "Vector editing options")
 
 From the toolbar you could either **edit** (1) existing features that are part of the layers or **save** (2) any modification.
 
@@ -354,7 +354,7 @@ From the toolbar you could either **edit** (1) existing features that are part o
 
 What is a **raster**?
 
-![Raster model](./assets/img/raster-model-primitive.png "Raster model")
+![Raster model](../assets/img/raster-model-primitive.png "Raster model")
 
 **Digital Terrain Models (DTM)** are fundamental data for GIS analysis, but there are also orthophotos, technical maps, aerial photos, satellite images, geological maps, etc.
 
@@ -367,28 +367,28 @@ What is a **raster**?
 
 * **DSM** (Digital Surface Model) represents in digital form the heights of the upper part of the terrain including buildings, infrastructures and trees without the filtering procedures used to produce DEMs and/or DTMs.
 
-![Digital elevation models](./assets/img/digital-elevation-model.png "Digital elevation models")
+![Digital elevation models](../assets/img/digital-elevation-model.png "Digital elevation models")
 
 * **Ortophoto**: It is a photographic map that combines the characteristics of a traditional map with those of an image. It is georeferenced, distortion-free and has a uniform scale.
 
-![Ortophoto](./assets/img/ortophoto.png "Orthophoto")
+![Ortophoto](../assets/img/ortophoto.png "Orthophoto")
 
 ### Raster import
 
-![Raster import](./assets/img/raster-import.png "Raster import")
+![Raster import](../assets/img/raster-import.png "Raster import")
 
 ### Reprojection
 
 Raster reprojection using the GDAL libraries:
 ***Raster → Projections → Warp (Reproject)…***
 
-![Raster reprojection](./assets/img/raster-reprojection.png "Raster reprojection")
+![Raster reprojection](../assets/img/raster-reprojection.png "Raster reprojection")
 
 ### Properties
 
 To change the properties of the raster, right-click on the layer of interest and select **Properties**:
 
-![Raster properties](./assets/img/raster-properties.png "Raster properties")
+![Raster properties](../assets/img/raster-properties.png "Raster properties")
 
 ### Style
 
@@ -402,7 +402,7 @@ Change the **style**:
 
 …and other statistical settings
 
-![Raster style](./assets/img/raster-style.png "Raster style")
+![Raster style](../assets/img/raster-style.png "Raster style")
 
 **Example**
 
@@ -418,13 +418,13 @@ Map of land cover classified according to 5 classes of first reference level:
 
 ... it's a matter of classification by value classes!
 
-![Corine Land Cover classes](./assets/img/CLC-landcover.png "Corine Land Cover classes")
+![Corine Land Cover classes](../assets/img/CLC-landcover.png "Corine Land Cover classes")
 
 ### Paletted/Unique values style
 
 Set the **Paletted/Unique values** render type and define the **visualisation style** (color and label) for each first level land cover class.
 
-![Raster paletted values](./assets/img/raster-paletted-values.png "Raster paletted values")
+![Raster paletted values](../assets/img/raster-paletted-values.png "Raster paletted values")
 
 ### Transparency
 
@@ -433,9 +433,9 @@ Manage the **layer transparency**:
 * Global opacity
 * Customized for selected classes
 
-![Raster transparency](./assets/img/raster-transparency.png "Raster transparency")
+![Raster transparency](../assets/img/raster-transparency.png "Raster transparency")
 
-![Raster style results](./assets/img/raster-style-results.png "Raster style results")
+![Raster style results](../assets/img/raster-style-results.png "Raster style results")
 
 ## Save a project
 
