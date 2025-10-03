@@ -32,4 +32,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdocs gh-deploy --force --remote-name origin --branch gh-pages
+          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
