@@ -1,91 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>Nonearch-pc-about/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/arch-pc-about/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/arch-pc-about/"/>
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/"/>
     </url>
     <url>
-         <loc>Nonearch-pc-intro/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/arch-pc-intro/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/arch-pc-intro/"/>
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/arch/arch-pc-about/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/arch/arch-pc-about/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-about/"/>
     </url>
     <url>
-         <loc>Nonearch-pc-layout.it/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/arch-pc-layout.it/"/>
-         
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/arch/arch-pc-intro/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/arch/arch-pc-intro/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-intro/"/>
     </url>
     <url>
-         <loc>Nonecourses/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/courses/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/courses/"/>
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/en/courses/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/en/courses/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/en/courses/"/>
     </url>
     <url>
-         <loc>None./</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/"/>
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/sit/sit-about/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-about/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-about/"/>
     </url>
     <url>
-         <loc>Noneintro-workshop/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/intro-workshop/"/>
-         <xhtml:link rel="alternate" hreflang="it" href="Noneit/intro-workshop/"/>
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/sit/sit-intro/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-intro/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-intro/"/>
     </url>
     <url>
-         <loc>Nonesit-about.it/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/sit-about.it/"/>
-         
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/sit/sit-qgis00/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-qgis00/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis00/"/>
     </url>
     <url>
-         <loc>Nonesit-intro.it/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/sit-intro.it/"/>
-         
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/sit/sit-qgis01/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-qgis01/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis01/"/>
     </url>
     <url>
-         <loc>Nonesit-qgis00.it/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/sit-qgis00.it/"/>
-         
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/sit/sit-qgis02/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-qgis02/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis02/"/>
     </url>
     <url>
-         <loc>Nonesit-qgis01.it/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/sit-qgis01.it/"/>
-         
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/workshop/intro-workshop/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/workshop/intro-workshop/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/workshop/intro-workshop/"/>
     </url>
     <url>
-         <loc>Nonesit-qgis02.it/</loc>
-         <lastmod>2025-10-03</lastmod>
-         <changefreq>daily</changefreq>
-         <xhtml:link rel="alternate" hreflang="en" href="Noneen/sit-qgis02.it/"/>
-         
-         
+        <loc>https://tars4815.github.io/qgis-learning-material/it/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-about/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/arch/arch-pc-about/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-intro/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-intro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/arch/arch-pc-intro/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-layout/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/arch/arch-pc-layout/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/en/courses/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/en/courses/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/en/courses/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/sit/sit-about/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-about/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/sit/sit-intro/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-intro/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-intro/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis00/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis00/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-qgis00/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis01/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis01/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-qgis01/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis02/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis02/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-qgis02/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/workshop/intro-workshop/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/workshop/intro-workshop/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/workshop/intro-workshop/"/>
     </url>
 </urlset>
