@@ -1,7 +1,7 @@
 # qgis-learning-material
 A repository for QGIS-related learning material.
 
-This space is currently under construction and revision.
+This space is currently under construction and revision. Whole resources are based on QGIS-related courses offered since 2020 at Politecnico di Milano courses.
 
 TO DO and PROGRESS:
 
@@ -38,3 +38,4 @@ TO DO and PROGRESS:
     - [ ] Dati vettoriali: Gestione ed elaborazione shapefile e tabelle csv
     - [ ] Dati vettoriali: Operazioni di query, filtri, join e metadatazione
     - // Under development //
+
