@@ -30,3 +30,11 @@ TO DO and PROGRESS:
 [ ] Plugins
 
 [ ] Layout
+
+**Corso introduttivo a QGIS Urbanistica Campus Leonardo**
+
+* *IT Version (2025)*:
+    - [ ] Introduzione al software: Gestione progetto e interfaccia, formato dati, operazioni base
+    - [ ] Dati vettoriali: Gestione ed elaborazione shapefile e tabelle csv
+    - [ ] Dati vettoriali: Operazioni di query, filtri, join e metadatazione
+    - // Under development //
