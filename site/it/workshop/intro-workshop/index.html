@@ -1,0 +1,1352 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../arch/arch-pc-intro/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>Workshop introduttivo - QGIS Learning Material</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#workshop-introduttivo" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../../" title="QGIS Learning Material" class="md-header__button md-logo" aria-label="QGIS Learning Material" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QGIS Learning Material
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Workshop introduttivo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Seleziona la lingua">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../workshop/intro-workshop/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="it" class="md-select__link">
+              Italiano
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Tars4815/qgis-learning-material" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="QGIS Learning Material" class="md-nav__button md-logo" aria-label="QGIS Learning Material" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QGIS Learning Material
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Tars4815/qgis-learning-material" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Courses
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Courses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Environmental Engineering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Environmental Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sit/sit-about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    A proposito
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sit/sit-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sit/sit-qgis00/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGIS 00
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sit/sit-qgis01/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGIS 01
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Architecture
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arch/arch-pc-about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Architettura Piacenza Campus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arch/arch-pc-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Workshop
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Workshop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Workshop introduttivo
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Workshop introduttivo
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#foss4g" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOSS4G
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osgeo" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSGEO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      QGIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graphic-user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphic User Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esercizio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Esercizio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nuovo-progetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuovo progetto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caricamento-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caricamento dati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basemap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simbologia-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simbologia dati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selezione-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selezione elemento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selezione elemento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selezione-per-attributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selezione per attributo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selezione-per-posizione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selezione per posizione
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dati-da-openstreetmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati da OpenStreetMap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-di-stampa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout di stampa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-saperne-di-piu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per saperne di più
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#foss4g" class="md-nav__link">
+    <span class="md-ellipsis">
+      FOSS4G
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osgeo" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSGEO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      QGIS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="QGIS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#graphic-user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphic User Interface
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esercizio" class="md-nav__link">
+    <span class="md-ellipsis">
+      Esercizio
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Esercizio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nuovo-progetto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuovo progetto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caricamento-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caricamento dati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basemap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basemap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simbologia-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simbologia dati
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selezione-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selezione elemento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selezione elemento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selezione-per-attributo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selezione per attributo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selezione-per-posizione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selezione per posizione
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dati-da-openstreetmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati da OpenStreetMap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout-di-stampa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Layout di stampa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#per-saperne-di-piu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Per saperne di più
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="workshop-introduttivo">Workshop introduttivo</h1>
+<p><strong>Benvenuti nel mondo del Software Open Source per applicazioni geospaziali!</strong></p>
+<p>In questo workshop introduttivo scoprirete cosa si intende con <strong><a href="#foss4g">FOSS4G</a></strong>, cos'è e di cosa si occupa <strong><a href="#osgeo">OSGEO</a></strong> e avrai un piccolo assaggio delle potenzialità di <strong><a href="#qgis">QGIS</a></strong>.</p>
+<h2 id="foss4g">FOSS4G</h2>
+<p>Di cosa si parla quando si utilizza l'acronimo <strong>FOSS4G</strong>?</p>
+<p>Dal 2004, anno in cui questo termine fa il suo debutto ufficiale su una pubblicazione scientifica, con questa sigla si fa riferimento all'ambito dei <strong>F</strong>ree and <strong>O</strong>pen <strong>S</strong>ource <strong>S</strong>oftware for <strong>G</strong>eospatial, indicando la grande famiglia di applicazioni libere e open-source sviluppate da una community di appassionati e professionisti nel settore della geoinformatica e delle scienze geografiche.</p>
+<p><img alt="Logo FOSS4G" src="https://upload.wikimedia.org/wikipedia/commons/7/78/FOSS4G-Ribbon.png" /></p>
+<p>Dal 2004 l'acronimo è stato ufficialmente adottato come titolo delle conferenze annuali che vengono organizzate in ogni parte del mondo dalla comunità di sviluppatori e utilizzatori dei software. Allo stesso anno di inizio della serie di conferenze corrisponde anche la nascita del logo ufficiale di FOSS4G: un <strong>nastro</strong> che simboleggia lo scorrere libero di idee e ispirazioni nell'ambito dell'open-source. Scorrendo i loghi delle conferenze negli anni, il nastro rimane sempre il filo conduttore di una community in continua evoluzione e crescita.</p>
+<p>FOSS4G e comunità italiana: il raduno globale ha avuto luogo a <strong>Firenze</strong> nell'agosto del 2022, esattamente 20 anni dopo il primo raduno informale di appassionati di software libero geografico avvenuto a Trento nel 2002.</p>
+<p><img alt="Foto di gruppo di FOSS4G 2022 Firenze" src="https://www.gfoss.it/images/DSC_0802.jpg" /></p>
+<p>L'evento si articola in una serie di incontri, workshop e presentazioni su più giorni in cui sviluppatori e utilizzatori possono confrontarsi sulle novità dei software, discutendo sui bisogni degli utenti e sulle future prospettive dei progetti. Non si tratta unicamente di una conferenza dedicata quindi esclusivamente a <strong>sviluppatori</strong> ma anche a <strong>utilizzatori</strong>, <strong>ricercatori</strong> in ambito accademico e non ma anche ad <strong>aziende</strong> ed <strong>enti pubblici</strong> attivi in ambito geospaziale.</p>
+<p>Dal 2006, l'organizzazione della conferenza è coordinata a livello globale dall'<strong>Open Geospatial Foundation</strong> (OSGEO) e resa possibile da un comitato organizzativo locale di volontari.</p>
+<p>La prossima conferenza FOSS4G avrà luogo a <strong>Auckland in Nuova Zelanda</strong> dal 17 al 23 novembre 2025.</p>
+<p><img alt="Logo FOSS4G 2025" src="https://2025.foss4g.org/_next/static/media/foss4g_2025_logo_interim.28038a5c.png" /></p>
+<p>Parallelamente, con cadenza annuale, vengono organizzate delle conferenze locali, tendenzialmente a livello nazionale, dai local chapter di OSGeo. In Italia la conferenza prende il nome di <strong>FOSS4G-IT</strong>. Nel 2023 avrà luogo a <strong>Bari</strong> dall'11 al 14 giugno nell'ambito dei <strong>GEODaysIT 2023</strong>.</p>
+<p>Maggiori info:</p>
+<ul>
+<li><a href="https://foss4g.org/">Sito ufficiale delle conferenze globali</a></li>
+<li><a href="https://2025.foss4g.org/">FOSS4G 2025 Auckland</a></li>
+<li><a href="https://2025.europe.foss4g.org/">FOSS4G EU 2025 Mostar</a></li>
+<li><a href="https://www.youtube.com/@FOSS4G">Canale YouTube ufficiale</a></li>
+</ul>
+<h2 id="osgeo">OSGEO</h2>
+<p>La <strong>Open Source Geospatial Foundation</strong> (OSGEO) è l'organizzazione non-profit che dal 2006 coordina l'organizzazione delle conferenze <em>FOSS4G</em>. La missione principale di OSGEO è promuovere l'adozione globale della tecnologia geospaziale aperta, essendo una fondazione software inclusiva dedicata a una filosofia aperta e allo sviluppo partecipativo guidato dalla comunità.</p>
+<p><img alt="OSGeo Logo" src="https://www.osgeo.org/wp-content/themes/roots/assets/img/logo-osgeo.svg" /></p>
+<p>La fondazione fornisce sostegno finanziario, organizzativo e legale alla più ampia comunità geospaziale open source. Inoltre, funge da entità legale indipendente a cui i membri della comunità possono contribuire con codice, fondi e altre risorse, sicuri che i loro contributi saranno mantenuti a beneficio del pubblico. OSGeo funge anche da organizzazione di sensibilizzazione e di advocacy per la comunità geospaziale open source e fornisce un forum comune e un'infrastruttura condivisa per migliorare la collaborazione tra progetti.</p>
+<p>I progetti della fondazione sono tutti liberamente disponibili e utilizzabili con una licenza open source certificata dalla <strong><a href="https://opensource.org/licenses/">Open Source Initiative</a></strong>. Tra questi figurano librerie di codice, tool per il web mapping, database e software GIS per l'elaborazione e analisi di dati territoriali.</p>
+<p>Tra i più noti:</p>
+<ul>
+<li><strong><a href="https://www.osgeo.org/projects/qgis/">QGIS</a></strong>, il principale GIS desktop gratuito e open source  che permette di creare, modificare, visualizzare, analizzare e pubblicare informazioni geospaziali su Windows, Mac OS, Linux e Android.</li>
+<li><strong><a href="https://www.osgeo.org/projects/postgis/">PostGIS</a></strong>, un'estensione di database spaziale per il DBMS PostgreSQL che fornisce nuovi tipi di geometria, geografia, raster e topogeometria a PostgreSQL e funzioni conformi a SQL/MM OGC SFSQL per svolgere lavori GIS come la gestione catastale e il back-end per servizi di mappatura Web.</li>
+<li><strong><a href="https://www.osgeo.org/projects/openlayers/">OpenLayers</a></strong>, libreria open-source JavaScript che permette di inserire facilmente mappe dinamiche in pagine web. </li>
+<li>... e molti altri!!</li>
+</ul>
+<p>A livello locale/nazionale, esistono numerose sezioni di OSGeo che si occupano del coordinamento dello sviluppo dei progetti in ambito territoriale e dell'organizzazione di eventi e conferenze. In Italia opera dal 2007 l'<strong>Associazione italiana per l'informazione geografica libera</strong> nota anche con l'acronimo <strong>GFOSS.IT</strong>.</p>
+<p>Maggiori info:</p>
+<ul>
+<li><a href="https://www.osgeo.org/">Sito ufficiale</a></li>
+<li><a href="https://www.gfoss.it/">Sito GFOSS.IT</a></li>
+</ul>
+<h2 id="qgis">QGIS</h2>
+<p>Cos'è un GIS?</p>
+<p>Con la sigla GIS si fa riferimento a un <strong>G</strong>eographic <strong>I</strong>nformation <strong>S</strong>ystem (in italiano anche noto come Sistema Informativo Territoriale o SIT), ovvero un software che permette l'<strong>acquisizione</strong>, <strong>creazione</strong>, <strong>analisi</strong>, <strong>visualizzazione</strong>, <strong>condivisione</strong> e <strong>presentazione</strong> di informazioni geografiche.</p>
+<p><strong>QGIS</strong> - in precedenza noto anche come <em>QuantumGIS</em> - è un software GIS free e open-source che rientra tra i progetti supportati da OSGEO.
+Sin dalla sua prima versione rilasciata pubblicamente nel 2002, il software ha raccolto un grande entusiasmo nella comunità open-source e non solo, coinvolgendo sempre più sviluppatori e utenti da tutto il mondo.</p>
+<p><img alt="Logo QGIS" src="https://www.osgeo.org/wp-content/uploads/QGIS_740x412_acf_cropped-370x206.png" /></p>
+<p>In occasione di ogni edizione di FOSS4G, gli sviluppatori presentano le nuove funzionalità del software e gli indirizzi di sviluppo per le prossime versioni. Uno dei grandi punti di forza di QGIS è proprio la sua flessibilità in termini di aggiornamento: ogni 4 mesi, infatti, viene rilasciata una nuova <strong>Long Term Release</strong> (più stabile per l'utilizzo frequente) e una versione avanzata con funzionalità avanzate in fase di test, mantenendo però sempre compatibilità per i progetti realizzati con le versioni precedenti. Molto spesso tali funzionalità vengono prima abbozzate e ideate e poi sviluppate durante gli incontri online e in presenza organizzati dalla community (<em>QGIS Hackfest</em>, <em>User conference</em>, <em>Contributor Meeting</em> e <em>QGIS Open Day</em>). Spesso questi incontri vengono organizzati in luoghi che daranno poi il nome alla più recente versione del software. QGIS 3.28 prende il nome da Firenze, in onore dell'ultimo meeting avvenuto pochi giorni prima di FOSS4G 2023.</p>
+<p><img alt="QGIS Contributors Meeting" src="https://www.qgis.org/it/_static/images/about-community.jpeg" /></p>
+<p>Tra le funzionalità principali di QGIS vi sono:</p>
+<ul>
+<li><strong>Visualizzazione dei dati</strong></li>
+</ul>
+<p>si possono visualizzare e sovrappore dati vettoriali e raster in diversi formati e proiezioni cartografiche.</p>
+<ul>
+<li><strong>Esplorazione di dati e creazione di mappe</strong>:</li>
+</ul>
+<p>si possono comporre mappe ed esplorare interattivamente dati spaziali tramite una facile interfaccia grafica.</p>
+<ul>
+<li><strong>Creazione, editing, gestione, esportazione</strong>:</li>
+</ul>
+<p>possono essere eseguite analisi spaziali di dati.</p>
+<ul>
+<li><strong>Collegamento a DB esterni</strong></li>
+</ul>
+<p>è possibile visualizzare e interrogare dati memorizzati su DB (es. MySQL, PostgreSQL...) esterni.</p>
+<ul>
+<li><strong>Pubblicazione di mappe sul web</strong></li>
+</ul>
+<p>con plugin nativi e non, QGIS permette di definire le impostazioni per realizzare una mappa interattiva da condividere su pagine web.</p>
+<p>...e molto altro!</p>
+<p>Il software può essere scaricato su sistemi operativi Windows, MacOS e Linux seguendo le <a href="https://www.qgis.org/it/site/forusers/download.html">istruzioni e la documentazione</a> presente sul sito ufficiale.</p>
+<h3 id="graphic-user-interface">Graphic User Interface</h3>
+<p>La GUI di QGIS Desktop è principalmente composta da:</p>
+<ol>
+<li><strong>Barra dei menù</strong> dove è possibile trovare le principali funzionalità di progetto QGIS raggruppate per tematiche.</li>
+<li><strong>Barra delle applicazioni</strong> personalizzabile che include le scorciatoie ai tool di più comune utilizzo per la manipolazione dei dati in ambiente GIS. Come ogni software GIS, infatti la gestione di operazioni ed elaborazioni in ambiente QGIS avviene attraverso la creazione di <em>progetti</em> in cui sono caricati dall'utente dati georiferiti e non secondo <em>strati informativi</em> su più livelli. </li>
+<li><strong>Elenco dei layers caricati</strong> che indica quali dati sono stati inseriti nel progetto, specificandone le caratteristiche, la simbologia e la visibilità. </li>
+<li><strong>Area di visualizzazione layers</strong> ovvero la map canvas su cui è possibile valutare graficamente la componente geografica e geometrica dei dati.</li>
+<li><strong>Barra di stato</strong> che indica lo stato di avanzamento di eventuali processamenti avviati ed eventuali errori riscontrati.</li>
+</ol>
+<p><img alt="QGIS Graphic User Interface" src="./assets/img/GUI.png" title="QGIS GUI" /></p>
+<h3 id="esercizio">Esercizio</h3>
+<p>In questo workshop introduttivo di QGIS verranno illustrate alcune operazioni di utilizzo comune in ambiente GIS per realizzare una mappa digitale del territorio di Arona evidenziando la presenza di piste ciclabili, parcheggi per biciclette e aree verdi.</p>
+<h4 id="dati">Dati</h4>
+<p>In ambiente GIS esistono principalmente due modi di concettualizzare o modellare la realtà da un punto di vista geografico considerando:</p>
+<ul>
+<li><strong>Oggetti discreti</strong>: possono essere osservati o descritti nel mondo reale ed identificati da una sua posizione. In questo caso viene adottato il cosiddetto <strong>modello vettoriale</strong> che indica una rappresentazione di entità geografiche attraverso <strong>punti</strong>, <strong>linee</strong>, <strong>poligoni</strong>. Tipicamente vengono utilizzati file in formato <em>shapefile</em>, <em>geojson</em> o <em>geopackage</em>.</li>
+</ul>
+<p><img alt="Vector model" src="./assets/img/vector-model.jpg" title="Vector model" /></p>
+<ul>
+<li><strong>Oggetti distribuiti</strong>:
+rappresentano una grandezza il cui valore è funzione della posizione e si può misurare in ogni luogo. In questo caso, i GIS adottando il modello <strong>raster</strong> in cui informazioni su oggetti continui sono codificate da un insieme di celle (pixel) di una griglia, ciascuna con il suo valore relativo. Il formato più diffuso è il <em>tif</em>, usato per ortofoto e modelli digitali del terreno.</li>
+</ul>
+<p><img alt="Raster model" src="../../../assets/img/raster-model.png" title="Raster model" /></p>
+<p>Per l'esercizio con QGIS verranno utilizzati dati vettoriali provenienti da diverse fonti:</p>
+<ul>
+<li><a href="https://www.datigeo-piem-download.it/direct/Geoportale/RegionePiemonte/Limiti_amministrativi/Ambiti_amministrativi_comuni_serie_storica/AMBITI_AMMINISTRATIVI_COMUNI_2021.zip">Ambiti Amministrativi - Regione Piemonte</a> [FONTE: <em>Geoportale Piemonte</em> - Ultimo Accesso: 24/05/2025]</li>
+<li><a href="https://www.geoportale.piemonte.it/geonetwork/srv/ita/catalog.search#/metadata/r_piemon:4368c018-6b58-4834-b233-c45360cb1206">Aree Protette Natura 2000 - Regione Piemonte</a> [FONTE: <em>Geoportale Piemonte</em> - Ultimo Accesso: 24/05/2025]</li>
+<li><a href="https://www.openstreetmap.org/#map=14/45.7500/8.5658">Dati OpenStreetMap</a></li>
+</ul>
+<h4 id="nuovo-progetto">Nuovo progetto</h4>
+<p>Avviare QGIS Desktop sul proprio pc. Nella schermata di benvenuto cliccare <strong>Nuovo Progetto Vuoto</strong> oppure dalla voce <strong>Progetto</strong> nella barra dei menù, selezionare <strong>Nuovo</strong>.</p>
+<p>In questo modo si crea un nuovo progetto QGIS in cui poter lavorare: esso sarà il "contenitore" di tutti i singoli dati geografici che verranno caricati in strati informativi e delle loro elaborazioni ed analisi.</p>
+<p>Prima di iniziare a caricare nuovi dati nel progetto, è necessario definire il <strong>sistema di riferimento cartografico</strong> all'interno del quale sono inquadrati i dati vettoriali. Questo passaggio è essenziale per permettere la corretta interpretazione del riferimento geografico contenuto nei dati, definendo il corretto sistema di coordinate e l'unità di misura del progetto. Per l'Italia e Regione Piemonte il sistema di riferimento adottato è il WGS84 - UTM Zone 32 Nord, indicato con codifica standard EPSG: 32632. Tale informazione deve essere indicata anche nel progetto QGIS accedendo al menù delle proprietà da <strong><em>Progetto &gt; Proprietà &gt; Tab SR</em></strong>. Nel box di ricerca digitare 32632 e scegliere la voce corrispondente dalla lista di Sistemi di Riferimento. Una volta selezionata, cliccare <em>Applica</em> e poi <em>Ok</em> per tornare alla visualizzazione principale del progetto.</p>
+<p><img alt="Scelta del sistema di riferimento" src="./assets/img/intro-workshop/sr.jpg" title="Scelta del sistema di riferimento" /></p>
+<p>Salvare quindi il progetto dal menù <strong><em>Progetto &gt; Salva</em></strong>.</p>
+<h4 id="caricamento-dati">Caricamento dati</h4>
+<p>I dati vettoriali dell'esercizio sono forniti in forniti in formato shapefile. L'estensione di riferimento in questo caso è <em>.shp</em> che contiene la geometria del dataset. Tuttavia, per poter leggere correttamente il dato all'interno dell'ambiente GIS, ogni file .shp è sempre accompagnato da almeno altri due file "ombra" con estensione <em>.shx</em> (che contiene gli indici spaziali) e <em>.dbf</em> (che contiene il database, ovvero la componente tabellare del dataset). Per questo motivo è estremamente importante che dopo aver unzippato le cartelle dati scaricate in precedenza, non si cancellino i dati senza estensione .shp anche se all'apparenza potrebbero risultare inutili.</p>
+<p>Il metodo più intuitivo e pratico per il caricamento di nuovi dati vettoriali all'interno del progetto QGIS consiste in un semplice <em>drag&amp;drop</em> dalla cartella in cui il file .shp è salvato allo spazio del map canvas in QGIS.
+In tale modo si procede quindi con il caricamento dei dati .shp dei confini amministrativi e dei parchi Natura 2000.</p>
+<p>Una volta caricati i dati, la visibilità di un dato strato informativo può essere attivata e disattivata attraverso il flag accanto al nome del layer. Per portare in primo piano di visualizzazione un layer, invece, basta selezionare lo strato di interesse dalla lista dei layer caricati e tenere premuto il tasto sinistro per trascinarlo all'inizio della lista.</p>
+<p><img alt="Caricamento vettori shapefile" src="./assets/img/intro-workshop/vector-layers.jpg" /></p>
+<h4 id="basemap">Basemap</h4>
+<p>Spesso, per poter interpretare al meglio i dati caricati o per comprendere se esistono errori di georeferenziazione degli stessi, risulta utile utilizzare una mappa di sfondo che fornisce un contesto ai layer caricati, la cosiddetta <strong>basemap</strong>. Tale livello informativo di tipo immagine può essere fornito da un'immagine satellitare/area di tipo raster caricata in maniera analoga a quella utilizzata in precedenza per i dati vettoriali. Tuttavia, esiste una soluzione più pratica che permette di utilizzare collegamenti a provider di mappe di utilizzo comune sfruttando uno dei maggiori potenziali di QGIS: i <strong>plugins</strong>.</p>
+<p>Attraverso lo sviluppo e la condivisione sulla <a href="https://plugins.qgis.org/plugins/">repository ufficiale dei QGIS Python Plugins</a> di estensioni del codice nativo del software, la community di contributors permette di ampliare le funzionalità di base di QGIS con estensioni dedicate che rendono possibile l'esecuzione di analisi ed elaborazioni avanzate.</p>
+<p>Per accedere alla lista dei possibili plugins installabili è necessario cliccare su <strong><em>Plugins &gt; Gestisci ed Installa Plugins</em></strong>. Nella nuova finestra è quindi possibile valutare i pacchetti installati e quelli già integrati. Nel tab <em>Tutto</em> nella barra di ricerca digitare <strong>QuickMapServices</strong> e selezionare il risultato corrispondente. Nel box a destra della finestra si ha quindi una panoramica delle funzionalità di tale plugins, dei riferimenti per la documentazione con i crediti agli autori e le valutazioni degli utenti. Per installare, cliccare <em>Installa Plugin</em>.</p>
+<p><img alt="Installazione plugin" src="./assets/img/intro-workshop/plugins.jpg" /></p>
+<p>Nella schermata QGIS principale dal menù <strong><em>Web &gt; QuickMapServices</em></strong>, selezionare quindi <em>OSM &gt; OSM Standard</em>. Questa selezione permettera di collegarsi attraverso una connessione di tipo WMS (Web Map Services) a OpenStreetMap per poterne visualizzare dinamicamente i dati nel progetto.</p>
+<p><img alt="QuickMapServices OSM" src="./assets/img/intro-workshop/QuickMapServices.jpg" /></p>
+<h4 id="simbologia-dati">Simbologia dati</h4>
+<p>Per poter lavorare al meglio e svolgere con facilità le operazioni successive, può essere utile cambiare la modalità di visualizzazione degli strati vettoriali caricati in precedenza. In particolare, è suggerito definire una visualizzazione senza riempimento per i poligoni dei comuni, lasciandone in evidenza solamente il confine. Per questo motivo, è necessario cliccare con il tasto destro sul layer dei comuni e selezionare l'opzione <strong>Proprietà</strong> posizionandosi in seguito nel tab <strong>Simbologia</strong>. Selezionare quindi la voce <em>Riempimento semplice</em> e nel menù sottostante definire:</p>
+<ul>
+<li><em>Stile di riempimento</em>: Vuoto</li>
+<li><em>Colore tratto</em>: Rosso</li>
+<li><em>Spessore tratto</em>: 0.4</li>
+<li><em>Stile tratto</em>: Linea tratteggiata</li>
+</ul>
+<p>Premere quindi <em>Applica</em> e poi <em>OK</em>.</p>
+<p><img alt="Simbologia comuni" src="./assets/img/intro-workshop/Simbologia.jpg" /></p>
+<p><img alt="Simbologia comuni" src="./assets/img/intro-workshop/simbologia-2.jpg" /></p>
+<h4 id="selezione-elemento">Selezione elemento</h4>
+<p>Tra le operazioni più comuni nei database spaziali vi è quella di <strong>Query</strong>. In ambiente QGIS è possibile eseguire query per:</p>
+<ul>
+<li>
+<p><strong>Attributo</strong> selezionando elementi all'interno di un layer vettoriale che corrispondo a una data condizione di valori contenuti in un loro campo (es. comune con un certo nome, parco classificato con una specifica codifica);</p>
+</li>
+<li>
+<p><strong>Posizione</strong> selezionando elementi in base alla loro posizione relativa (es. parchi che ricadono in un certo comune).</p>
+</li>
+</ul>
+<h5 id="selezione-per-attributo">Selezione per attributo</h5>
+<p>Nel primo caso, per esempio, può essere isolare il solo comune di Arona. Per fare questo è necessario accedere alla componente tabellare del dataset dei comuni cliccando con il tasto destro sul layer <em>Ambiti amministrativi</em> e selezionando <strong>Apri tabella attributi</strong>. La nuova finestra mostrerà i record associati a ogni poligono visibile sulla mappa e i valori dei vari attributi (colonne).</p>
+<p><img alt="Tabella attributi" src="./assets/img/intro-workshop/tabella-attributi.jpg" /></p>
+<p>La colonna <em>comune_nom</em> in particolare contiene le informazioni relative al nome di ogni comune piemontese. Per poter individuare il territori di Arona, quindi, sarà necessario selezionare la riga in cui tale colonna ha valore <em>Arona</em>. Per poter effettuare questa selezione, cliccare nella barra sopra alla tabella sull'icona del quadrato giallo con la E associata all'operazione di <strong>Selezione per espressione</strong>. Dunque, nella nuova finestra nel box bianco di definizione a sinistra inserire la seguente espressione  * "comune_nom"  = 'Arona'<em> e premere </em>Seleziona elementi*.</p>
+<p><img alt="Selezione attributo" src="./assets/img/intro-workshop/selezione-arona.jpg" /></p>
+<p>A seguito di questa operazione, un solo elemento verrà selezionato nella tabella e sulla mappa. Per zoommare agevolmente su di esso, cliccare sull'icona del quadrato giallo con la lente di ingrandimento.</p>
+<p><img alt="Selezione arona" src="./assets/img/intro-workshop/arona-selected.jpg" /></p>
+<p>Per salvare in un nuovo layer il solo comune di Arona, lasciare selezionato l'elemento, premere il tasto destro sul layer dei comuni e dunque <strong><em>Esporta &gt; Salva elementi selezionati come...</em></strong>. Nella nuova schermata, definire il percorso di salvataggio e il nome del nuovo file che verrà automaticamente caricato sulla mappa al termine della procedura.</p>
+<p><img alt="Salva selected" src="./assets/img/intro-workshop/salva-selected.jpg" /></p>
+<p>Prima di procedere, disattivare la visualizzazione del vecchio layer dei comuni e copiarne la simbologia (Tasto destro sul layer, <strong><em>Stili &gt; Copia stile &gt; Tutti gli elementi dello stile</em></strong>). Incollare la simbologia appena copiata cliccando il tasto destro sul layer del comune di Arona, poi <strong><em>Stili &gt; Incolla stile &gt; Tutti gli elementi dello stile</em></strong>.</p>
+<h5 id="selezione-per-posizione">Selezione per posizione</h5>
+<p>Come individuare invece i parchi classificati di rilevanza regionale che ricadono nei confini di Arona?</p>
+<p>Per rispondere a questa domanda basta definire una semplice selezione per prossimità in ambiente QGIS. Dalla schermata principale del software, nella barra dei menù selezionare <strong><em>Vettore &gt; Strumenti di ricerca &gt; Seleziona per posizione...</em></strong>. Nella nuova finestra, definire:</p>
+<ul>
+<li><em>Seleziona elementi da</em>: layer dei parchi</li>
+<li><em>Predicato geometrico</em>: Interseca e Sono contenuti</li>
+<li><em>Rispetto agli elementi da</em>: layer del comune di Arona</li>
+</ul>
+<p><img alt="Selezione per posizione" src="./assets/img/intro-workshop/selezione-parchi.jpg" /></p>
+<p>Cliccando <em>Esegui</em>, QGIS effettuerà una selezione sul layer dei parchi, evidenziando in giallo solo gli elementi che intersecano o sono all'interno dei confini del comune.</p>
+<p><img alt="Selezione parchi in Arona" src="./assets/img/intro-workshop/parchi-selected.jpg" /></p>
+<p>Per visualizzare le informazioni dei parchi selezionati, cliccare con il tasto destro sul layer dei parchi e cliccare <em>Apri tabella attributi</em>. Nella tabella attributi in basso a sinistra, al posto di <em>Mostra tutti gli elementi</em>, indicare l'opzione <strong><em>Mostra elementi selezionati</em></strong>. In questo modo, la vista della tabella sarà filtrata mostrando unicamente le informazioni relative ai parchi selezionati sulla mappa.</p>
+<p><img alt="Selezione parchi in Arona - Tabella" src="./assets/img/intro-workshop/parchi-selected-tab.jpg" /></p>
+<h4 id="dati-da-openstreetmap">Dati da OpenStreetMap</h4>
+<p>I dati utilizzati finora provengono da geoportali cartografici ufficiali (Geoportale Regione Piemonte) e sono stati scaricati utilizzzando link diretti alle pagine di download dati degli stessi. Tuttavia, è interessante osservare come, attraverso plugin realizzati dalla comunità, sia possibile anche far dialogare agevolmente l'ambiente di QGIS anche con la realtà dei dati geografici volontari come quella di OpenStreetMap. In particolare, il plugin <strong>QuickOSM</strong> - scaricabile in <a href="#basemap">modo analogo</a> a quanto descritto in precedenza - rende possibile formulare con pochi comandi e un'interfaccia semplificata query alle API di Overpass per poter scaricare dati di interesse da <strong>OpenStreetMap</strong>.</p>
+<p>Una volta installato il plugin indicato, dal menù Vettore selezionare <strong><em>QuickOSM &gt; QuickOSM</em></strong>. Nella nuova finestra di QGIS è possibile indicare <em>chiave</em> e <em>valore</em>, ovvero il <strong>tag</strong> - etichetta - associato all'elemento geografico in OSM che si vuole scaricare nel proprio progetto di QGIS. Per esempio, per scaricare i dati relativi ai tracciati ciclabili di Arona è necessario indicare <em>highway</em> come chiave e <em>cycleway</em> come valore, specificando come area di ricerca Arona (sotto al box Chiave-Valore quindi selezionare l'opzione <strong>In</strong> e digitare nel box <em>Arona</em>). La scelta del tag di ricerca è dettata dalla codifica riconosciuta dalla comunità di OpenStreetMap e documentata sulla <a href="https://wiki.openstreetmap.org/wiki/Tag:highway%3Dcycleway">pagina di riferimento di WikiOSM</a>. Per avviare la ricerca, premere <em>Esegui richiesta</em>.</p>
+<p><img alt="Query cycleway QuickOSM" src="./assets/img/intro-workshop/QuickOSM-cycleway.jpg" /></p>
+<p>Il risultato dell'operazione verrà scaricato e visualizzato direttamente nel map canvas del progetto.</p>
+<p><img alt="Ciclabili OSM di Arona" src="./assets/img/intro-workshop/highway-cycleway-arona.jpg" /></p>
+<p>Analogamente, è possibile scaricare anche i parcheggi per biciclette (<a href="https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbicycle_parking"><em>amenity=bicycle_parking</em></a>) e i parchi cittadini (<a href="https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dpark"><em>leisure=park</em></a>).</p>
+<p><img alt="Dati OpenStreetMap in QGIS" src="./assets/img/intro-workshop/dati-osm.jpg" /></p>
+<p><strong><em>PS: Ti sembra che manchi qualche dato tra quelli mappati su OSM? Contribuisci al progetto di OpenStreetMap e rendi ancora più accurata e aggiornata la mappa!</em></strong></p>
+<h4 id="layout-di-stampa">Layout di stampa</h4>
+<p>E' ora il momento di realizzare il primo layout di stampa della propria mappa!</p>
+<p>Cliccare su <strong><em>Progetto &gt; Nuovo Layout di Stampa</em></strong> e, nella nuova finestra, indicare un titolo per la propria tavola di stampa.</p>
+<p>Dalla nuova finestra è possibile procedere nel definire le proprietà del file da stampare inserendo gli elementi cartografici di interesse come la visualizzazione della <strong>mappa</strong>, lo <strong>scalimetro</strong>, la <strong>legenda</strong>, la <strong>freccia del Nord</strong> e un <strong>titolo</strong> rappresentativo.</p>
+<p><img alt="Layout di stampa in QGIS" src="./assets/img/intro-workshop/layout-stampa.jpg" /></p>
+<p>Una volta soddisfatti del design del layout di stampa, è possibile procedere con la creazione di un file immagine o pdf cliccando nella barra dei menù su <strong><em>Layout &gt; Esporta come immagine/Esporta come PDF</em></strong>.</p>
+<p>Et voilà!</p>
+<p><img alt="Immagine stampa" src="./assets/img/intro-workshop/qgis-stampa.png" /></p>
+<h4 id="per-saperne-di-piu">Per saperne di più</h4>
+<p>Questo workshop è una semplice introduzione all'ampissimo mondo di potenzialità e funzionalità di QGIS e dei software GIS. Se questo semplice viaggio nel software ti ha incuriosito, ecco alcune risorse per approfondire le conoscenze sia teoriche che pratiche sul software:</p>
+<ul>
+<li><a href="https://docs.qgis.org/3.22/it/docs/training_manual/foreword/intro.html">Documentazione ufficiale QGIS</a></li>
+<li><a href="http://www.qgistutorials.com/en/">QGIS Tutorials and Tips</a></li>
+<li><a href="https://gis.stackexchange.com/questions/tagged/qgis">#QGIS su StackExchange</a></li>
+<li><a href="https://www.youtube.com/@qgishome">Canale YouTube della comunità di QGIS</a></li>
+<li><a href="https://www.youtube.com/@pigrecoinfinito/videos">Canale YouTube di PiGrecoInfinito</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLrHt3p3U-QzEDA0CsAa_nPzn8nitU5_h2">Canale YouTube di Paolo Corradeghini</a></li>
+</ul>
+<p>[...Lista in continuo aggiornamento...]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../../arch/arch-pc-intro/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Introduzione">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Introduzione
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/fede_gaspari" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Tars4815" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/federicagaspari/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accetta</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Gestisci le opzioni</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["i18n", "navigation.path", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

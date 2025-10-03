@@ -23,8 +23,13 @@ jobs:
         run: |
           pip install mkdocs-material mkdocs-static-i18n
 
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy MkDocs site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdocs gh-deploy --force
+          mkdocs gh-deploy --force --remote-name origin --branch gh-pages
