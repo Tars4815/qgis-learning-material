@@ -9,13 +9,14 @@ theme:
     text: Open Sans
   language: en
   features:
+    - i18n
     - navigation.path
     - navigation.footer
 
 # Customization
 extra:
   social:
-    - icon: fontawesome/brands/twitter 
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/fede_gaspari
     - icon: fontawesome/brands/github
       link: https://github.com/Tars4815
@@ -34,34 +35,34 @@ repo_url: https://github.com/Tars4815/qgis-learning-material
 plugins:
   - search
   - i18n:
-      default_language: en
       languages:
-        en: English
-        it: Italiano
-      no_translation:
-        en: "This page isn't translated to English."
-        it: "Questa pagina non è tradotta in italiano."
-
+        - locale: en 
+          name: English
+          build: true
+          default: true
+        - locale: it
+          name: Italiano
+          build: true
+          default: false
+      nav_translations:
+        it:
+          Home: Home
+          Courses: Corsi
 
 markdown_extensions:
   - attr_list
 
-# Page tree
+# Page tree (language-neutral, i18n will pull from docs/en and docs/it)
 nav:
   - Home: index.md
   - Courses:
-      - Sistemi Informativi Territoriali:
-          - sit-intro.it.md
-          - sit-qgis00.it.md
-      - a. 2023:
-          - Intro Workshop: intro-workshop.md
-          - Sistemi Informativi Territoriali:
-              - sit-about.md
-              - sit-qgis00.md
-              - sit-qgis01.md
-              - sit-qgis02.md
-      - a. 2022:
-          - Piacenza Campus:
-              - arch-pc-about.md
-              - arch-pc-intro.md
-              - arch-pc-layout.md
+      - Environmental Engineering: 
+          - sit/sit-about.md
+          - sit/sit-intro.md
+          - sit/sit-qgis00.md
+          - sit/sit-qgis01.md
+      - Architecture:
+          - arch/arch-pc-about.md
+          - arch/arch-pc-intro.md
+  - Workshop:
+      - workshop/intro-workshop.md

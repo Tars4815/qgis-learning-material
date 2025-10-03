@@ -127,7 +127,7 @@ In ambiente GIS esistono principalmente due modi di concettualizzare o modellare
 * **Oggetti distribuiti**:
 rappresentano una grandezza il cui valore è funzione della posizione e si può misurare in ogni luogo. In questo caso, i GIS adottando il modello **raster** in cui informazioni su oggetti continui sono codificate da un insieme di celle (pixel) di una griglia, ciascuna con il suo valore relativo. Il formato più diffuso è il *tif*, usato per ortofoto e modelli digitali del terreno.
 
-![Raster model](./assets/img/raster-model.png "Raster model")
+![Raster model](../assets/img/raster-model.png "Raster model")
 
 Per l'esercizio con QGIS verranno utilizzati dati vettoriali provenienti da diverse fonti:
 
