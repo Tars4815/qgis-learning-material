@@ -1,4 +1,5 @@
 site_name: QGIS Learning Material
+site_url: https://tars4815.github.io/qgis-learning-material/
 
 # Configuration
 theme:
@@ -9,9 +10,11 @@ theme:
     text: Open Sans
   language: en
   features:
-    - i18n
     - navigation.path
     - navigation.footer
+    - navigation.tabs
+    - toc.integrate
+    
 
 # Customization
 extra:
