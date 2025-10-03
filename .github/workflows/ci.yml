@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,6 +23,8 @@ jobs:
         run: |
           pip install mkdocs-material mkdocs-static-i18n
 
-      - name: Build and Deploy
+      - name: Deploy MkDocs site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdocs gh-deploy --force
