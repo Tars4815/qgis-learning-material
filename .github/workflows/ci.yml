@@ -22,7 +22,7 @@ jobs:
           cache: 'pip'
       - name: Install dependencies
         run: |
-          pip install mkdocs-material mkdocs-static-i18n
+          pip install install -r requirements.txt
 
       - name: Configure Git
         run: |
