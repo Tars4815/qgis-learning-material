@@ -23,7 +23,7 @@ E' un software:
 
 Inoltre, QGIS ha il grande vantaggio per chi lavora con versioni più datate di poter gestire anche progetti realizzati con versioni più recenti.
 
-![Logo QGIS](./assets/img/QGIS-logo.png "Logo QGIS")
+![Logo QGIS](../assets/img/QGIS-logo.png "Logo QGIS")
 
 ## **Le funzionalità principali**
 
@@ -59,7 +59,7 @@ La GUI di QGIS Desktop è principalmente composta da:
 4. **Area di visualizzazione layers** ovvero la map canvas su cui è possibile valutare graficamente la componente geografica e geometrica dei dati.
 5. **Barra di stato** che indica lo stato di avanzamento di eventuali processamenti avviati ed eventuali errori riscontrati.
 
-![QGIS Graphic User Interface](./assets/img/GUI.png "QGIS GUI")
+![QGIS Graphic User Interface](../assets/img/GUI.png "QGIS GUI")
 
 ## Gestione dati
 
@@ -80,7 +80,7 @@ Cosa serve per lavorare in QGIS?
 
 Questo concetto tipicamente geometrico è ancora più importante in cartografia per localizzare correttamente un punto appartenente al territorio.
 
-![Sistema di riferimento](./assets/img/cartesian-sr.png "Sistema di riferimento")
+![Sistema di riferimento](../assets/img/cartesian-sr.png "Sistema di riferimento")
 
 ## Sistema di riferimento geografico
 
@@ -101,11 +101,11 @@ Normalmente si usano diversi SR per planimetria e altimetria.
 
 * **planimetria**: riferimento ellissoidico (sferico per piccole o grandi scale). Perché non lo uso per l'altimetria? Perché privo di legame con il campo della gravità.
 
-![Planimetria](./assets/img/planimetria.png "Sistema di riferimento planimetrica")
+![Planimetria](../assets/img/planimetria.png "Sistema di riferimento planimetrica")
 
 * **altimetria**: riferimento geoidico (non ha descrizione analitica semplice). Perché non lo uso per la planimetria? Di impiego molto complesso nel trattamento delle osservazioni effettuate per la planimetria (angoli e distanze).
 
-![Geoide](./assets/img/geoid.png "Geoide")
+![Geoide](../assets/img/geoid.png "Geoide")
 
 ## Datum
 
@@ -134,7 +134,7 @@ La superficie della terra è curva ma ci sono molte ragioni che ci spingono a ra
 
 Per queste ragioni anche in cartografia numerica si utilizzano le diverse **proiezioni cartografiche**.
 
-![Projection](./assets/img/proj.png "Projection")
+![Projection](../assets/img/proj.png "Projection")
 
 Le proiezioni cartografiche trasportano coordinate dall'ellissoide del sistema di riferimento al piano della carta. **Le due superfici non sono topologicamente equivalenti, quindi non è possibile passare da ellissoide a carta senza deformazioni.**
 
@@ -203,12 +203,12 @@ Esistono principalmente due modi di concettualizzare o modellare la realtà da u
 
 * **Oggetti discreti**: possono essere osservati o descritti nel mondo reale ed identificati da una sua posizione.
 
-![Vector model](./assets/img/vector-model.jpg "Vector model")
+![Vector model](../assets/img/vector-model.jpg "Vector model")
 
 * **Oggetti distribuiti**:
 rappresentano una grandezza il cui valore è funzione della posizione e si può misurare in ogni luogo.
 
-![Raster model](./assets/img/raster-model.png "Raster model")
+![Raster model](../assets/img/raster-model.png "Raster model")
 
 Il modello **vettore** in cui le informazioni su oggetti discreti sono codificate ed archiviate come insieme di coordinate x, y, z.
 
@@ -222,21 +222,21 @@ I modelli vettoriali sono particolarmente utili per rappresentare e memorizzare 
 
 **Nel modello vettoriale le informazioni su oggetti discreti sono codificate e archiviate come insieme di coordinate x, y, z.**
 
-![Vector model primitives](./assets/img/vector-model-primitive.png "Vector model primitives")
+![Vector model primitives](../assets/img/vector-model-primitive.png "Vector model primitives")
 
 Il modello **raster** in cui informazioni su oggetti continui sono codificate da un insieme di celle di una griglia, ciascuna con il suo valore relativo.
 
 I valori sono celle di una griglia con determinate estensioni e una determinata risoluzione.
 
-![Raster model primitives](./assets/img/raster-model-primitive.png "Raster model primitives")
+![Raster model primitives](../assets/img/raster-model-primitive.png "Raster model primitives")
 
 ## Importazione shapefile
 
-![Shapefile import](./assets/img/shapefile-import.png "Shapefile import")
+![Shapefile import](../assets/img/shapefile-import.png "Shapefile import")
 
-![Shapefile import](./assets/img/shapefile-import-1.png "Shapefile import")
+![Shapefile import](../assets/img/shapefile-import-1.png "Shapefile import")
 
-![Shapefile import](./assets/img/shapefile-import-2.png "Shapefile import")
+![Shapefile import](../assets/img/shapefile-import-2.png "Shapefile import")
 
 ## Gestione proprietà shapefile
 

@@ -24,7 +24,7 @@ Dal 2006, l'organizzazione della conferenza è coordinata a livello globale dall
 
 La prossima conferenza FOSS4G avrà luogo a **Auckland in Nuova Zelanda** dal 17 al 23 novembre 2025.
 
-![Logo FOSS4G 2025](https://2025.foss4g.org/_next/static/media/foss4g_2025_logo_interim.28038a5c.png)
+![Logo FOSS4G 2025](https://2025.foss4g.org/_app/immutable/assets/Nav-Logo.W_Yr4oR8.svg)
 
 Parallelamente, con cadenza annuale, vengono organizzate delle conferenze locali, tendenzialmente a livello nazionale, dai local chapter di OSGeo. In Italia la conferenza prende il nome di **FOSS4G-IT**. Nel 2023 avrà luogo a **Bari** dall'11 al 14 giugno nell'ambito dei **GEODaysIT 2023**.
 
@@ -72,7 +72,7 @@ Sin dalla sua prima versione rilasciata pubblicamente nel 2002, il software ha r
 
 In occasione di ogni edizione di FOSS4G, gli sviluppatori presentano le nuove funzionalità del software e gli indirizzi di sviluppo per le prossime versioni. Uno dei grandi punti di forza di QGIS è proprio la sua flessibilità in termini di aggiornamento: ogni 4 mesi, infatti, viene rilasciata una nuova **Long Term Release** (più stabile per l'utilizzo frequente) e una versione avanzata con funzionalità avanzate in fase di test, mantenendo però sempre compatibilità per i progetti realizzati con le versioni precedenti. Molto spesso tali funzionalità vengono prima abbozzate e ideate e poi sviluppate durante gli incontri online e in presenza organizzati dalla community (*QGIS Hackfest*, *User conference*, *Contributor Meeting* e *QGIS Open Day*). Spesso questi incontri vengono organizzati in luoghi che daranno poi il nome alla più recente versione del software. QGIS 3.28 prende il nome da Firenze, in onore dell'ultimo meeting avvenuto pochi giorni prima di FOSS4G 2023.
 
-![QGIS Contributors Meeting](https://www.qgis.org/it/_static/images/about-community.jpeg)
+![QGIS Contributors Meeting](https://uc2025.qgis.org/images/20250603_151948_qgis_uc_2025_group_photo.jpeg)
 
 Tra le funzionalità principali di QGIS vi sono:
 
@@ -110,7 +110,7 @@ La GUI di QGIS Desktop è principalmente composta da:
 4. **Area di visualizzazione layers** ovvero la map canvas su cui è possibile valutare graficamente la componente geografica e geometrica dei dati.
 5. **Barra di stato** che indica lo stato di avanzamento di eventuali processamenti avviati ed eventuali errori riscontrati.
 
-![QGIS Graphic User Interface](./assets/img/GUI.png "QGIS GUI")
+![QGIS Graphic User Interface](../assets/img/GUI.png "QGIS GUI")
 
 ### Esercizio
 
@@ -122,7 +122,7 @@ In ambiente GIS esistono principalmente due modi di concettualizzare o modellare
 
 * **Oggetti discreti**: possono essere osservati o descritti nel mondo reale ed identificati da una sua posizione. In questo caso viene adottato il cosiddetto **modello vettoriale** che indica una rappresentazione di entità geografiche attraverso **punti**, **linee**, **poligoni**. Tipicamente vengono utilizzati file in formato *shapefile*, *geojson* o *geopackage*.
 
-![Vector model](./assets/img/vector-model.jpg "Vector model")
+![Vector model](../assets/img/vector-model.jpg "Vector model")
 
 * **Oggetti distribuiti**:
 rappresentano una grandezza il cui valore è funzione della posizione e si può misurare in ogni luogo. In questo caso, i GIS adottando il modello **raster** in cui informazioni su oggetti continui sono codificate da un insieme di celle (pixel) di una griglia, ciascuna con il suo valore relativo. Il formato più diffuso è il *tif*, usato per ortofoto e modelli digitali del terreno.
@@ -131,8 +131,8 @@ rappresentano una grandezza il cui valore è funzione della posizione e si può 
 
 Per l'esercizio con QGIS verranno utilizzati dati vettoriali provenienti da diverse fonti:
 
-- [Ambiti Amministrativi - Regione Piemonte](https://www.datigeo-piem-download.it/direct/Geoportale/RegionePiemonte/Limiti_amministrativi/Ambiti_amministrativi_comuni_serie_storica/AMBITI_AMMINISTRATIVI_COMUNI_2021.zip) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 24/05/2025]
-- [Aree Protette Natura 2000 - Regione Piemonte](https://www.geoportale.piemonte.it/geonetwork/srv/ita/catalog.search#/metadata/r_piemon:4368c018-6b58-4834-b233-c45360cb1206) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 24/05/2025]
+- [Ambiti Amministrativi - Regione Piemonte](https://www.datigeo-piem-download.it/direct/Geoportale/RegionePiemonte/Limiti_amministrativi/Ambiti_amministrativi_comuni_serie_storica/AMBITI_AMMINISTRATIVI_COMUNI_2021.zip) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 03/10/2025]
+- [Aree Protette Natura 2000 - Regione Piemonte](https://www.geoportale.piemonte.it/geonetwork/srv/ita/catalog.search#/metadata/r_piemon:4368c018-6b58-4834-b233-c45360cb1206) [FONTE: *Geoportale Piemonte* - Ultimo Accesso: 03/10/2025]
 - [Dati OpenStreetMap](https://www.openstreetmap.org/#map=14/45.7500/8.5658)
 
 #### Nuovo progetto
@@ -143,7 +143,7 @@ In questo modo si crea un nuovo progetto QGIS in cui poter lavorare: esso sarà 
 
 Prima di iniziare a caricare nuovi dati nel progetto, è necessario definire il **sistema di riferimento cartografico** all'interno del quale sono inquadrati i dati vettoriali. Questo passaggio è essenziale per permettere la corretta interpretazione del riferimento geografico contenuto nei dati, definendo il corretto sistema di coordinate e l'unità di misura del progetto. Per l'Italia e Regione Piemonte il sistema di riferimento adottato è il WGS84 - UTM Zone 32 Nord, indicato con codifica standard EPSG: 32632. Tale informazione deve essere indicata anche nel progetto QGIS accedendo al menù delle proprietà da ***Progetto > Proprietà > Tab SR***. Nel box di ricerca digitare 32632 e scegliere la voce corrispondente dalla lista di Sistemi di Riferimento. Una volta selezionata, cliccare *Applica* e poi *Ok* per tornare alla visualizzazione principale del progetto.
 
-![Scelta del sistema di riferimento](./assets/img/intro-workshop/sr.jpg "Scelta del sistema di riferimento")
+![Scelta del sistema di riferimento](../assets/img/intro-workshop/sr.jpg "Scelta del sistema di riferimento")
 
 Salvare quindi il progetto dal menù ***Progetto > Salva***.
 
@@ -156,7 +156,7 @@ In tale modo si procede quindi con il caricamento dei dati .shp dei confini ammi
 
 Una volta caricati i dati, la visibilità di un dato strato informativo può essere attivata e disattivata attraverso il flag accanto al nome del layer. Per portare in primo piano di visualizzazione un layer, invece, basta selezionare lo strato di interesse dalla lista dei layer caricati e tenere premuto il tasto sinistro per trascinarlo all'inizio della lista.
 
-![Caricamento vettori shapefile](./assets/img/intro-workshop/vector-layers.jpg)
+![Caricamento vettori shapefile](../assets/img/intro-workshop/vector-layers.jpg)
 
 #### Basemap
 
@@ -166,11 +166,11 @@ Attraverso lo sviluppo e la condivisione sulla [repository ufficiale dei QGIS Py
 
 Per accedere alla lista dei possibili plugins installabili è necessario cliccare su ***Plugins > Gestisci ed Installa Plugins***. Nella nuova finestra è quindi possibile valutare i pacchetti installati e quelli già integrati. Nel tab *Tutto* nella barra di ricerca digitare **QuickMapServices** e selezionare il risultato corrispondente. Nel box a destra della finestra si ha quindi una panoramica delle funzionalità di tale plugins, dei riferimenti per la documentazione con i crediti agli autori e le valutazioni degli utenti. Per installare, cliccare *Installa Plugin*.
 
-![Installazione plugin](./assets/img/intro-workshop/plugins.jpg)
+![Installazione plugin](../assets/img/intro-workshop/plugins.jpg)
 
 Nella schermata QGIS principale dal menù ***Web > QuickMapServices***, selezionare quindi *OSM > OSM Standard*. Questa selezione permettera di collegarsi attraverso una connessione di tipo WMS (Web Map Services) a OpenStreetMap per poterne visualizzare dinamicamente i dati nel progetto.
 
-![QuickMapServices OSM](./assets/img/intro-workshop/QuickMapServices.jpg)
+![QuickMapServices OSM](../assets/img/intro-workshop/QuickMapServices.jpg)
 
 #### Simbologia dati
 
@@ -183,9 +183,9 @@ Per poter lavorare al meglio e svolgere con facilità le operazioni successive, 
 
 Premere quindi *Applica* e poi *OK*.
 
-![Simbologia comuni](./assets/img/intro-workshop/Simbologia.jpg)
+![Simbologia comuni](../assets/img/intro-workshop/Simbologia.jpg)
 
-![Simbologia comuni](./assets/img/intro-workshop/simbologia-2.jpg)
+![Simbologia comuni](../assets/img/intro-workshop/simbologia-2.jpg)
 
 #### Selezione elemento
 
@@ -199,19 +199,19 @@ Tra le operazioni più comuni nei database spaziali vi è quella di **Query**. I
 
 Nel primo caso, per esempio, può essere isolare il solo comune di Arona. Per fare questo è necessario accedere alla componente tabellare del dataset dei comuni cliccando con il tasto destro sul layer *Ambiti amministrativi* e selezionando **Apri tabella attributi**. La nuova finestra mostrerà i record associati a ogni poligono visibile sulla mappa e i valori dei vari attributi (colonne).
 
-![Tabella attributi](./assets/img/intro-workshop/tabella-attributi.jpg)
+![Tabella attributi](../assets/img/intro-workshop/tabella-attributi.jpg)
 
 La colonna *comune_nom* in particolare contiene le informazioni relative al nome di ogni comune piemontese. Per poter individuare il territori di Arona, quindi, sarà necessario selezionare la riga in cui tale colonna ha valore *Arona*. Per poter effettuare questa selezione, cliccare nella barra sopra alla tabella sull'icona del quadrato giallo con la E associata all'operazione di **Selezione per espressione**. Dunque, nella nuova finestra nel box bianco di definizione a sinistra inserire la seguente espressione  * "comune_nom"  = 'Arona'* e premere *Seleziona elementi*.
 
-![Selezione attributo](./assets/img/intro-workshop/selezione-arona.jpg )
+![Selezione attributo](../assets/img/intro-workshop/selezione-arona.jpg )
 
 A seguito di questa operazione, un solo elemento verrà selezionato nella tabella e sulla mappa. Per zoommare agevolmente su di esso, cliccare sull'icona del quadrato giallo con la lente di ingrandimento.
 
-![Selezione arona](./assets/img/intro-workshop/arona-selected.jpg)
+![Selezione arona](../assets/img/intro-workshop/arona-selected.jpg)
 
 Per salvare in un nuovo layer il solo comune di Arona, lasciare selezionato l'elemento, premere il tasto destro sul layer dei comuni e dunque ***Esporta > Salva elementi selezionati come...***. Nella nuova schermata, definire il percorso di salvataggio e il nome del nuovo file che verrà automaticamente caricato sulla mappa al termine della procedura.
 
-![Salva selected](./assets/img/intro-workshop/salva-selected.jpg)
+![Salva selected](../assets/img/intro-workshop/salva-selected.jpg)
 
 Prima di procedere, disattivare la visualizzazione del vecchio layer dei comuni e copiarne la simbologia (Tasto destro sul layer, ***Stili > Copia stile > Tutti gli elementi dello stile***). Incollare la simbologia appena copiata cliccando il tasto destro sul layer del comune di Arona, poi ***Stili > Incolla stile > Tutti gli elementi dello stile***.
 
@@ -225,15 +225,15 @@ Per rispondere a questa domanda basta definire una semplice selezione per prossi
 - *Predicato geometrico*: Interseca e Sono contenuti
 - *Rispetto agli elementi da*: layer del comune di Arona
 
-![Selezione per posizione](./assets/img/intro-workshop/selezione-parchi.jpg)
+![Selezione per posizione](../assets/img/intro-workshop/selezione-parchi.jpg)
 
 Cliccando *Esegui*, QGIS effettuerà una selezione sul layer dei parchi, evidenziando in giallo solo gli elementi che intersecano o sono all'interno dei confini del comune.
 
-![Selezione parchi in Arona](./assets/img/intro-workshop/parchi-selected.jpg)
+![Selezione parchi in Arona](../assets/img/intro-workshop/parchi-selected.jpg)
 
 Per visualizzare le informazioni dei parchi selezionati, cliccare con il tasto destro sul layer dei parchi e cliccare *Apri tabella attributi*. Nella tabella attributi in basso a sinistra, al posto di *Mostra tutti gli elementi*, indicare l'opzione ***Mostra elementi selezionati***. In questo modo, la vista della tabella sarà filtrata mostrando unicamente le informazioni relative ai parchi selezionati sulla mappa.
 
-![Selezione parchi in Arona - Tabella](./assets/img/intro-workshop/parchi-selected-tab.jpg)
+![Selezione parchi in Arona - Tabella](../assets/img/intro-workshop/parchi-selected-tab.jpg)
 
 #### Dati da OpenStreetMap
 
@@ -241,15 +241,15 @@ I dati utilizzati finora provengono da geoportali cartografici ufficiali (Geopor
 
 Una volta installato il plugin indicato, dal menù Vettore selezionare ***QuickOSM > QuickOSM***. Nella nuova finestra di QGIS è possibile indicare *chiave* e *valore*, ovvero il **tag** - etichetta - associato all'elemento geografico in OSM che si vuole scaricare nel proprio progetto di QGIS. Per esempio, per scaricare i dati relativi ai tracciati ciclabili di Arona è necessario indicare *highway* come chiave e *cycleway* come valore, specificando come area di ricerca Arona (sotto al box Chiave-Valore quindi selezionare l'opzione **In** e digitare nel box *Arona*). La scelta del tag di ricerca è dettata dalla codifica riconosciuta dalla comunità di OpenStreetMap e documentata sulla [pagina di riferimento di WikiOSM](https://wiki.openstreetmap.org/wiki/Tag:highway%3Dcycleway). Per avviare la ricerca, premere *Esegui richiesta*.
 
-![Query cycleway QuickOSM](./assets/img/intro-workshop/QuickOSM-cycleway.jpg)
+![Query cycleway QuickOSM](../assets/img/intro-workshop/QuickOSM-cycleway.jpg)
 
 Il risultato dell'operazione verrà scaricato e visualizzato direttamente nel map canvas del progetto.
 
-![Ciclabili OSM di Arona](./assets/img/intro-workshop/highway-cycleway-arona.jpg)
+![Ciclabili OSM di Arona](../assets/img/intro-workshop/highway-cycleway-arona.jpg)
 
 Analogamente, è possibile scaricare anche i parcheggi per biciclette ([*amenity=bicycle_parking*](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dbicycle_parking)) e i parchi cittadini ([*leisure=park*](https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dpark)).
 
-![Dati OpenStreetMap in QGIS](./assets/img/intro-workshop/dati-osm.jpg)
+![Dati OpenStreetMap in QGIS](../assets/img/intro-workshop/dati-osm.jpg)
 
 ***PS: Ti sembra che manchi qualche dato tra quelli mappati su OSM? Contribuisci al progetto di OpenStreetMap e rendi ancora più accurata e aggiornata la mappa!***
 
@@ -261,13 +261,13 @@ Cliccare su ***Progetto > Nuovo Layout di Stampa*** e, nella nuova finestra, ind
 
 Dalla nuova finestra è possibile procedere nel definire le proprietà del file da stampare inserendo gli elementi cartografici di interesse come la visualizzazione della **mappa**, lo **scalimetro**, la **legenda**, la **freccia del Nord** e un **titolo** rappresentativo.
 
-![Layout di stampa in QGIS](./assets/img/intro-workshop/layout-stampa.jpg)
+![Layout di stampa in QGIS](../assets/img/intro-workshop/layout-stampa.jpg)
 
 Una volta soddisfatti del design del layout di stampa, è possibile procedere con la creazione di un file immagine o pdf cliccando nella barra dei menù su ***Layout > Esporta come immagine/Esporta come PDF***.
 
 Et voilà!
 
-![Immagine stampa](./assets/img/intro-workshop/qgis-stampa.png)
+![Immagine stampa](../assets/img/intro-workshop/qgis-stampa.png)
 
 #### Per saperne di più
 

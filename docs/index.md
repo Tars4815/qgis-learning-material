@@ -8,10 +8,11 @@ Here you will find learning material focused on QGIS and its applications in dif
 
 * **[Sistemi Informativi Territoriali](sit-about.it.md)** 🇮🇹 - Last update: March 8th, 2023
 * **[QGIS for Fundamentals of Representation](arch-pc-about.md)** 🇮🇹 🇬🇧 - Last update: November 2022
+* **[Introduction to QGIS for Urban Planning](urb/about.it.md)** 🇮🇹 - Under construction
 
 ## Workshop & Other
 
-* **[Intro QGIS Workshop](intro-workshop.it.md)** 🇮🇹 - Last update: March 17th, 2023
+* **[Intro QGIS Workshop](workshop/intro-workshop.it.md)** 🇮🇹 - Last update: May 22nd, 2026
 
 ## About the author(s)
 
