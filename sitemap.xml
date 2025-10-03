@@ -64,6 +64,13 @@
         <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis02/"/>
     </url>
     <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/urb/about/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/urb/about/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/urb/about/"/>
+    </url>
+    <url>
         <loc>https://tars4815.github.io/qgis-learning-material/workshop/intro-workshop/</loc>
         <lastmod>2025-10-03</lastmod>
         <changefreq>daily</changefreq>
@@ -138,6 +145,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/sit/sit-qgis02/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/sit/sit-qgis02/"/>
+    </url>
+    <url>
+        <loc>https://tars4815.github.io/qgis-learning-material/it/urb/about/</loc>
+        <lastmod>2025-10-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="it" href="https://tars4815.github.io/qgis-learning-material/it/urb/about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tars4815.github.io/qgis-learning-material/urb/about/"/>
     </url>
     <url>
         <loc>https://tars4815.github.io/qgis-learning-material/it/workshop/intro-workshop/</loc>
