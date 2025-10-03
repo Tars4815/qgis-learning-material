@@ -1,0 +1,1829 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../arch-pc-about/">
+      
+      
+        <link rel="next" href="../arch-pc-layout/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Introduzione - QGIS Learning Material</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduzione" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="QGIS Learning Material" class="md-header__button md-logo" aria-label="QGIS Learning Material" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QGIS Learning Material
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduzione
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Tars4815/qgis-learning-material" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="QGIS Learning Material" class="md-nav__button md-logo" aria-label="QGIS Learning Material" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    QGIS Learning Material
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Tars4815/qgis-learning-material" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Courses
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Courses
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sistemi Informativi Territoriali
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Sistemi Informativi Territoriali
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sit-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduzione
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sit-qgis00/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGIS 00
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    a. 2023
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            a. 2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro-workshop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intro Workshop
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Sistemi Informativi Territoriali
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Sistemi Informativi Territoriali
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sit-about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sit-qgis00/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGIS 00
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sit-qgis01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGIS 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sit-qgis02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGIS02
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    a. 2022
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            a. 2022
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Piacenza Campus
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Piacenza Campus
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arch-pc-about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architettura Piacenza Campus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Introduzione
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduzione
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#che-cose-un-gis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Che cos'è un GIS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-funzionalita-principali" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le funzionalità principali
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphic-user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphic User Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestione-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestione dati
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-di-riferimento-geografico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema di riferimento geografico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proiezioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proiezioni
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proiezioni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impostazioni-sr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impostazioni SR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sr-del-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      SR del layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riproiezione-shapefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Riproiezione - Shapefile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modellazione-della-realta-con-qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modellazione della realtà con QGIS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importazione-shapefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importazione shapefile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestione-proprieta-shapefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestione proprietà shapefile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestione proprietà shapefile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etichette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etichette
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dati-vettoriali" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati vettoriali
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dati vettoriali">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabella-attributi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabella attributi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggiunta-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aggiunta campo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calcolatore-di-campi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calcolatore di campi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rimuovi-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rimuovi campo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dati-raster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati raster
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dati raster">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelli-digitali-delle-altezze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelli digitali delle altezze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ortofoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ortofoto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importare-un-raster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importare un raster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riproiezione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Riproiezione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proprieta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proprietà
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stile_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arch-pc-layout/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Creazione di layout di stampa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#che-cose-un-gis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Che cos'è un GIS?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-funzionalita-principali" class="md-nav__link">
+    <span class="md-ellipsis">
+      Le funzionalità principali
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphic-user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphic User Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestione-dati" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestione dati
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sistema-di-riferimento-geografico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema di riferimento geografico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Datum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proiezioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proiezioni
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proiezioni">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#impostazioni-sr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impostazioni SR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sr-del-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      SR del layer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riproiezione-shapefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Riproiezione - Shapefile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modellazione-della-realta-con-qgis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modellazione della realtà con QGIS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importazione-shapefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importazione shapefile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestione-proprieta-shapefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestione proprietà shapefile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestione proprietà shapefile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etichette" class="md-nav__link">
+    <span class="md-ellipsis">
+      Etichette
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dati-vettoriali" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati vettoriali
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dati vettoriali">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tabella-attributi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabella attributi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aggiunta-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aggiunta campo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calcolatore-di-campi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calcolatore di campi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rimuovi-campo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rimuovi campo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dati-raster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dati raster
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dati raster">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelli-digitali-delle-altezze" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelli digitali delle altezze
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ortofoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ortofoto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importare-un-raster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importare un raster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#riproiezione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Riproiezione
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proprieta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proprietà
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stile_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="introduzione">Introduzione</h1>
+<h2 id="che-cose-un-gis"><strong>Che cos'è un GIS?</strong></h2>
+<p>Un <strong>GIS</strong> (<em>Geographic Information System</em>) è un sistema informativo computerizzato che permette di <strong>acquisire</strong>, <strong>registrare</strong>, <strong>analizzare</strong>, <strong>visualizzare</strong>, <strong>restituire</strong>, <strong>condividere</strong> e <strong>presentare</strong> informazioni da <strong>dati geografici</strong> (<em>georiferiti</em>).</p>
+<p>Permette quindi di associare i dati alla loro posizione geografica sulla superficie terrestre e di elaborarli per estrarne informazioni.</p>
+<p>I principali <strong>software GIS</strong> disponibili sono:</p>
+<ul>
+<li>ArcGIS</li>
+<li>QGIS</li>
+<li>GeoMedia</li>
+<li>SagaGIS
+...</li>
+</ul>
+<p><strong>Perché QGIS?</strong></p>
+<p>E' un software:</p>
+<ul>
+<li>Free and Open Source</li>
+<li>In forte evoluzione -&gt; Ogni 4 mesi viene rilasciata una nuova release</li>
+</ul>
+<p>Inoltre, QGIS ha il grande vantaggio per chi lavora con versioni più datate di poter gestire anche progetti realizzati con versioni più recenti.</p>
+<p><img alt="Logo QGIS" src="../assets/img/QGIS-logo.png" title="Logo QGIS" /></p>
+<h2 id="le-funzionalita-principali"><strong>Le funzionalità principali</strong></h2>
+<ul>
+<li><strong>Visualizzazione dei dati</strong>:</li>
+</ul>
+<p>si possono visualizzare e sovrappore dati vettoriali e raster in diversi formati e proiezioni cartografiche.</p>
+<ul>
+<li><strong>Esplorazione di dati e creazione di mappe</strong>:</li>
+</ul>
+<p>si possono comporre mappe ed esplorare interattivamente dati spaziali tramite una facile interfaccia grafica.</p>
+<ul>
+<li><strong>Creazione, editing, gestione, esportazione</strong>:</li>
+</ul>
+<p>possono essere eseguite analisi spaziali di dati.</p>
+<ul>
+<li><strong>Collegamento a DB esterni</strong></li>
+</ul>
+<p>è possibile visualizzare e interrogare dati memorizzati su DB (es. MySQL, PostgreSQL...) esterni.</p>
+<ul>
+<li><strong>Pubblicazione di mappe sul web</strong></li>
+</ul>
+<p>con plugin nativi e non, QGIS permette di definire le impostazioni per realizzare una mappa interattiva da condividere su pagine web.</p>
+<p>...e molto altro!</p>
+<h2 id="graphic-user-interface">Graphic User Interface</h2>
+<p>La GUI di QGIS Desktop è principalmente composta da:</p>
+<ol>
+<li><strong>Barra dei menù</strong> dove è possibile trovare le principali funzionalità di progetto QGIS raggruppate per tematiche.</li>
+<li><strong>Barra delle applicazioni</strong> personalizzabile che include le scorciatoie ai tool di più comune utilizzo per la manipolazione dei dati in ambiente GIS.</li>
+<li><strong>Elenco dei layers caricati</strong> che indica quali dati sono stati inseriti nel progetto, specificandone le caratteristiche, la simbologia e la visibilità.</li>
+<li><strong>Area di visualizzazione layers</strong> ovvero la map canvas su cui è possibile valutare graficamente la componente geografica e geometrica dei dati.</li>
+<li><strong>Barra di stato</strong> che indica lo stato di avanzamento di eventuali processamenti avviati ed eventuali errori riscontrati.</li>
+</ol>
+<p><img alt="QGIS Graphic User Interface" src="../assets/img/GUI.png" title="QGIS GUI" /></p>
+<h2 id="gestione-dati">Gestione dati</h2>
+<p><strong>Come vengono gestiti i dati geografici in QGIS?</strong></p>
+<p>Cosa serve per lavorare in QGIS?</p>
+<ul>
+<li>Saper gestire dati geografici nei <strong>diversi sistemi di coordinate</strong> geografiche e/o proiettate;</li>
+<li>Saper gestire un <strong>progetto</strong>;</li>
+<li>Saper importare:<ul>
+<li>Dati <strong>vettoriali</strong> (e.g. shapefile .shp, GeoJSON .geojson...)</li>
+<li>Dati <strong>raster</strong> (e.g. .tiff)</li>
+</ul>
+</li>
+<li>Comprendere la logica dei <strong>plugins</strong></li>
+</ul>
+<p><strong>A cosa serve un sistema di riferimento?</strong></p>
+<p><strong>Sistema di riferimento</strong> -&gt; insieme di regole che ci consentono di risalire alla posizione nello spazio in maniera univoca.</p>
+<p>Questo concetto tipicamente geometrico è ancora più importante in cartografia per localizzare correttamente un punto appartenente al territorio.</p>
+<p><img alt="Sistema di riferimento" src="../assets/img/cartesian-sr.png" title="Sistema di riferimento" /></p>
+<h2 id="sistema-di-riferimento-geografico">Sistema di riferimento geografico</h2>
+<p>Sicuramente il sistema di riferimento geografico è il più conosciuto e comprensivo e forse anche uno tra i più potenti sistemi di georeferenziazione.</p>
+<p><strong>Esso è metrico, standard, stabile, unico.</strong></p>
+<p>Utilizza un riferimento ben definito e fisso basato su:</p>
+<ul>
+<li>asse di rotazione terrestre</li>
+<li>centro di massa</li>
+<li>meridiano di riferimento di Greenwich</li>
+<li>equatore</li>
+</ul>
+<p>[INSERIRE IMMAGINE]</p>
+<p>Normalmente si usano diversi SR per planimetria e altimetria.</p>
+<ul>
+<li><strong>planimetria</strong>: riferimento ellissoidico (sferico per piccole o grandi scale). Perché non lo uso per l'altimetria? Perché privo di legame con il campo della gravità.</li>
+</ul>
+<p><img alt="Planimetria" src="../assets/img/planimetria.png" title="Sistema di riferimento planimetrica" /></p>
+<ul>
+<li><strong>altimetria</strong>: riferimento geoidico (non ha descrizione analitica semplice). Perché non lo uso per la planimetria? Di impiego molto complesso nel trattamento delle osservazioni effettuate per la planimetria (angoli e distanze).</li>
+</ul>
+<p><img alt="Geoide" src="../assets/img/geoid.png" title="Geoide" /></p>
+<h2 id="datum">Datum</h2>
+<p>Un <strong>datum (geodetico)</strong> è un sistema geodetico di riferimento che consente di definire in termini matematici la posizione di punti sulla superficie della Terra.</p>
+<p><strong>Datum</strong> -&gt; Insieme di parametri che definiscono la <strong>forma</strong> dell'ellissoide usato ed il suo <strong>orientamento</strong>.</p>
+<p>Un datum è costituito da 8 parametri:</p>
+<ul>
+<li>2 di forma dell'ellissoide;</li>
+<li>6 di posizione e di orientamento:<ul>
+<li>latitudine e longitudine ellissoidica (2)</li>
+<li>altezza geoidica</li>
+<li>2 componenti della deviazione della verticale</li>
+<li>azimut ellissoidico</li>
+</ul>
+</li>
+</ul>
+<h2 id="proiezioni">Proiezioni</h2>
+<p>La superficie della terra è curva ma ci sono molte ragioni che ci spingono a rappresentarla su <strong>piano</strong>, anch in cartografia numerica.</p>
+<ul>
+<li>La carta utilizzata per rappresentare i risultati di analisi fatte con GIS è piatta.</li>
+<li>Le carte piatte sono scansionate ed utilizzate per creare dati GIS.</li>
+<li>Il modello raster è piatto</li>
+<li>Non si può vedere contemporaneamente tutta la terra su una superficie curva</li>
+<li>E' molto più facile effettuare misure nel piano (aree, distanze, direzioni).</li>
+</ul>
+<p>Per queste ragioni anche in cartografia numerica si utilizzano le diverse <strong>proiezioni cartografiche</strong>.</p>
+<p><img alt="Projection" src="../assets/img/proj.png" title="Projection" /></p>
+<p>Le proiezioni cartografiche trasportano coordinate dall'ellissoide del sistema di riferimento al piano della carta. <strong>Le due superfici non sono topologicamente equivalenti, quindi non è possibile passare da ellissoide a carta senza deformazioni.</strong></p>
+<p>A seconda del <strong>tipo di forma</strong> usato per effettuare le proiezioni, si distinguono:</p>
+<ul>
+<li>proiezioni piane;</li>
+<li>proiezioni cilindriche;</li>
+<li>proiezioni coniche.</li>
+</ul>
+<p>Ci sono moltissimi tipi di proiezioni cartografiche, quelle utilizzate in <strong>Italia</strong> sono:</p>
+<ul>
+<li><strong>UTM</strong> (Universal Trasversal Mercator), utilizzata a livello mondiale;</li>
+<li><strong>Gauss-Boaga</strong>, utilizzata per il datum Roma 40 Monte Mario;</li>
+<li><strong>Cassini-Soldner</strong>, utilizzata dal Nuovo Catasto dei Terreni Italiano.</li>
+</ul>
+<p>In definitiva, la definizione di un sistema di riferimento è data da:</p>
+<ul>
+<li><em>sistemi di coordinate geografiche</em>:</li>
+</ul>
+<p><strong>Datum</strong> (es. WGS84 oppure Roma 40 Monte Mario)</p>
+<ul>
+<li><em>sistemi di coordinate proiettate</em>:</li>
+</ul>
+<p><strong>Datum + sistema di proiezione</strong> (es. WGS84-UTM32N oppure Roma 40 Monte Mario - Gauss Boaga Fuso Ovest)</p>
+<p>Inoltre tutti i GIS utilizzano i registri di parametri geometrici di cui il più conosciuto è quello rappresentato dai <strong>codici EPSG</strong> (European Petroleum Survey Group) per definire in maniera univoca i vari sistemi di riferimento mondiali.</p>
+<p><strong>Come gestisce QGIS i dati geografici?</strong></p>
+<p>La gestione dei <strong>sistemi di riferimento</strong> è sempre un elemento particolarmente delicato in un GIS.</p>
+<p>In QGIS esistono 2 diverse gestioni di sistemi di riferimento:</p>
+<ul>
+<li>S.R. del <strong>progetto</strong></li>
+<li>S.R. del <strong>singolo layer</strong></li>
+</ul>
+<p>QGIS è in grado di eseguire la riproiezione al volo dei singoli layer tramite le librerie <a href="https://proj.org/">proj4</a>, purché sia definito il S.R. del singolo layer.</p>
+<p>QGIS usa i codici <strong>EPSG</strong> (European Petroleum Survey Group) per definire in maniera univoca i vari sistemi di riferimento mondiali.</p>
+<h3 id="impostazioni-sr">Impostazioni SR</h3>
+<p>Dalle impostazioni (<strong><em>Impostazioni -&gt; Opzioni -&gt; SR tab</em></strong>) è possibile definire le regole con cui gestire i SR dei vari layer.</p>
+<p>Permette di definire quale SR adottare al momento dell'apertura di un nuovo progetto o come gestire i layers privi di informazioni circa il sistema di riferimento utilizzato.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="sr-del-layer">SR del layer</h3>
+<p>Il <strong>SR del singolo layer</strong> è gestibile cliccando con il tasto destro del mouse sul layer stesso.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="riproiezione-shapefile">Riproiezione - Shapefile</h3>
+<p>E' possibile gestire la ri-proiezione dei vettori: <strong><em>tasto destro sul layer -&gt; Salva con nome...</em></strong></p>
+<p>[INSERIRE IMMAGINE]</p>
+<h2 id="modellazione-della-realta-con-qgis">Modellazione della realtà con QGIS</h2>
+<p>Esistono principalmente due modi di concettualizzare o modellare la realtà da un punto di vista geografico considerando:</p>
+<ul>
+<li><strong>Oggetti discreti</strong>: possono essere osservati o descritti nel mondo reale ed identificati da una sua posizione.</li>
+</ul>
+<p><img alt="Vector model" src="../assets/img/vector-model.jpg" title="Vector model" /></p>
+<ul>
+<li><strong>Oggetti distribuiti</strong>:
+rappresentano una grandezza il cui valore è funzione della posizione e si può misurare in ogni luogo.</li>
+</ul>
+<p><img alt="Raster model" src="../assets/img/raster-model.png" title="Raster model" /></p>
+<p>Il modello <strong>vettore</strong> in cui le informazioni su oggetti discreti sono codificate ed archiviate come insieme di coordinate x, y, z.</p>
+<p>Il modello vettoriale indica una rappresentazione di entità geografiche attraverso:</p>
+<ul>
+<li><strong>Punti</strong></li>
+<li><strong>Linee</strong></li>
+<li><strong>Poligoni</strong></li>
+</ul>
+<p>I modelli vettoriali sono particolarmente utili per rappresentare e memorizzare oggetti discreti come edifici, strade, particelle, etc.</p>
+<p><strong>Nel modello vettoriale le informazioni su oggetti discreti sono codificate e archiviate come insieme di coordinate x, y, z.</strong></p>
+<p><img alt="Vector model primitives" src="../assets/img/vector-model-primitive.png" title="Vector model primitives" /></p>
+<p>Il modello <strong>raster</strong> in cui informazioni su oggetti continui sono codificate da un insieme di celle di una griglia, ciascuna con il suo valore relativo.</p>
+<p>I valori sono celle di una griglia con determinate estensioni e una determinata risoluzione.</p>
+<p><img alt="Raster model primitives" src="../assets/img/raster-model-primitive.png" title="Raster model primitives" /></p>
+<h2 id="importazione-shapefile">Importazione shapefile</h2>
+<p><img alt="Shapefile import" src="../assets/img/shapefile-import.png" title="Shapefile import" /></p>
+<p><img alt="Shapefile import" src="../assets/img/shapefile-import-1.png" title="Shapefile import" /></p>
+<p><img alt="Shapefile import" src="../assets/img/shapefile-import-2.png" title="Shapefile import" /></p>
+<h2 id="gestione-proprieta-shapefile">Gestione proprietà shapefile</h2>
+<p>Per modificare le proprietà dello shapefile, cliccare sul layer con il tasto destro e selezionare proprietà.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="stile">Stile</h3>
+<p><strong>Visualizzazione con singolo simbolo</strong></p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>E' possibile anche impostare la trasparenza del layer che può essere utile nei casi in cui si vuole sovrappore questo ad un altro strato informativo (es. un'ortofoto).</p>
+<p><strong>Visualizzazione con simbolo categorizzato</strong> in base ai valori contenuti in un campo del layer.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>L'utilizzo di questo stile permette anche di assegnare a ogni valore individuato un'etichetta da includere nella legenda. In questo modo il significato del campo scelto e dei suoi valori risulta ancora più chiaro e comprensibile.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="etichette">Etichette</h3>
+<p>Per identificare meglio i comuni è possibile inserire anche le etichette relative ad ogni unità geometrica: cliccare su <strong>etichette</strong> -&gt; Selezionare <strong><em>Etichette singole</em></strong> e scegliere quale <strong><em>Valore</em></strong> far comparire.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>[INSERIRE IMMAGINE]</p>
+<h2 id="dati-vettoriali">Dati vettoriali</h2>
+<h3 id="tabella-attributi">Tabella attributi</h3>
+<p>Per visualizzare la tabella con i comuni della provincia di PC, cliccare con il tasto destro sul layer nel pannello layer -&gt; premere <strong><em>Apri tabella attributi</em></strong></p>
+<h3 id="aggiunta-campo">Aggiunta campo</h3>
+<p><strong><em>Tasto destro sul layer -&gt; Apri tabella attributi -&gt; Attiva modifiche -&gt; Nuovo campo</em></strong></p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>Definire i campi richiesti con particolare attenzione al <strong>tipo di valore</strong> che verrà inserito nel nuovo campo (numero intero, decimale, testo, data, etc.) e il <strong>numero massimo di caratteri</strong>.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>Per finalizzare le modifiche, salvare e concludere la sessione di editing.</p>
+<h3 id="calcolatore-di-campi">Calcolatore di campi</h3>
+<p><strong><em>Tasto destro sul layer -&gt; Apri tabella attributi -&gt; Attiva modifiche -&gt; Apri il calcolatore di campi</em></strong></p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>Con il <strong>calcolatore di campi</strong> è possibile creare un nuovo campo con il risultato della funzione scelta oppure aggiornarne uno esistente.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="rimuovi-campo">Rimuovi campo</h3>
+<p><strong><em>Tasto destro sul layer -&gt; Apri tabella attributi -&gt; Attiva modifiche -&gt; Elimina campo</em></strong></p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>Selezionare il campo di interesse e confermare la rimozione.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>Per finalizzare le modifiche, salvare e concludere la sessione di editing.</p>
+<h2 id="dati-raster">Dati raster</h2>
+<p>Che cos'è un raster?</p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>Un dato fondamentale per le analisi GIS sono i cosiddetti <strong>Digital Terrain Model</strong> (DTM) ma ci sono anche <strong>Ortofoto</strong>, <strong>Carte tecniche</strong>, foto aree, immagini satellitari, mappe geologiche etc.</p>
+<h3 id="modelli-digitali-delle-altezze">Modelli digitali delle altezze</h3>
+<ul>
+<li>
+<p><strong>DEM</strong> (Digital Elevation Model) è un file digitale con le quote della superficie del terreno a intervalli regolarmente spaziati sul piano orizzontale.</p>
+</li>
+<li>
+<p><strong>DTM</strong> (Digital Terrain Model) avrebbe un significato più generico indicando oltre alla quota della superficie del terreno anche altre informazioni come pendenza ed esposizione.</p>
+</li>
+<li>
+<p><strong>DSM</strong> (Digital Surface Model) rappresenta in forma digitale le quote della parte superiore del terreno comprensivo degli edifici, delle infrastrutture e degli alberi senza le procedure di filtraggio utilizzare per produrre DEM e/o DTM.</p>
+</li>
+</ul>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="ortofoto">Ortofoto</h3>
+<p>E' una mappa fotografica che combina le caratteristiche di una mappa tradizionale con quelle di un'immagine. E' georeferenziata, priva di distorsioni e con scala uniforme.</p>
+<h3 id="importare-un-raster">Importare un raster</h3>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="riproiezione">Riproiezione</h3>
+<p>La riproiezione raster tramite le librerie GDAL:
+<strong>*Raster -&gt; Proiezioni -&gt; Riproiezione</strong></p>
+<p>[INSERIRE IMMAGINI]</p>
+<h3 id="proprieta">Proprietà</h3>
+<p>Per modificare le proprietà del raster, cliccare sul tasto destro e selezionare <strong>proprietà</strong>:</p>
+<p>[INSERIRE IMMAGINE]</p>
+<h3 id="stile_1">Stile</h3>
+<p>Modificare lo <strong>stile</strong>:</p>
+<ul>
+<li>Banda singola grigia</li>
+<li>Colori banda multipla</li>
+<li>Valori a tavolozza</li>
+<li>Banda singola falso colore</li>
+<li>Omreggiatura</li>
+</ul>
+<p>...e altre opzioni statistiche.</p>
+<p>[INSERIRE IMMAGINE]</p>
+<p>[IN COSTRUZIONE//]</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../arch-pc-about/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Architettura Piacenza Campus">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Architettura Piacenza Campus
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../arch-pc-layout/" class="md-footer__link md-footer__link--next" aria-label="Next: Creazione di layout di stampa">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Creazione di layout di stampa
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/fede_gaspari" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Tars4815" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/federicagaspari/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+        
+  
+  
+    
+    
+  
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="github" checked>
+      <span class="task-list-indicator"></span>
+      GitHub
+    </label>
+  </li>
+
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.path", "navigation.footer"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
