@@ -14,7 +14,7 @@ theme:
     - navigation.footer
     - navigation.tabs
     - toc.integrate
-    
+
 
 # Customization
 extra:
@@ -67,5 +67,8 @@ nav:
       - Architecture:
           - arch/arch-pc-about.md
           - arch/arch-pc-intro.md
+      - Urban Planning:
+          - urb/about.md
+          - urb/intro.md
   - Workshop:
       - workshop/intro-workshop.md
