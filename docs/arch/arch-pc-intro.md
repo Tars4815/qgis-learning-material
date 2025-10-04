@@ -446,8 +446,8 @@ Saving the project **(*.qgs)** concerns the following elements:
 * Printing layouts;
 * RS used and last display extension.
 
-![Save project option](./assets/img/save-project.png "Save project option")
+![Save project option](../assets/img/save-project.png "Save project option")
 
 The *.qgs file does not contain map files but only references to them and is saved in XML format.
 
-![Save project pop-up](./assets/img/save-project-popup.png "Save project pop-up")
+![Save project pop-up](../assets/img/save-project-popup.png "Save project pop-up")
