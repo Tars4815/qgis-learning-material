@@ -6,12 +6,13 @@ Qui troverete materiale didattico incentrato su QGIS e sulle sue applicazioni in
 
 ## Corsi
 
-* **[Sistemi Informativi Territoriali](sit-about.it.md)** 🇮🇹 - Ultimo aggiornamento: 8 marzo 2023
-* **[QGIS for Fundamentals of Representation](arch-pc-about.md)** 🇮🇹 🇬🇧 - Ultimo aggiornamento: novembre 2022
+* **[Sistemi Informativi Territoriali](sit/sit-about.it.md)** 🇮🇹 - Ultimo aggiornamento: 8 marzo 2023
+* **[QGIS for Fundamentals of Representation](arch/arch-pc-about.it.md)** 🇮🇹 🇬🇧 - Ultimo aggiornamento: novembre 2022
+* **[Introduzione a QGIS per urbanisti](urb/about.it.md)** 🇮🇹 - Under construction
 
 ## Workshop e altro
 
-* **[Intro QGIS Workshop](intro-workshop.it.md)** 🇮🇹 - Ultimo aggiornamento: 17 marzo 2023
+* **[Intro QGIS Workshop](workshop/intro-workshop.it.md)** 🇮🇹 - Ultimo aggiornamento: 22 maggio 2025
 
 ## Informazioni sull'autore/i
 

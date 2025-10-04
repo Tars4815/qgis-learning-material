@@ -12,7 +12,7 @@ Here you will find learning material focused on QGIS and its applications in dif
 
 ## Workshop & Other
 
-* **[Intro QGIS Workshop](workshop/intro-workshop.it.md)** 🇮🇹 - Last update: May 22nd, 2026
+* **[Intro QGIS Workshop](workshop/intro-workshop.it.md)** 🇮🇹 - Last update: May 22nd, 2025
 
 ## About the author(s)
 
