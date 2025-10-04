@@ -37,6 +37,7 @@ repo_url: https://github.com/Tars4815/qgis-learning-material
 
 plugins:
   - search
+  - tags
   - git-authors
   - i18n:
       languages:

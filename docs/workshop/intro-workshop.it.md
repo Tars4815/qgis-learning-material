@@ -1,3 +1,11 @@
+---
+tags:
+  - QGIS
+  - OSGeo
+  - FOSS4G
+  - OpenStreetMap
+  - Dati vettoriali
+---
 # Workshop introduttivo
 
 **Benvenuti nel mondo del Software Open Source per applicazioni geospaziali!**
