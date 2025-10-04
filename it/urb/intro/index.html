@@ -14,7 +14,7 @@
         <link rel="prev" href="../about/">
       
       
-        <link rel="next" href="../../workshop/intro-workshop/">
+        <link rel="next" href="../urb01/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -784,10 +784,75 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#personalizzazione-dellinterfaccia-grafica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personalizzazione dell’interfaccia grafica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personalizzazione dell’interfaccia grafica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lingua-del-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lingua del software
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visibilita-dei-pannelli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visibilità dei pannelli
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#risorse-utili" class="md-nav__link">
+    <span class="md-ellipsis">
+      Risorse utili
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../urb01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gestione progetto e interfaccia, formato dati, operazioni base
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -893,6 +958,34 @@
                 
                   
 
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <span class="md-tag">Intro</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">QGIS</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">Urbanistica</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">Vettoriali</span>
+      
+    
+  </nav>
+
 
   
   
@@ -913,12 +1006,49 @@ QGIS è rilasciato sotto la <a href="https://github.com/qgis/QGIS?tab=GPL-2.0-1-
 <p>... e molto altro!</p>
 <h2 id="installazione">Installazione</h2>
 <p>La versione da utilizzare per le esercitazioni è l’attuale <strong>Long Term Release</strong> (LTS, versione più stabile) 3.40.xx da scaricare nell’apposita pagina Downloads del sito del progetto: https://qgis.org/download/.</p>
+<p><img alt="Logo QGIS 3.40 LTR" src="../../../assets/img/qgis340logo.png" /></p>
+<p>QGIS 3.40 è l’edizione desktop del software. Esso permettere di interrogare, editare ed effettuare analisi spaziali sui dati geografici.</p>
+<p>L’interfaccia di QGIS Desktop contiene:</p>
+<ol>
+<li><strong>Barra dei menù</strong>: fornisce accesso alle varie funzioni di QGIS utilizzando menù a tendina </li>
+<li><strong>Barra degli strumenti</strong>: fornisce gli strumenti necessari per interagire con la mappa </li>
+<li><strong>Layer</strong>: regola la visibilità e la disposizione degli strati cartografici: quelli più in alto sono sovrapposti a quelli più in basso </li>
+<li><strong>Area di visualizzazione</strong>: rappresenta la cartografia relativa ai livelli vettoriali e raster selezionati nel gruppo «Layer» </li>
+<li><strong>Barra di stato</strong>: mostra le coordinate relative alla posizione del mouse, la scala di visualizzazione e il sistema di riferimento utilizzato </li>
+</ol>
+<p><img alt="Interfaccia grafica utente di QGIS" src="../../../assets/img/GUI.png" /></p>
+<h2 id="personalizzazione-dellinterfaccia-grafica">Personalizzazione dell’interfaccia grafica</h2>
+<h3 id="lingua-del-software">Lingua del software</h3>
+<p>Di default al primo accesso al software, QGIS Desktop definirà come sua lingua di visualizzazione quella impostata dal sistema operativo di utilizzo. Per facilitare le indicazioni delle esercitazioni e il supporto a eventuali problemi con il software, per le esercitazioni è richiesto l’utilizzo di QGIS in inglese. In questo modo, per qualsiasi esigenza, sarà molto più semplice consultare l’ampia documentazione online in inglese a supporto degli utenti.</p>
+<p>Nel caso in cui la lingua di sistema non sia già l’inglese, è necessario accedere alle impostazioni del software da <em>Impostazioni -&gt; Opzioni -&gt; Tab Generale</em>. Nella nuova finestra, spuntare il box <em>Sovrascrivi la lingua del sistema</em>.
+Alla voce Traduzione interfaccia utente, dal menù a tendina selezionare <em>American English</em>. 
+Alla voce Localizzazione (formati per numeri, date e valuta), dal menù a tendina selezionare <em>English United Kingdom (en_GB)</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Queste impostazioni sono particolarmente importanti per la gestione dei valori numerici che in ambiente QGIS verranno quindi gestiti considerando il punto come separatore decimale.</p>
+</div>
+<p>Per finalizzare tutte le modifiche definite nella tabella <em>Opzioni &gt; Generale</em> è richiesto il riavvio del software.</p>
+<p><img alt="Preferenze software per linguaggio" src="../../../assets/img/settings-language.png" /></p>
+<h3 id="visibilita-dei-pannelli">Visibilità dei pannelli</h3>
+<p>Nel corso delle esercitazioni e di eventuali progetti futuri in ambienti QGIS, potrebbe essere necessaria l’attivazione di nuovi pannelli e finestre nella GUI oltre a quelli già attivi di default descritti in precedenza. Per poter controllare in base alle proprie necessità la visibilità dei vari pannelli, è necessario accedere al menù <em>View</em> nella Barra dei menù. Da qui e possibile attivare o disattivare i pannelli e/o le toolbar.</p>
+<p><img alt="Visibilità panels" src="../../../assets/img/view-panels.png" /></p>
+<p><img alt="Visibilità toolbars" src="../../../assets/img/view-toolbars.png" /></p>
+<h2 id="risorse-utili">Risorse utili</h2>
+<ul>
+<li><strong>QGIS User Guide</strong>: documentazione ufficiale delle funzionalità di QGIS Desktop. Link: https://docs.qgis.org/3.40/en/docs/user_manual/index.html (Ultimo accesso: 14/09/2025)</li>
+<li><strong>QGIS source code</strong>: repository ufficiale del codice di QGIS contenente numerosi link a risorse utili (tutorial, guide etc.). Link: https://github.com/qgis/QGIS (Ultimo accesso: 14/09/2025)</li>
+<li><strong>QGIS Tutorials and Tips</strong> di Ujaval Gandhi: sito che documenta una selezione variegata di esercizi guidati su possibili applicazioni di QGIS. Link: http://www.qgistutorials.com/it/ (Ultimo accesso: 14/09/2025)</li>
+<li><strong>Canale YouTube QGIS</strong>: canale con raccolte di video tutorial, workshop e presentazioni legate a versioni di QGIS e sue funzionalità in progetti di vari ambiti. Link: https://www.youtube.com/@qgishome/video (Ultimo accesso: 14/09/2025)</li>
+</ul>
 
 
 
 
 
 
+
+  
+  
 
 
   <aside class="md-source-file">
@@ -981,13 +1111,13 @@ QGIS è rilasciato sotto la <a href="https://github.com/qgis/QGIS?tab=GPL-2.0-1-
         
         
           
-          <a href="../../workshop/intro-workshop/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Workshop introduttivo">
+          <a href="../urb01/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Gestione progetto e interfaccia, formato dati, operazioni base">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Successivo
               </span>
               <div class="md-ellipsis">
-                Workshop introduttivo
+                Gestione progetto e interfaccia, formato dati, operazioni base
               </div>
             </div>
             <div class="md-footer__button md-icon">
