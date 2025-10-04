@@ -56,6 +56,9 @@ plugins:
 
 markdown_extensions:
   - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 # Page tree (language-neutral, i18n will pull from docs/en and docs/it)
 nav:
@@ -72,5 +75,6 @@ nav:
       - Urban Planning:
           - urb/about.md
           - urb/intro.md
+          - urb/urb01.md
   - Workshop:
       - workshop/intro-workshop.md
