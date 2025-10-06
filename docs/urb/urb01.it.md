@@ -67,3 +67,7 @@ Per ritagliare le informazioni di copertura del suolo solo nel territorio del co
 Applicare al nuovo raster ritagliato la stessa simbologia del precedente: tasto destro sul vecchio raster *> Styles > Copy Style > All Style Categories*. Sul layer raster ritagliato cliccare tasto destro, *Styles > Paste Style > All Style Categories*.
 
 Salvare il progetto.
+
+## Per approfondire
+
+[...]
