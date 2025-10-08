@@ -28,3 +28,5 @@ Introduzione al software e all’ambiente GIS
 [Urb 02](urb02.it.md){ .md-button .md-button--primary} Gestione ed elaborazione dati vettoriali shapefile e tabelle csv
 
 [Urb 03](urb03.it.md){ .md-button .md-button--primary} Dati vettoriali: operazioni di query, filtri, join e metadatazione
+
+[Urb 04](urb04.it.md){ .md-button .md-button--primary} Risorse online: download dati OpenStreetMap, risorse e servizi web
