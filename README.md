@@ -27,7 +27,7 @@ TO DO and PROGRESS:
     - [X] Introduzione al software: Gestione progetto e interfaccia, formato dati, operazioni base
     - [ ] Dati vettoriali: Gestione ed elaborazione shapefile e tabelle csv
     - [ ] Dati vettoriali: Operazioni di query, filtri, join e metadatazione
-    - [ ] Importare layer da OSM e altre risorse Web
+    - [X] Importare layer da OSM e altre risorse Web
     - [ ] Georeferenziazione di immagini e calcolo dell'accuratezza
     - [ ] Statistiche spaziali: centro medio, standard distance e Kernel Density
     - // Under development //
