@@ -76,5 +76,9 @@ nav:
           - urb/about.md
           - urb/intro.md
           - urb/urb01.md
+          - urb/urb02.md
+          - urb/urb03.md
+          - urb/urb04.md
+          - urb/urb05.md
   - Workshop:
       - workshop/intro-workshop.md
