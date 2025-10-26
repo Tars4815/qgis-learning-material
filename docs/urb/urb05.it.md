@@ -48,5 +48,30 @@ Nella tabella di seguito sono elencate con il loro significato le possibili tras
 
 ## Selezione dei punti omologhi
 
+Prima di procedere, controllare nuovamente che il sistema di riferimento del progetto in QGIS sia quello scelto per la Lombardia.
 
-[UNDER CONSTRUCTION]
+L’obiettivo della procedura è identificare coppie di punti omologhi (Ground Control Points, GCPs) su entrambe le mappe e consentire la trasformazione che “posizionerà” la mappa del masterplan nel sistema di riferimento scelto. Elementi utili per la selezione dei GCPs sono solitamente rappresentati da spigoli di edifici, intersezioni di strade o angoli acuti su entità ben distinguibili su entrambe le mappe su cui si stanno “catturando” i punti omologhi. Attivare quindi la modalità di selezione dei punti:
+
+* Dalla barra menù del georeferencer selezionare *Add point* > Cliccare con il tasto sinistro sul punto omologo individuato sul masterplan > Selezionare l’opzione *From Map Canvas* > Cliccare con il tasto sinistro nuovamente sul punto corrispondente individuato sulla basemap di OSM. Dopo aver completato questa operazione, un nuovo record associato al punto omologo inserito viene incluso nella tabella del georeferencer.
+* Ripetere la procedura aggiungendo almeno 3 punti. Nel caso in cui si rilevino errori elevati nella tabella oppure errori grossolani dovuti all’individuazione errata di un punto, utilizzare i comandi *Delete point* o *Move GCP Point* presenti nel menù.
+* Termina la procedura di selezione di punti omologhi, cliccare *Start georeferencer*.
+
+## Vettorializzazione
+
+Avviare la procedura di digitalizzazione delle strade visibili nella mappa creando un nuovo layer vettoriale:
+* *Layer > Create Layer > New Shapefile Layer > File name:* “strade” > *Geometry type*: LineString > *SR*: EPSG:32632 – WGS 84 / UTM zone 32N
+* Aggiungere nuovo campo > *Name*: “NOME” > *Type*: Text data > *Length*: 250 > *Add to Fields List*
+
+Attivare modalità di editing e aggiungere nuovi elementi al vettore “strade”:
+* Tasto destro sul layer “strade” > *Toggle editing*
+* Attivare visualizzazione della barra del menù editing: *View > Toolbars > Flag su Digitizing Toolbar*
+* Nella barra degli strumenti di digitalizzazione cliccare *Add Line Features*
+*	Cliccare con il tasto sinistro sulla mappa in corrispondenza dei nodi della linea che si vuole digitalizzare come strada. Cliccare il tasto destro al termine della procedura. Nella finestra di pop up inserire le informazioni relative all’id numerico e al nome della strada e premere OK.
+*	Al termine della vettorializzazione degli elementi di interesse, cliccare su *Salva Modifiche Vettore* nella Barra degli Strumenti di Digitalizzazione e disattivare il pulsante *Save Layer Edits*.
+
+Mostrare modalità di editing vettoriale avanzato per agganciare elementi stradali in modo consistente:
+
+* Attivare visualizzazione della barra del menù editing avanzato: *View > Toolbars > Flag su Snapping Toolbar*
+*	Nella snapping toolbar, premere *Enable snapping* (Calamita), cliccare su *Vertex* e *Segment* nel menù a tendina da cui scegliere gli elementi a cui agganciarsi e definire una tolleranza di aggancio di 5 metri. In questo modo, ogni nuovo nodo aggiunto in editing che ricade a meno 5 metri da un nodo o un segmento già esistente verrà “agganciato” automaticamente all’elemento esistente.
+
+Ripetere la vettorializzazione degli edifici e delle aree in modo analogo creando un apposito attributo che permetta di categorizzare gli elementi secondo la loro destinazione.
