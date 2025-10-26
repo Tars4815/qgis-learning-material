@@ -923,6 +923,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#vettorializzazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vettorializzazione
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1141,7 +1150,29 @@
 </tbody>
 </table>
 <h2 id="selezione-dei-punti-omologhi">Selezione dei punti omologhi</h2>
-<p>[UNDER CONSTRUCTION]</p>
+<p>Prima di procedere, controllare nuovamente che il sistema di riferimento del progetto in QGIS sia quello scelto per la Lombardia.</p>
+<p>L’obiettivo della procedura è identificare coppie di punti omologhi (Ground Control Points, GCPs) su entrambe le mappe e consentire la trasformazione che “posizionerà” la mappa del masterplan nel sistema di riferimento scelto. Elementi utili per la selezione dei GCPs sono solitamente rappresentati da spigoli di edifici, intersezioni di strade o angoli acuti su entità ben distinguibili su entrambe le mappe su cui si stanno “catturando” i punti omologhi. Attivare quindi la modalità di selezione dei punti:</p>
+<ul>
+<li>Dalla barra menù del georeferencer selezionare <em>Add point</em> &gt; Cliccare con il tasto sinistro sul punto omologo individuato sul masterplan &gt; Selezionare l’opzione <em>From Map Canvas</em> &gt; Cliccare con il tasto sinistro nuovamente sul punto corrispondente individuato sulla basemap di OSM. Dopo aver completato questa operazione, un nuovo record associato al punto omologo inserito viene incluso nella tabella del georeferencer.</li>
+<li>Ripetere la procedura aggiungendo almeno 3 punti. Nel caso in cui si rilevino errori elevati nella tabella oppure errori grossolani dovuti all’individuazione errata di un punto, utilizzare i comandi <em>Delete point</em> o <em>Move GCP Point</em> presenti nel menù.</li>
+<li>Termina la procedura di selezione di punti omologhi, cliccare <em>Start georeferencer</em>.</li>
+</ul>
+<h2 id="vettorializzazione">Vettorializzazione</h2>
+<p>Avviare la procedura di digitalizzazione delle strade visibili nella mappa creando un nuovo layer vettoriale:
+* <em>Layer &gt; Create Layer &gt; New Shapefile Layer &gt; File name:</em> “strade” &gt; <em>Geometry type</em>: LineString &gt; <em>SR</em>: EPSG:32632 – WGS 84 / UTM zone 32N
+* Aggiungere nuovo campo &gt; <em>Name</em>: “NOME” &gt; <em>Type</em>: Text data &gt; <em>Length</em>: 250 &gt; <em>Add to Fields List</em></p>
+<p>Attivare modalità di editing e aggiungere nuovi elementi al vettore “strade”:
+* Tasto destro sul layer “strade” &gt; <em>Toggle editing</em>
+* Attivare visualizzazione della barra del menù editing: <em>View &gt; Toolbars &gt; Flag su Digitizing Toolbar</em>
+* Nella barra degli strumenti di digitalizzazione cliccare <em>Add Line Features</em>
+*   Cliccare con il tasto sinistro sulla mappa in corrispondenza dei nodi della linea che si vuole digitalizzare come strada. Cliccare il tasto destro al termine della procedura. Nella finestra di pop up inserire le informazioni relative all’id numerico e al nome della strada e premere OK.
+*   Al termine della vettorializzazione degli elementi di interesse, cliccare su <em>Salva Modifiche Vettore</em> nella Barra degli Strumenti di Digitalizzazione e disattivare il pulsante <em>Save Layer Edits</em>.</p>
+<p>Mostrare modalità di editing vettoriale avanzato per agganciare elementi stradali in modo consistente:</p>
+<ul>
+<li>Attivare visualizzazione della barra del menù editing avanzato: <em>View &gt; Toolbars &gt; Flag su Snapping Toolbar</em></li>
+<li>Nella snapping toolbar, premere <em>Enable snapping</em> (Calamita), cliccare su <em>Vertex</em> e <em>Segment</em> nel menù a tendina da cui scegliere gli elementi a cui agganciarsi e definire una tolleranza di aggancio di 5 metri. In questo modo, ogni nuovo nodo aggiunto in editing che ricade a meno 5 metri da un nodo o un segmento già esistente verrà “agganciato” automaticamente all’elemento esistente.</li>
+</ul>
+<p>Ripetere la vettorializzazione degli edifici e delle aree in modo analogo creando un apposito attributo che permetta di categorizzare gli elementi secondo la loro destinazione.</p>
 
 
 
