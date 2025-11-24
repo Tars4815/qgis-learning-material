@@ -30,5 +30,7 @@ TO DO and PROGRESS:
     - [X] Importare layer da OSM e altre risorse Web
     - [ ] Georeferenziazione di immagini e calcolo dell'accuratezza
     - [ ] Statistiche spaziali: centro medio, standard distance e Kernel Density
+    - [ ] Analisi di cluster e calcolo di aree di influenza
+    - [ ] Interpolazione e aree di influenza
     - // Under development //
 

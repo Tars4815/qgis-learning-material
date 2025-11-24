@@ -32,3 +32,9 @@ Introduzione al software e all’ambiente GIS
 [Urb 04](urb04.it.md){ .md-button .md-button--primary} Risorse online: download dati OpenStreetMap, risorse e servizi web
 
 [Urb 05](urb05.it.md){ .md-button .md-button--primary} Georeferenziazione e vettorializzazione
+
+[Urb 06](urb06.it.md){ .md-button .md-button--primary} Statistiche spaziali: centro medio, standard distance e Kernel Density
+
+[Urb 07](urb07.it.md){ .md-button .md-button--primary} Analisi di cluster e calcolo di aree di influenza
+
+[Urb 08](urb08.it.md){ .md-button .md-button--primary} Interpolazione e aree di influenza
