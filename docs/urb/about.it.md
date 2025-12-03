@@ -38,3 +38,5 @@ Introduzione al software e all’ambiente GIS
 [Urb 07](urb07.it.md){ .md-button .md-button--primary} Analisi di cluster e calcolo di aree di influenza
 
 [Urb 08](urb08.it.md){ .md-button .md-button--primary} Interpolazione e aree di influenza
+
+[Urb 09](urb09.it.md){ .md-button .md-button--primary} Interpolazione e aree di influenza
