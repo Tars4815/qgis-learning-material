@@ -39,4 +39,6 @@ Introduzione al software e all’ambiente GIS
 
 [Urb 08](urb08.it.md){ .md-button .md-button--primary} Interpolazione e aree di influenza
 
-[Urb 09](urb09.it.md){ .md-button .md-button--primary} Interpolazione e aree di influenza
+[Urb 09](urb09.it.md){ .md-button .md-button--primary} Elaborazioni di routine su Digital Terrain Models
+
+[Urb 10](urb10.it.md){ .md-button .md-button--primary} Analisi con raster e vettoriali
