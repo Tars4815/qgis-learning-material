@@ -29,3 +29,14 @@ Utilizzare dati raster in ambiente GIS; convertire dati da vettoriali a raster; 
 * *class_bosco* (Raster tiff con la classificazione delle aree boschive della Valtellina - Fonte: Geoportale Lombardia)
 
 * *orto3* (Raster tiff con ortofoto dell’Alta Valtellina - Fonte: Geoportale Lombardia)
+
+## Istruzioni per l'esecuzione
+
+### Preparazione dati
+
+Definire le unità di misura e il percorso relativo: *Project > Properties > General Tab > Save paths > Relative*. Impostare il sistema di riferimento con codice EPSG: 32632 – WGS84 – UTM Zone 32 N.
+
+Caricare nella mappa i layer vettoriali delle strade statali e provinciali della provincia di Sondrio, il layer vettoriale con i confini delle comunità montane della Lombardia, il raster con la classificazione delle aree boschive della provincia di Sondrio, l’ortofoto dell’Alta Valtellina. Controllarne informazioni e caratteristiche per verificarne la consistenza con i requisiti di progetto.
+
+Eseguire una query per attributo sul layer vettoriale delle comunità montane per selezionare la comunità montana denominata “ALTA VALTELLINA” ed esportarla in un nuovo layer vettoriale.
+Ritagliare i 2 layer vettoriali delle strade statali e provinciali con il poligono della comunità montana dell’Alta Valtellina appena esportato.
