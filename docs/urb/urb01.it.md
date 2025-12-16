@@ -22,6 +22,8 @@ Shapefile:
 Raster:
 * CLC_PCP_20M.tif (classificazione della copertura del suolo nella provincia di Piacenza)
 
+Fonte: [Geoportale Emilia Romagna](https://geoportale.regione.emilia-romagna.it/)
+
 ## Preparazione progetto
 
 Definire le unità di misura e il percorso relativo: *Project > Properties > General Tab > Save paths > Relative*.
@@ -60,11 +62,19 @@ Il layer appena caricato contiene le informazioni relative alla copertura del su
 | 4 | Zone umide | Viola |
 | 5 | Corpi idrici permanenti | Azzurro |
 
-Dopo aver valutato le proprietà del layer, da *Properties > Simbology*, selezionare la modalità di rendering *Paletted/Unique values* e cliccare *Classify*. Fare doppio clic sui valori nella colonna Label per modificare l’etichetta della legenda colori in accordo con il significato indicato nella tabella precedente.
+Dopo aver valutato le proprietà del layer, da *Properties > Simbology*, selezionare la modalità di rendering *Paletted/Unique values* e cliccare *Classify*. Questa modalità permette di definire un colore specifico per ciascun valore univoco nei pixel del raster. E' ottimale per rappresentazioni cartografiche che riguardano la mappatura del territorio secondo classi predefinite.
+
+Dopo aver scelto la modalità di rappresentazione, fare doppio clic sui valori nella colonna Label per modificare l’etichetta della legenda colori in accordo con il significato indicato nella tabella precedente. Premere *Apply* per applicare le modifiche.
+
+!["Simbologia per paletted unique values](../assets/img/urb/paletted-unique-values-clc.png)
 
 Per ritagliare le informazioni di copertura del suolo solo nel territorio del comune di Piacenza, cliccare sul menù *Raster > Extraction > Clip raster by mask layer*. Selezionare come layer in input il raster della copertura del suolo e come mask layer Piacenza_COM.
 
 Applicare al nuovo raster ritagliato la stessa simbologia del precedente: tasto destro sul vecchio raster *> Styles > Copy Style > All Style Categories*. Sul layer raster ritagliato cliccare tasto destro, *Styles > Paste Style > All Style Categories*.
+
+Confrontare qualitativamente la mappatura raster del Corine Land Cover con la mappatura dell'edificato per il comune di Piacenza: come si differenziano? Si notano pattern significativi?
+
+!["Elementi vettoriali dell'edificato sovrapposti al raster ritagliatto del Corine Land Cover per il Comune di Piacenza"](../assets/img/urb/comune-pc-clc.png)
 
 Salvare il progetto.
 
