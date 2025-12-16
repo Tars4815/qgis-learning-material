@@ -40,3 +40,38 @@ Caricare nella mappa i layer vettoriali delle strade statali e provinciali della
 
 Eseguire una query per attributo sul layer vettoriale delle comunità montane per selezionare la comunità montana denominata “ALTA VALTELLINA” ed esportarla in un nuovo layer vettoriale.
 Ritagliare i 2 layer vettoriali delle strade statali e provinciali con il poligono della comunità montana dell’Alta Valtellina appena esportato.
+
+### Classificazione delle tipologie boschive
+
+Ritagliare il raster con la classificazione delle aree boschive *class_bosco.tif* con il poligono della comunità montana dell’Alta Valtellina. Ridefinire la simbologia per il raster appena ritagliato (*class_bosco_Alta_Valtellina.tif* secondo estensione della comunità montana in analisi) utilizzando la legenda fornita.
+
+| Valore pixel   | Significato    | 
+| ------ | ----- | 
+| 1 | No info |
+| 2 | Conifere | 
+| 3 | Latifoglie | 
+| 4 | Boschi misti |
+
+### Filtro buffer delle strade
+
+Fare un merge fra i due layer vettoriali delle strade, creando un nuovo layer vettoriale che contiene tutti i tratti stradali dei due layer di partenza: *Vector > Geoprocessing Tools > Union.*
+
+Creare un buffer di 400 m attorno al layer delle strade unito, appena creato.
+
+Aggiungere un attributo (campo numerico) nella TA del layer vettoriale con il buffer appena creato ed inserire il valore 1 in quella cella con il Field calculator.
+
+Convertire il layer vettoriale (di poligoni) con i buffer delle strade in un raster di risoluzione 50x50 metri.
+
+### Individuazione delle aree di diboscamento
+
+Con l’aiuto del *Raster calculator*, creare una maschera booleana (raster in cui i pixel possono assumere solo valori 0 o 1) , in cui il valore 1 sarà attribuito ai pixel classificati come boschi di conifere: “classraster = 2”.
+
+Moltiplicare la maschera booleana appena creata per il raster creato a partire dal buffer attorno alle strade, utilizzando ancora il *Raster Calculator*. Ripetere le operazioni del punto precedente.
+
+Calcolare la superficie di conifere esboscabile comprese nel buffer di 400 m attorno alle strade con gli strumenti di *Raster analysis*.
+
+## Per saperne di più
+
+Dalla documentazione ufficiale:
+
+* // UNDER CONSTRUCTION //
