@@ -1135,6 +1135,54 @@
 <p><em>orto3</em> (Raster tiff con ortofoto dell’Alta Valtellina - Fonte: Geoportale Lombardia)</p>
 </li>
 </ul>
+<h2 id="istruzioni-per-lesecuzione">Istruzioni per l'esecuzione</h2>
+<h3 id="preparazione-dati">Preparazione dati</h3>
+<p>Definire le unità di misura e il percorso relativo: <em>Project &gt; Properties &gt; General Tab &gt; Save paths &gt; Relative</em>. Impostare il sistema di riferimento con codice EPSG: 32632 – WGS84 – UTM Zone 32 N.</p>
+<p>Caricare nella mappa i layer vettoriali delle strade statali e provinciali della provincia di Sondrio, il layer vettoriale con i confini delle comunità montane della Lombardia, il raster con la classificazione delle aree boschive della provincia di Sondrio, l’ortofoto dell’Alta Valtellina. Controllarne informazioni e caratteristiche per verificarne la consistenza con i requisiti di progetto.</p>
+<p>Eseguire una query per attributo sul layer vettoriale delle comunità montane per selezionare la comunità montana denominata “ALTA VALTELLINA” ed esportarla in un nuovo layer vettoriale.
+Ritagliare i 2 layer vettoriali delle strade statali e provinciali con il poligono della comunità montana dell’Alta Valtellina appena esportato.</p>
+<h3 id="classificazione-delle-tipologie-boschive">Classificazione delle tipologie boschive</h3>
+<p>Ritagliare il raster con la classificazione delle aree boschive <em>class_bosco.tif</em> con il poligono della comunità montana dell’Alta Valtellina. Ridefinire la simbologia per il raster appena ritagliato (<em>class_bosco_Alta_Valtellina.tif</em> secondo estensione della comunità montana in analisi) utilizzando la legenda fornita.</p>
+<table>
+<thead>
+<tr>
+<th>Valore pixel</th>
+<th>Significato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>No info</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Conifere</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Latifoglie</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Boschi misti</td>
+</tr>
+</tbody>
+</table>
+<h3 id="filtro-buffer-delle-strade">Filtro buffer delle strade</h3>
+<p>Fare un merge fra i due layer vettoriali delle strade, creando un nuovo layer vettoriale che contiene tutti i tratti stradali dei due layer di partenza: <em>Vector &gt; Geoprocessing Tools &gt; Union.</em></p>
+<p>Creare un buffer di 400 m attorno al layer delle strade unito, appena creato.</p>
+<p>Aggiungere un attributo (campo numerico) nella TA del layer vettoriale con il buffer appena creato ed inserire il valore 1 in quella cella con il Field calculator.</p>
+<p>Convertire il layer vettoriale (di poligoni) con i buffer delle strade in un raster di risoluzione 50x50 metri.</p>
+<h3 id="individuazione-delle-aree-di-diboscamento">Individuazione delle aree di diboscamento</h3>
+<p>Con l’aiuto del <em>Raster calculator</em>, creare una maschera booleana (raster in cui i pixel possono assumere solo valori 0 o 1) , in cui il valore 1 sarà attribuito ai pixel classificati come boschi di conifere: “classraster = 2”.</p>
+<p>Moltiplicare la maschera booleana appena creata per il raster creato a partire dal buffer attorno alle strade, utilizzando ancora il <em>Raster Calculator</em>. Ripetere le operazioni del punto precedente.</p>
+<p>Calcolare la superficie di conifere esboscabile comprese nel buffer di 400 m attorno alle strade con gli strumenti di <em>Raster analysis</em>.</p>
+<h2 id="per-saperne-di-piu">Per saperne di più</h2>
+<p>Dalla documentazione ufficiale:</p>
+<ul>
+<li>// UNDER CONSTRUCTION //</li>
+</ul>
 
 
 
