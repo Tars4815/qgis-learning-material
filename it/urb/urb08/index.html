@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1112,9 +1112,37 @@
 
 <h1 id="interpolazione-e-aree-di-influenza">Interpolazione e aree di influenza</h1>
 <h2 id="scopo-dellesercizio">Scopo dell’esercizio</h2>
-<p>[//Under construction//]</p>
+<p>Applicare algoritmi di interpolazione in ambiente GIS; stabilire le zone di rischio rumore sulla base dei dati misurati nel Comune di Modena.</p>
 <h2 id="dati">Dati</h2>
-<p>[//Under construction//]</p>
+<p>Vettoriali:
+* <em>zonizzacu</em> (Layer shapefile della zonizzazione acustica del comune di Modena)</p>
+<p>Tabelle:
+* <em>RUMORE_MIS</em> (File txt dati di rumore misurato in posizioni puntuali)</p>
+<h2 id="preparazione-del-progetto">Preparazione del progetto</h2>
+<p>Definire le unità di misura e il percorso relativo: <em>Project &gt; Properties &gt; General Tab &gt; Save paths &gt; Relative</em>. Impostare il sistema di riferimento con codice EPSG: 25832 – ETRS89 – UTM Zone 32 N.</p>
+<p>Caricare i dati di rumore misurato in posizioni puntuali con modalità equivalenti a quelle dei file csv.</p>
+<p>Cambiare la simbologia del layer con le misure di rumore in una visualizzazione graduata.</p>
+<h2 id="calcolo-modelli-di-interpolazione">Calcolo modelli di interpolazione</h2>
+<p>Ricavare una mappa interpolata del rumore nel Comune di Modena a partire dai valori puntuali misurati, usando diverse tecniche:
+1.  <strong>Inverse Distance Weighting</strong> (<em>Interpolation &gt; IDW Interpolation</em>)
+2.  <strong>Triangulated Irregular Network</strong> (<em>Interpolation &gt; TIN Interpolation</em>)</p>
+<h3 id="inverse-distance-weighting">Inverse Distance Weighting</h3>
+<p>Da <em>Processing Toolbox &gt; Interpolation &gt; IDW Interpolation</em>. Definire come layer da interpolare quello delle misure puntuali di rumore e scegliere come campo da considerare per l’operazione (Interpolation attribute) <em>RUM_DB</em>. Confermare queste impostazioni cliccando sull’icona +.</p>
+<p>Scegliere come <em>Distance coefficient p</em> il valore 2 (potenza applicata alla distanza inversa), definire come <em>Extent</em> quella del layer della zonizzazione acustica e come Pixel size 25 metri. Lanciare il processamento e ripeterlo con diverse combinazioni di potenze (e.g. 0.5, 4…) e pixel (e.g. 10, 50 metri…). Come cambia il raster risultante?</p>
+<h3 id="triangulated-irregular-network">Triangulated Irregular Network</h3>
+<p>Da <em>Processing Toolbox &gt; Interpolation &gt; TIN Interpolation</em>. Definire come layer da interpolare quello delle misure puntuali di rumore e scegliere come campo da considerare per l’operazione (Interpolation attribute) <em>RUM_DB</em>. Confermare queste impostazioni cliccando sull’icona +.</p>
+<p>Scegliere come Interpolation method il valore Linear, definire come <em>Extent</em> quella del layer della zonizzazione acustica e come <em>Pixel size</em> 25 metri. Lanciare il processamento e ripeterlo con diverse combinazioni di metodi (Linear o Cubic) e pixel (e.g. 10, 50 metri…). Come cambia il raster risultante?</p>
+<h2 id="validazione-modello-e-calcolo-errore-di-modello">Validazione modello e calcolo errore di modello</h2>
+<p>Per valutare la qualità del modello interpolato, ho necessità di avere un campione di dati di validazione: dalla <em>Processing Toolbox &gt; Vector selection &gt; Random selection</em>. Selezionare come input layer lo shapefile delle misure puntuali. Come <em>Method</em>, definire <em>Percentage of selected features</em> e definire come Percentage 70%. Salvare in un nuovo layer “training” i record selezionati. Invertire la selezione e salvare il subset complementare come layer “validation”.</p>
+<p>Ripetere la procedura di interpolazione con IDW e TIN usando unicamente il campione dei dati di “training”.</p>
+<p>In corrispondenza dei punti del campione di validazione, estrarre il valore stimato dai modelli interpolati: <em>Processing Toolbox &gt; Raster analysis &gt; Sample raster values</em>. Scegliere come input il layer di validazione, come raster uno dei raster interpolati e definire il nome del nuovo campo (<em>Output column prefix</em>) per salvare il valore nel pixel del raster in cui ricade ciascun punto (e.g. IDW_val, TIN_val in base al raster su cui si sta effettuando il campionamento). Ripetere il procedimento per entrambi i raster interpolati.</p>
+<p>Nel layer di validazione contenente i valori campionati derivati dalle due interpolazioni eseguite, accedere al <em>Field calculator</em> e calcolare le differenze tra i valori stimati con i due metodi e il valore osservato in corrispondenza di ciascun punto, creando di conseguenza due nuovi campi. Dei due nuovi campi ottenuti, calcolarne le statistiche (<em>Processing Toolbox &gt; Vector analysis &gt; Basic statistics for fields</em>).</p>
+<h2 id="analisi-misurazioni-suono-a-modena">Analisi misurazioni suono a Modena</h2>
+<p>Confrontare il rumore effettivamente misurato con quello considerato massimo accettabile in modo da individuare le zone caratterizzate da disagio acustico.</p>
+<p>Convertire lo shapefile zonizacc in raster per renderlo confrontabile con i risultati delle interpolazioni: <em>Processing toolbox &gt; GDAL &gt; Vector conversion &gt; Rasterize (Vector to raster)</em>. <em>Input layer</em>: zonizacc; <em>Field to use for a burn-in value</em>: maxdBa; <em>Output raster size</em>: Georeferenced units &gt; Definire di seguito la dimensione coerente con quella scelta per i raster delle interpolazioni. Avviare la procedura.</p>
+<p>Determinare le zone di disagio acustico sulla base del raster ottenuto con interpolazione tramite IDW o TIN. <em>Menù Raster &gt; Raster calculator</em>. Output layer: definire nome e cartella di salvataggio; nel box <em>Raster calculator</em> expression definire la formula della differenza tra <em>(rumore misurato [raster interpolato]) – (rumore max accettabile [raster della zonizzazione])</em>.</p>
+<p>Ancora con il Raster Calculator: (risultato del calcolo prec.) &gt; 10 dBa. Si ottiene così il raster del disagio acustico (considerare una tolleranza di 5 dBa oppure 10 dBa).</p>
+<p>Calcolare la percentuale del comune di Modena interessata dal disagio acustico. Ricavare il numero di celle con disagio: <em>Processing toolbox &gt; Raster analysis &gt; Raster layer unique values</em>. Scegliere come input l’ultimo raster calcolato. L’html risultante conterrà sia per le aree che rispettano che quelle che non rispettano la tolleranza (1 o 0) il totale calcolato per la superficie. Calcolare quindi la percentuale di quelle che non rispettano i limiti di tolleranza.</p>
 
 
 
@@ -1289,10 +1317,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.path", "navigation.footer", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.path", "navigation.footer", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

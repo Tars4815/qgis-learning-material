@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1318,6 +1318,7 @@
 * V_EDI_GPG (edificato dei comuni della provincia di Piacenza)
 Raster:
 * CLC_PCP_20M.tif (classificazione della copertura del suolo nella provincia di Piacenza)</p>
+<p>Fonte: <a href="https://geoportale.regione.emilia-romagna.it/">Geoportale Emilia Romagna</a></p>
 <h2 id="preparazione-progetto">Preparazione progetto</h2>
 <p>Definire le unità di misura e il percorso relativo: <em>Project &gt; Properties &gt; General Tab &gt; Save paths &gt; Relative</em>.</p>
 <h2 id="caricamento-vettoriali">Caricamento vettoriali</h2>
@@ -1369,9 +1370,13 @@ Raster:
 </tr>
 </tbody>
 </table>
-<p>Dopo aver valutato le proprietà del layer, da <em>Properties &gt; Simbology</em>, selezionare la modalità di rendering <em>Paletted/Unique values</em> e cliccare <em>Classify</em>. Fare doppio clic sui valori nella colonna Label per modificare l’etichetta della legenda colori in accordo con il significato indicato nella tabella precedente.</p>
+<p>Dopo aver valutato le proprietà del layer, da <em>Properties &gt; Simbology</em>, selezionare la modalità di rendering <em>Paletted/Unique values</em> e cliccare <em>Classify</em>. Questa modalità permette di definire un colore specifico per ciascun valore univoco nei pixel del raster. E' ottimale per rappresentazioni cartografiche che riguardano la mappatura del territorio secondo classi predefinite.</p>
+<p>Dopo aver scelto la modalità di rappresentazione, fare doppio clic sui valori nella colonna Label per modificare l’etichetta della legenda colori in accordo con il significato indicato nella tabella precedente. Premere <em>Apply</em> per applicare le modifiche.</p>
+<p><img alt="&quot;Simbologia per paletted unique values" src="../../../assets/img/urb/paletted-unique-values-clc.png" /></p>
 <p>Per ritagliare le informazioni di copertura del suolo solo nel territorio del comune di Piacenza, cliccare sul menù <em>Raster &gt; Extraction &gt; Clip raster by mask layer</em>. Selezionare come layer in input il raster della copertura del suolo e come mask layer Piacenza_COM.</p>
 <p>Applicare al nuovo raster ritagliato la stessa simbologia del precedente: tasto destro sul vecchio raster <em>&gt; Styles &gt; Copy Style &gt; All Style Categories</em>. Sul layer raster ritagliato cliccare tasto destro, <em>Styles &gt; Paste Style &gt; All Style Categories</em>.</p>
+<p>Confrontare qualitativamente la mappatura raster del Corine Land Cover con la mappatura dell'edificato per il comune di Piacenza: come si differenziano? Si notano pattern significativi?</p>
+<p><img alt="&quot;Elementi vettoriali dell'edificato sovrapposti al raster ritagliatto del Corine Land Cover per il Comune di Piacenza&quot;" src="../../../assets/img/urb/comune-pc-clc.png" /></p>
 <p>Salvare il progetto.</p>
 <h2 id="per-approfondire">Per approfondire</h2>
 <p>[...]</p>
@@ -1587,10 +1592,10 @@ Raster:
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.path", "navigation.footer", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.path", "navigation.footer", "navigation.tabs", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
