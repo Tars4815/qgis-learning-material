@@ -32,5 +32,7 @@ TO DO and PROGRESS:
     - [ ] Statistiche spaziali: centro medio, standard distance e Kernel Density
     - [ ] Analisi di cluster e calcolo di aree di influenza
     - [ ] Interpolazione e aree di influenza
+    - [ ] Digital Terrain Model: Operazioni base e visualizzazione
+    - [ ] Analisi con raster e vettoriali
     - // Under development //
 
