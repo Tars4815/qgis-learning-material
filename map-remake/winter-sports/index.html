@@ -1295,6 +1295,36 @@ out geom;
 <p>To understand if the rink is in a high-density urban area or a low-density mountain area:</p>
 <p>Expression: <em>"pop_sum" / ($area / 1000000)</em></p>
 <p>[UNDER CONSTRUCTION]</p>
+<h3 id="6-comparison-with-2026-italian-athletes-hometown">6. Comparison with 2026 Italian athletes hometown</h3>
+<p>Query WikiData</p>
+<div class="highlight"><pre><span></span><code>SELECT ?athlete ?athleteLabel (GROUP_CONCAT(DISTINCT ?eventLabel; separator=&quot;, &quot;) AS ?events)
+WHERE {
+  {
+    SELECT DISTINCT ?athlete ?event WHERE {
+      # 1. Start with the most restrictive filter: Italian Citizens
+      ?athlete wdt:P27 wd:Q38 .
+
+      # 2. Check for the specific Occupation (Olympic athlete)
+      ?athlete wdt:P106/wdt:P279* wd:Q50995749 .
+
+      # 3. Connect to the 2026 Winter Olympics hierarchy
+      ?event wdt:P361* wd:Q4630399 .
+      { ?event wdt:P710 ?athlete . }
+      UNION
+      { ?athlete wdt:P1344 ?event . }
+    }
+  }
+
+  # 4. Fetch labels outside the complex logic to prevent timeouts
+  SERVICE wikibase:label { 
+    bd:serviceParam wikibase:language &quot;[AUTO_LANGUAGE],it,en&quot;. 
+    ?athlete rdfs:label ?athleteLabel .
+    ?event rdfs:label ?eventLabel .
+  }
+}
+GROUP BY ?athlete ?athleteLabel
+ORDER BY ?athleteLabel
+</code></pre></div>
 
 
 
